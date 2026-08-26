@@ -1,86 +1,940 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light">
+<html lang="es" data-theme="dark">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clubes y estadios | SporTour</title>
-  <meta name="description" content="Recorridos por instituciones y escenarios emblemáticos para conocer su historia, infraestructura, identidad y vínculo con cada barrio.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/pages.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clubes y estadios | SporTour</title>
+
+    <meta
+        name="description"
+        content="Conocé clubes, estadios e instalaciones emblemáticas del fútbol argentino con SporTour."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/pages.css">
 </head>
+
 <body>
-  <nav class="nav">
+
+
+<!-- =========================================================
+     NAV
+========================================================= -->
+
+<nav class="nav">
+
     <div class="nav-inner">
-      <a class="brand" href="../index.html#top"><span class="dot"></span><img src="../img/sportour2.png" alt="SporTour"></a>
-      <ul class="navlinks" id="navlinks">
-        <li><a href="../index.html#servicios">Servicios</a></li>
-        <li><a href="../index.html#destinos">Viví Buenos Aires</a></li>
-        <li><a href="../index.html#paquetes">Paquetes</a></li>
-        <li><a href="../index.html#alojamiento">Alojamiento</a></li>
-        <li><a href="../index.html#nosotros">Nosotros</a></li>
-        <li><a href="../index.html#contacto">Contacto</a></li>
-      </ul>
-      <a class="nav-cta" href="../index.html#contacto">Consultar</a>
-      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navlinks"><span></span></button>
+
+        <a class="brand" href="../index.html#top">
+            <span class="dot"></span>
+            <img
+                src="../img/sportour2.png"
+                alt="SporTour"
+            >
+        </a>
+
+        <ul class="navlinks" id="navlinks">
+
+            <li>
+                <a href="../index.html#servicios">
+                    Experiencia
+                </a>
+            </li>
+
+            <li>
+                <a href="../index.html#destinos">
+                    Servicios
+                </a>
+            </li>
+
+            <li>
+                <a href="../index.html#paquetes">
+                    Paquetes
+                </a>
+            </li>
+
+            <li>
+                <a href="../index.html#alojamiento">
+                    Alojamiento
+                </a>
+            </li>
+
+            <li>
+                <a href="../index.html#nosotros">
+                    Nosotros
+                </a>
+            </li>
+
+            <li>
+                <a href="../index.html#contacto">
+                    Contacto
+                </a>
+            </li>
+
+        </ul>
+
+        <a
+            class="nav-cta"
+            href="../index.html#contacto"
+        >
+            Cotizar viaje
+        </a>
+
+        <button
+            class="burger"
+            id="burger"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="navlinks"
+        >
+            <span></span>
+        </button>
+
     </div>
-  </nav>
 
-  <main class="subpage-main">
-    <header class="experience-hero">
-      <div class="experience-hero-photo" style="background-image:url('../img/estadio1.jpg')"></div>
-      <div class="wrap experience-hero-content">
-        <div class="experience-breadcrumb"><a href="../index.html">Inicio</a><span>/</span><a href="../index.html#destinos">Viví Buenos Aires</a><span>/</span><span>Clubes y estadios</span></div>
-        <div class="experience-kicker">Viví Buenos Aires · 02</div>
-        <h1>Entrá en la historia de sus clubes y estadios</h1>
-        <p class="experience-hero-copy">Recorridos por instituciones y escenarios emblemáticos para conocer su historia, infraestructura, identidad y vínculo con cada barrio.</p>
-        <div class="experience-hero-actions">
-          <a class="btn primary" href="../index.html#contacto">Solicitar propuesta</a>
-          <a class="btn secondary-light" href="#experiencia">Ver experiencia</a>
+</nav>
+
+
+<main>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<header class="clubs-hero">
+
+    <div
+        class="clubs-hero-bg"
+        style="background-image:url('../img/estadio1.jpg')"
+    ></div>
+
+    <div class="wrap clubs-hero-content">
+
+        <div class="clubs-breadcrumb">
+            <a href="../index.html">
+                Inicio
+            </a>
+
+            <span>/</span>
+
+            <a href="../index.html#destinos">
+                Viví Buenos Aires
+            </a>
+
+            <span>/</span>
+
+            <span>
+                Clubes y estadios
+            </span>
         </div>
-      </div>
-    </header>
 
-    <section class="experience-facts">
-      <div class="wrap experience-facts-grid"><div class="experience-fact"><span>Enfoque</span><strong>Clubes e infraestructura</strong></div><div class="experience-fact"><span>Formato</span><strong>Visitas coordinadas</strong></div><div class="experience-fact"><span>Destino</span><strong>Buenos Aires</strong></div><div class="experience-fact"><span>Ideal para</span><strong>Grupos futbolísticos</strong></div></div>
-    </section>
 
-    <section class="experience-section" id="experiencia">
-      <div class="wrap">
-        <div class="experience-heading"><h2>Conocer el fútbol desde sus casas</h2><p>Los estadios y clubes de Buenos Aires cuentan una parte central de la historia de la ciudad. La experiencia busca ir más allá de la foto y entender cómo funciona cada institución y qué representa para su comunidad.</p></div>
-        <div class="feature-grid"><article class="feature-card"><span class="feature-number">01</span><h3>Estadios emblemáticos</h3><p>Visitas y recorridos por escenarios reconocidos del fútbol argentino, sujetos a disponibilidad y calendario.</p></article><article class="feature-card"><span class="feature-number">02</span><h3>Historia institucional</h3><p>Contexto sobre orígenes, hitos deportivos, símbolos y protagonistas de cada club.</p></article><article class="feature-card"><span class="feature-number">03</span><h3>Infraestructura deportiva</h3><p>Acercamiento a instalaciones, espacios de entrenamiento y organización deportiva cuando el acceso lo permita.</p></article><article class="feature-card"><span class="feature-number">04</span><h3>Identidad de barrio</h3><p>Entender la relación entre cada institución, su territorio y la cultura de sus hinchas.</p></article></div>
-      </div>
-    </section>
+        <span class="clubs-eyebrow">
+            Experiencia 02
+        </span>
 
-    <section class="experience-section alt">
-      <div class="wrap includes-layout">
-        <div class="includes-copy">
-          <div class="experience-kicker">Programa flexible</div>
-          <h2>Qué puede incluir</h2>
-          <p>Cada propuesta se adapta al perfil del grupo, las fechas del viaje, los objetivos y la disponibilidad de cada actividad.</p>
+        <h1>
+            Clubes<br>
+            y estadios
+        </h1>
+
+        <p>
+            Entrá al corazón del fútbol argentino.
+            Conocé estadios, instituciones, instalaciones
+            y barrios donde el fútbol forma parte de la identidad cotidiana.
+        </p>
+
+        <div class="clubs-hero-actions">
+
+            <a
+                class="btn primary"
+                href="#clubes"
+            >
+                Explorar experiencia
+            </a>
+
+            <a
+                class="btn clubs-btn-light"
+                href="../index.html#contacto"
+            >
+                Consultar
+            </a>
+
         </div>
-        <div class="includes-list"><div class="includes-item"><span>Coordinación de visitas</span></div><div class="includes-item"><span>Traslados entre instituciones</span></div><div class="includes-item"><span>Entradas o tours cuando corresponda</span></div><div class="includes-item"><span>Guía local</span></div><div class="includes-item"><span>Recorridos por barrios futboleros</span></div><div class="includes-item"><span>Material informativo</span></div><div class="includes-item"><span>Planificación según calendario</span></div><div class="includes-item"><span>Acompañamiento del grupo</span></div></div>
-      </div>
-    </section>
 
-    <section class="experience-section">
-      <div class="wrap">
-        <div class="experience-heading"><h2>Cómo lo organizamos</h2><p>Un proceso simple para convertir los objetivos del grupo en un itinerario deportivo y turístico coherente, organizado y a medida.</p></div>
-        <div class="process-grid"><article class="process-step"><span class="step">01</span><h3>Entendemos al grupo</h3><p>Edad, nivel, objetivos deportivos y expectativas del viaje.</p></article><article class="process-step"><span class="step">02</span><h3>Diseñamos la propuesta</h3><p>Combinamos actividades, tiempos y servicios según el perfil del grupo.</p></article><article class="process-step"><span class="step">03</span><h3>Coordinamos la operativa</h3><p>Reservas, traslados, horarios y proveedores en un único programa.</p></article><article class="process-step"><span class="step">04</span><h3>Vivimos la experiencia</h3><p>Acompañamiento en destino y soporte durante toda la actividad.</p></article></div>
-        <div class="audience-strip"><span>Clubes</span><span>Academias</span><span>Instituciones</span><span>Equipos juveniles</span><span>Grupos internacionales</span></div>
-        <a class="subpage-back" href="../index.html#destinos">← Volver a Viví Buenos Aires</a>
-      </div>
-    </section>
+    </div>
 
-    <section class="experience-cta">
-      <div class="wrap experience-cta-grid">
-        <div><h2>Recorré los lugares donde vive el fútbol argentino</h2><p>Contanos quiénes viajan, las fechas estimadas y qué quieren vivir. Diseñamos una propuesta adaptada al grupo.</p></div>
-        <a class="btn primary" href="../index.html#contacto">Hablar con Sportour</a>
-      </div>
-    </section>
-  </main>
-  <script src="../js/main.js"></script>
+</header>
+
+
+
+<!-- =========================================================
+     DATOS RÁPIDOS
+========================================================= -->
+
+<section class="clubs-facts">
+
+    <div class="wrap clubs-facts-grid">
+
+        <div class="clubs-fact">
+            <span>Destino</span>
+            <strong>Buenos Aires</strong>
+        </div>
+
+        <div class="clubs-fact">
+            <span>Experiencia</span>
+            <strong>Fútbol argentino</strong>
+        </div>
+
+        <div class="clubs-fact">
+            <span>Formato</span>
+            <strong>Visitas grupales</strong>
+        </div>
+
+        <div class="clubs-fact">
+            <span>Ideal para</span>
+            <strong>Clubes y academias</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     INTRO
+========================================================= -->
+
+<section class="clubs-section">
+
+    <div class="wrap clubs-intro">
+
+        <div>
+
+            <span class="clubs-section-label">
+                La experiencia
+            </span>
+
+            <h2>
+                Conocé el fútbol desde adentro
+            </h2>
+
+        </div>
+
+
+        <div class="clubs-intro-copy">
+
+            <p>
+                Buenos Aires reúne algunos de los clubes y estadios
+                más reconocidos del fútbol sudamericano.
+            </p>
+
+            <p>
+                La propuesta de SporTour busca ir más allá de una
+                visita turística tradicional: conocer la historia,
+                la infraestructura y la identidad que rodea a cada institución.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CARRUSEL 1
+========================================================= -->
+
+<section
+    class="clubs-section clubs-section-alt"
+    id="clubes"
+>
+
+    <div class="wrap">
+
+        <div class="clubs-section-head">
+
+            <div>
+
+                <span class="clubs-section-label">
+                    Escenarios
+                </span>
+
+                <h2>
+                    Clubes que podés conocer
+                </h2>
+
+                <p>
+                    Las visitas se organizan según las fechas,
+                    disponibilidad y características de cada grupo.
+                </p>
+
+            </div>
+
+
+            <div class="carousel-controls">
+
+                <button
+                    class="carousel-arrow"
+                    data-carousel-prev="clubs-carousel"
+                    aria-label="Anterior"
+                >
+                    ←
+                </button>
+
+                <button
+                    class="carousel-arrow"
+                    data-carousel-next="clubs-carousel"
+                    aria-label="Siguiente"
+                >
+                    →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="clubs-carousel"
+            id="clubs-carousel"
+        >
+
+
+            <!-- RIVER -->
+
+            <article class="club-slide">
+
+                <div
+                    class="club-slide-photo"
+                    style="background-image:url('../img/estadio1.jpg')"
+                >
+
+                    <span class="club-slide-number">
+                        01
+                    </span>
+
+                </div>
+
+                <div class="club-slide-body">
+
+                    <span class="club-slide-type">
+                        Buenos Aires
+                    </span>
+
+                    <h3>
+                        River Plate
+                    </h3>
+
+                    <p>
+                        Conocé uno de los escenarios más
+                        representativos del fútbol argentino
+                        y su historia deportiva.
+                    </p>
+
+                    <div class="club-slide-tags">
+                        <span>Estadio</span>
+                        <span>Historia</span>
+                        <span>Museo</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- BOCA -->
+
+            <article class="club-slide">
+
+                <div
+                    class="club-slide-photo"
+                    style="background-image:url('../img/bombonera1.jpg')"
+                >
+
+                    <span class="club-slide-number">
+                        02
+                    </span>
+
+                </div>
+
+                <div class="club-slide-body">
+
+                    <span class="club-slide-type">
+                        La Boca
+                    </span>
+
+                    <h3>
+                        Boca Juniors
+                    </h3>
+
+                    <p>
+                        Una experiencia vinculada a uno de los
+                        barrios con mayor identidad futbolera
+                        de Buenos Aires.
+                    </p>
+
+                    <div class="club-slide-tags">
+                        <span>Estadio</span>
+                        <span>Barrio</span>
+                        <span>Cultura</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- RACING -->
+
+            <article class="club-slide">
+
+                <div
+                    class="club-slide-photo"
+                    style="background-image:url('../img/cancha-racing1.jpg')"
+                >
+
+                    <span class="club-slide-number">
+                        03
+                    </span>
+
+                </div>
+
+                <div class="club-slide-body">
+
+                    <span class="club-slide-type">
+                        Avellaneda
+                    </span>
+
+                    <h3>
+                        Racing Club
+                    </h3>
+
+                    <p>
+                        Descubrí la historia de una institución
+                        tradicional y su vínculo con el fútbol
+                        argentino.
+                    </p>
+
+                    <div class="club-slide-tags">
+                        <span>Club</span>
+                        <span>Estadio</span>
+                        <span>Tradición</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- SAN LORENZO -->
+
+            <article class="club-slide">
+
+                <div
+                    class="club-slide-photo"
+                    style="background-image:url('../img/cancha-casla1.jpg')"
+                >
+
+                    <span class="club-slide-number">
+                        04
+                    </span>
+
+                </div>
+
+                <div class="club-slide-body">
+
+                    <span class="club-slide-type">
+                        Buenos Aires
+                    </span>
+
+                    <h3>
+                        San Lorenzo
+                    </h3>
+
+                    <p>
+                        Conocé su historia,
+                        su comunidad y el lugar que ocupa
+                        dentro de la cultura futbolera porteña.
+                    </p>
+
+                    <div class="club-slide-tags">
+                        <span>Identidad</span>
+                        <span>Historia</span>
+                        <span>Club</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- INDEPENDIENTE -->
+
+            <article class="club-slide">
+
+                <div
+                    class="club-slide-photo"
+                    style="background-image:url('../img/cancha-independiente1.jpg')"
+                >
+
+                    <span class="club-slide-number">
+                        05
+                    </span>
+
+                </div>
+
+                <div class="club-slide-body">
+
+                    <span class="club-slide-type">
+                        Avellaneda
+                    </span>
+
+                    <h3>
+                        Independiente
+                    </h3>
+
+                    <p>
+                        Un recorrido por una institución
+                        histórica del fútbol sudamericano.
+                    </p>
+
+                    <div class="club-slide-tags">
+                        <span>Copas</span>
+                        <span>Historia</span>
+                        <span>Estadio</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+        <p class="clubs-disclaimer">
+            * Instituciones ilustrativas. Las visitas se encuentran sujetas
+            a disponibilidad, calendario y acuerdos vigentes.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     QUÉ PODÉS CONOCER
+========================================================= -->
+
+<section class="clubs-section">
+
+    <div class="wrap">
+
+        <div class="clubs-section-head">
+
+            <div>
+
+                <span class="clubs-section-label">
+                    Dentro del club
+                </span>
+
+                <h2>
+                    Una mirada completa
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="clubs-feature-grid">
+
+
+            <article class="clubs-feature">
+
+                <span class="clubs-feature-number">
+                    01
+                </span>
+
+                <h3>
+                    Estadios
+                </h3>
+
+                <p>
+                    Conocé los escenarios donde se disputan
+                    algunos de los partidos más importantes
+                    del fútbol argentino.
+                </p>
+
+            </article>
+
+
+            <article class="clubs-feature">
+
+                <span class="clubs-feature-number">
+                    02
+                </span>
+
+                <h3>
+                    Museos
+                </h3>
+
+                <p>
+                    Trofeos, camisetas, protagonistas
+                    y momentos que construyeron la historia
+                    de cada institución.
+                </p>
+
+            </article>
+
+
+            <article class="clubs-feature">
+
+                <span class="clubs-feature-number">
+                    03
+                </span>
+
+                <h3>
+                    Instalaciones
+                </h3>
+
+                <p>
+                    Dependiendo de cada visita,
+                    acercamiento a espacios deportivos,
+                    áreas internas y estructuras del club.
+                </p>
+
+            </article>
+
+
+            <article class="clubs-feature">
+
+                <span class="clubs-feature-number">
+                    04
+                </span>
+
+                <h3>
+                    Identidad
+                </h3>
+
+                <p>
+                    Entendé la relación entre
+                    el club, sus hinchas,
+                    su barrio y su historia.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CARRUSEL 2 - GALERÍA
+========================================================= -->
+
+<section class="clubs-section clubs-section-dark">
+
+    <div class="wrap">
+
+        <div class="clubs-section-head clubs-section-head-light">
+
+            <div>
+
+                <span class="clubs-section-label">
+                    Galería
+                </span>
+
+                <h2>
+                    Vivilo desde adentro
+                </h2>
+
+                <p>
+                    Diferentes momentos que pueden formar
+                    parte de la experiencia Sportour.
+                </p>
+
+            </div>
+
+
+            <div class="carousel-controls">
+
+                <button
+                    class="carousel-arrow carousel-arrow-light"
+                    data-carousel-prev="gallery-carousel"
+                    aria-label="Anterior"
+                >
+                    ←
+                </button>
+
+                <button
+                    class="carousel-arrow carousel-arrow-light"
+                    data-carousel-next="gallery-carousel"
+                    aria-label="Siguiente"
+                >
+                    →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="clubs-gallery-carousel"
+            id="gallery-carousel"
+        >
+
+
+            <div class="gallery-slide">
+
+                <img
+                    src="../img/estadio1.jpg"
+                    alt="Estadio de fútbol"
+                >
+
+                <span>
+                    Estadios
+                </span>
+
+            </div>
+
+
+            <div class="gallery-slide">
+
+                <img
+                    src="../img/entrenamientos1.jpg"
+                    alt="Entrenamiento de fútbol"
+                >
+
+                <span>
+                    Instalaciones
+                </span>
+
+            </div>
+
+
+            <div class="gallery-slide">
+
+                <img
+                    src="../img/equipofutbol1.jpg"
+                    alt="Equipo de fútbol"
+                >
+
+                <span>
+                    Clubes
+                </span>
+
+            </div>
+
+
+            <div class="gallery-slide">
+
+                <img
+                    src="../img/partidos1.avif"
+                    alt="Partido de fútbol"
+                >
+
+                <span>
+                    Partidos
+                </span>
+
+            </div>
+
+
+            <div class="gallery-slide">
+
+                <img
+                    src="../img/cultura1.jpg"
+                    alt="Cultura de Buenos Aires"
+                >
+
+                <span>
+                    Cultura futbolera
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CÓMO SE VIVE
+========================================================= -->
+
+<section class="clubs-section">
+
+    <div class="wrap">
+
+        <div class="clubs-section-head">
+
+            <div>
+
+                <span class="clubs-section-label">
+                    Programa
+                </span>
+
+                <h2>
+                    Cómo se integra al viaje
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="clubs-process">
+
+
+            <article>
+
+                <span>01</span>
+
+                <h3>
+                    Selección
+                </h3>
+
+                <p>
+                    Elegimos los clubes más interesantes
+                    según el perfil y objetivos del grupo.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <span>02</span>
+
+                <h3>
+                    Coordinación
+                </h3>
+
+                <p>
+                    Organizamos horarios,
+                    traslados, entradas
+                    y disponibilidad.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <span>03</span>
+
+                <h3>
+                    Visita
+                </h3>
+
+                <p>
+                    El grupo conoce los espacios
+                    y descubre la historia
+                    detrás de cada institución.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <span>04</span>
+
+                <h3>
+                    Experiencia
+                </h3>
+
+                <p>
+                    La actividad se integra
+                    con entrenamientos,
+                    turismo y partidos.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="clubs-cta">
+
+    <div class="wrap clubs-cta-inner">
+
+        <div>
+
+            <span class="clubs-section-label">
+                Tu viaje
+            </span>
+
+            <h2>
+                Conocé dónde vive el fútbol argentino
+            </h2>
+
+            <p>
+                Diseñamos las visitas según la edad,
+                cantidad de jugadores,
+                fechas y objetivos de cada grupo.
+            </p>
+
+        </div>
+
+
+        <a
+            class="btn primary"
+            href="../index.html#contacto"
+        >
+            Solicitar propuesta
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<script src="../js/main.js"></script>
+
 </body>
+
 </html>

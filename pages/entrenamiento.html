@@ -1,86 +1,186 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light">
+<html lang="es" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/pages.css">
   <title>Entrenamiento | SporTour</title>
-  <meta name="description" content="Sesiones orientadas al desarrollo técnico, táctico y colectivo, integradas al viaje y adaptadas a la edad, nivel y objetivos del grupo.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/pages.css">
 </head>
 <body>
-  <nav class="nav">
-    <div class="nav-inner">
-      <a class="brand" href="../index.html#top"><span class="dot"></span><img src="../img/sportour2.png" alt="SporTour"></a>
-      <ul class="navlinks" id="navlinks">
-        <li><a href="../index.html#servicios">Servicios</a></li>
-        <li><a href="../index.html#destinos">Viví Buenos Aires</a></li>
-        <li><a href="../index.html#paquetes">Paquetes</a></li>
-        <li><a href="../index.html#alojamiento">Alojamiento</a></li>
-        <li><a href="../index.html#nosotros">Nosotros</a></li>
-        <li><a href="../index.html#contacto">Contacto</a></li>
-      </ul>
-      <a class="nav-cta" href="../index.html#contacto">Consultar</a>
-      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navlinks"><span></span></button>
-    </div>
-  </nav>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html#top">
+      <span class="dot"></span>
+      <img src="../img/sportour2.png" alt="SporTour">
+    </a>
 
-  <main class="subpage-main">
-    <header class="experience-hero">
-      <div class="experience-hero-photo" style="background-image:url('../img/entrenamientos1.jpg')"></div>
-      <div class="wrap experience-hero-content">
-        <div class="experience-breadcrumb"><a href="../index.html">Inicio</a><span>/</span><a href="../index.html#destinos">Viví Buenos Aires</a><span>/</span><span>Entrenamiento</span></div>
-        <div class="experience-kicker">Viví Buenos Aires · 03</div>
+    <ul class="navlinks" id="navlinks">
+        <li><a href="../index.html#servicios">Experiencia</a></li>
+        <li><a href="../index.html#destinos">Servicios</a></li>
+      <li><a href="../index.html#paquetes">Paquetes</a></li>
+      <li><a href="../index.html#alojamiento">Alojamiento</a></li>
+      <li><a href="../index.html#nosotros">Nosotros</a></li>
+      <li><a href="../index.html#contacto">Contacto</a></li>
+    </ul>
+
+    <a class="nav-cta" href="../index.html#contacto">Cotizar viaje</a>
+
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navlinks">
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+  <header class="sp-training-hero">
+    <div class="sp-training-bg" style="background-image:url('../img/entrenamientos1.jpg')"></div>
+
+    <div class="wrap sp-training-hero-grid">
+      <div>
+        <div class="sp-breadcrumb">
+          <a href="../index.html">Inicio</a><span>/</span>
+          <a href="../index.html#destinos">Viví Buenos Aires</a><span>/</span>
+          <span>Entrenamiento</span>
+        </div>
+
+        <span class="sp-kicker">Experiencia 03</span>
         <h1>Entrená con una mirada argentina</h1>
-        <p class="experience-hero-copy">Sesiones orientadas al desarrollo técnico, táctico y colectivo, integradas al viaje y adaptadas a la edad, nivel y objetivos del grupo.</p>
-        <div class="experience-hero-actions">
-          <a class="btn primary" href="../index.html#contacto">Solicitar propuesta</a>
-          <a class="btn secondary-light" href="#experiencia">Ver experiencia</a>
+
+        <p class="sp-hero-copy">
+          Sesiones de tecnificación, conceptos tácticos y situaciones de juego
+          adaptadas a la edad, nivel y objetivos del grupo.
+        </p>
+
+        <div class="sp-actions">
+          <a class="btn primary" href="#training-plan">Ver programa</a>
+          <a class="btn sp-btn-light" href="../index.html#contacto">Consultar</a>
         </div>
       </div>
-    </header>
 
-    <section class="experience-facts">
-      <div class="wrap experience-facts-grid"><div class="experience-fact"><span>Enfoque</span><strong>Desarrollo futbolístico</strong></div><div class="experience-fact"><span>Formato</span><strong>Sesiones grupales</strong></div><div class="experience-fact"><span>Nivel</span><strong>Adaptable</strong></div><div class="experience-fact"><span>Ideal para</span><strong>Jugadores y equipos</strong></div></div>
-    </section>
+      <aside class="sp-training-panel">
+        <span>FORMATO</span><strong>Sesiones grupales</strong>
+        <hr>
+        <span>NIVEL</span><strong>Adaptable</strong>
+        <hr>
+        <span>IDEAL PARA</span><strong>Clubes y academias</strong>
+      </aside>
+    </div>
+  </header>
 
-    <section class="experience-section" id="experiencia">
-      <div class="wrap">
-        <div class="experience-heading"><h2>El viaje también se entrena</h2><p>Las sesiones buscan que el grupo no sea un espectador del fútbol local, sino que pueda vivir una experiencia práctica de aprendizaje y desarrollo dentro de un entorno nuevo.</p></div>
-        <div class="feature-grid"><article class="feature-card"><span class="feature-number">01</span><h3>Tecnificación</h3><p>Ejercicios enfocados en fundamentos técnicos y toma de decisiones en situaciones de juego.</p></article><article class="feature-card"><span class="feature-number">02</span><h3>Conceptos tácticos</h3><p>Trabajo colectivo adaptado al nivel del grupo y a los objetivos definidos previamente.</p></article><article class="feature-card"><span class="feature-number">03</span><h3>Profesionales locales</h3><p>Posibilidad de desarrollar sesiones con entrenadores y especialistas vinculados al fútbol argentino.</p></article><article class="feature-card"><span class="feature-number">04</span><h3>Partidos y desafíos</h3><p>Opciones de amistosos, encuentros o actividades competitivas según disponibilidad y perfil del grupo.</p></article></div>
-      </div>
-    </section>
-
-    <section class="experience-section alt">
-      <div class="wrap includes-layout">
-        <div class="includes-copy">
-          <div class="experience-kicker">Programa flexible</div>
-          <h2>Qué puede incluir</h2>
-          <p>Cada propuesta se adapta al perfil del grupo, las fechas del viaje, los objetivos y la disponibilidad de cada actividad.</p>
+  <section class="sp-section" id="training-plan">
+    <div class="wrap">
+      <div class="sp-section-head">
+        <div>
+          <span class="sp-kicker">Programa deportivo</span>
+          <h2>Una semana para aprender haciendo</h2>
         </div>
-        <div class="includes-list"><div class="includes-item"><span>Campos de entrenamiento</span></div><div class="includes-item"><span>Planificación de sesiones</span></div><div class="includes-item"><span>Entrenadores o especialistas</span></div><div class="includes-item"><span>Material deportivo básico</span></div><div class="includes-item"><span>Traslados a instalaciones</span></div><div class="includes-item"><span>Hidratación y soporte logístico</span></div><div class="includes-item"><span>Opciones de amistosos</span></div><div class="includes-item"><span>Coordinación del calendario</span></div></div>
+        <p>
+          Este esquema es ilustrativo. El contenido se ajusta a la cantidad de jugadores,
+          edades, nivel y objetivos del equipo.
+        </p>
       </div>
-    </section>
 
-    <section class="experience-section">
-      <div class="wrap">
-        <div class="experience-heading"><h2>Cómo lo organizamos</h2><p>Un proceso simple para convertir los objetivos del grupo en un itinerario deportivo y turístico coherente, organizado y a medida.</p></div>
-        <div class="process-grid"><article class="process-step"><span class="step">01</span><h3>Entendemos al grupo</h3><p>Edad, nivel, objetivos deportivos y expectativas del viaje.</p></article><article class="process-step"><span class="step">02</span><h3>Diseñamos la propuesta</h3><p>Combinamos actividades, tiempos y servicios según el perfil del grupo.</p></article><article class="process-step"><span class="step">03</span><h3>Coordinamos la operativa</h3><p>Reservas, traslados, horarios y proveedores en un único programa.</p></article><article class="process-step"><span class="step">04</span><h3>Vivimos la experiencia</h3><p>Acompañamiento en destino y soporte durante toda la actividad.</p></article></div>
-        <div class="audience-strip"><span>Clubes</span><span>Academias</span><span>Instituciones</span><span>Equipos juveniles</span><span>Grupos internacionales</span></div>
-        <a class="subpage-back" href="../index.html#destinos">← Volver a Viví Buenos Aires</a>
+      <div class="sp-training-tabs">
+        <button class="sp-training-tab active" data-training-tab="1"><span>Día 01</span><b>Adaptación</b></button>
+        <button class="sp-training-tab" data-training-tab="2"><span>Día 02</span><b>Técnica</b></button>
+        <button class="sp-training-tab" data-training-tab="3"><span>Día 03</span><b>Táctica</b></button>
+        <button class="sp-training-tab" data-training-tab="4"><span>Día 04</span><b>Competencia</b></button>
       </div>
-    </section>
 
-    <section class="experience-cta">
-      <div class="wrap experience-cta-grid">
-        <div><h2>Sumá entrenamiento real a la experiencia Sportour</h2><p>Contanos quiénes viajan, las fechas estimadas y qué quieren vivir. Diseñamos una propuesta adaptada al grupo.</p></div>
-        <a class="btn primary" href="../index.html#contacto">Hablar con Sportour</a>
+      <article class="sp-training-panel-content active" data-training-content="1">
+        <div class="sp-training-image" style="background-image:url('../img/entrenamientos1.jpg')"></div>
+        <div class="sp-training-copy">
+          <span>01</span>
+          <h3>Adaptación y activación</h3>
+          <p>Primera toma de contacto con el entorno, el staff y la metodología de trabajo.</p>
+          <ul>
+            <li>Movilidad y coordinación</li>
+            <li>Trabajo técnico liviano</li>
+            <li>Evaluación inicial</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="sp-training-panel-content" data-training-content="2">
+        <div class="sp-training-image" style="background-image:url('../img/equipofutbol1.jpg')"></div>
+        <div class="sp-training-copy">
+          <span>02</span>
+          <h3>Técnica y toma de decisiones</h3>
+          <p>Velocidad de ejecución, pase, control y resolución en espacios reducidos.</p>
+          <ul>
+            <li>Rondos y posesión</li>
+            <li>1v1 y 2v2</li>
+            <li>Finalización</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="sp-training-panel-content" data-training-content="3">
+        <div class="sp-training-image" style="background-image:url('../img/estadio1.jpg')"></div>
+        <div class="sp-training-copy">
+          <span>03</span>
+          <h3>Conceptos tácticos colectivos</h3>
+          <p>Organización, ocupación de espacios, presión y transiciones según el perfil del equipo.</p>
+          <ul>
+            <li>Bloques y distancias</li>
+            <li>Salida y progresión</li>
+            <li>Transiciones</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="sp-training-panel-content" data-training-content="4">
+        <div class="sp-training-image" style="background-image:url('../img/partidos1.avif')"></div>
+        <div class="sp-training-copy">
+          <span>04</span>
+          <h3>Partido o desafío competitivo</h3>
+          <p>Una instancia final para aplicar conceptos dentro de una situación real de juego.</p>
+          <ul>
+            <li>Activación precompetitiva</li>
+            <li>Partido o fútbol reducido</li>
+            <li>Feedback final</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sp-section sp-section-alt">
+    <div class="wrap">
+      <div class="sp-section-head">
+        <div>
+          <span class="sp-kicker">Metodología</span>
+          <h2>Qué se trabaja</h2>
+        </div>
       </div>
-    </section>
-  </main>
-  <script src="../js/main.js"></script>
+
+      <div class="sp-method-grid">
+        <article><span>01</span><h3>Técnica</h3><p>Fundamentos aplicados a situaciones reales de juego.</p></article>
+        <article><span>02</span><h3>Táctica</h3><p>Comprensión colectiva y lectura de espacios.</p></article>
+        <article><span>03</span><h3>Intensidad</h3><p>Ritmo adaptado a la edad y carga del grupo.</p></article>
+        <article><span>04</span><h3>Feedback</h3><p>Devoluciones claras para jugadores y staff.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sp-page-cta">
+    <div class="wrap sp-page-cta-grid">
+      <div>
+        <span class="sp-kicker">Sportour</span>
+        <h2>Convertí el viaje en una semana de desarrollo</h2>
+        <p>Contanos edad, cantidad de jugadores y objetivos del equipo.</p>
+      </div>
+      <a class="btn primary" href="../index.html#contacto">Solicitar propuesta</a>
+    </div>
+  </section>
+</main>
+
+<script src="../js/main.js"></script>
 </body>
 </html>

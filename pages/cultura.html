@@ -1,86 +1,154 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light">
+<html lang="es" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/pages.css">
   <title>Cultura | SporTour</title>
-  <meta name="description" content="Historia, gastronomía, barrios y expresiones culturales para complementar el viaje deportivo y entender mejor el contexto en el que se vive el fútbol argentino.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/pages.css">
 </head>
 <body>
-  <nav class="nav">
-    <div class="nav-inner">
-      <a class="brand" href="../index.html#top"><span class="dot"></span><img src="../img/sportour2.png" alt="SporTour"></a>
-      <ul class="navlinks" id="navlinks">
-        <li><a href="../index.html#servicios">Servicios</a></li>
-        <li><a href="../index.html#destinos">Viví Buenos Aires</a></li>
-        <li><a href="../index.html#paquetes">Paquetes</a></li>
-        <li><a href="../index.html#alojamiento">Alojamiento</a></li>
-        <li><a href="../index.html#nosotros">Nosotros</a></li>
-        <li><a href="../index.html#contacto">Contacto</a></li>
-      </ul>
-      <a class="nav-cta" href="../index.html#contacto">Consultar</a>
-      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navlinks"><span></span></button>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html#top">
+      <span class="dot"></span>
+      <img src="../img/sportour2.png" alt="SporTour">
+    </a>
+
+    <ul class="navlinks" id="navlinks">
+        <li><a href="../index.html#servicios">Experiencia</a></li>
+        <li><a href="../index.html#destinos">Servicios</a></li>
+      <li><a href="../index.html#paquetes">Paquetes</a></li>
+      <li><a href="../index.html#alojamiento">Alojamiento</a></li>
+      <li><a href="../index.html#nosotros">Nosotros</a></li>
+      <li><a href="../index.html#contacto">Contacto</a></li>
+    </ul>
+
+    <a class="nav-cta" href="../index.html#contacto">Cotizar viaje</a>
+
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navlinks">
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+  <header class="sp-culture-hero">
+    <div class="sp-culture-collage">
+      <div class="sp-culture-a" style="background-image:url('../img/cultura1.jpg')"></div>
+      <div class="sp-culture-b" style="background-image:url('../img/buenosaires1.jpg')"></div>
+      <div class="sp-culture-c" style="background-image:url('../img/partidos1.avif')"></div>
     </div>
-  </nav>
 
-  <main class="subpage-main">
-    <header class="experience-hero">
-      <div class="experience-hero-photo" style="background-image:url('../img/cultura1.jpg')"></div>
-      <div class="wrap experience-hero-content">
-        <div class="experience-breadcrumb"><a href="../index.html">Inicio</a><span>/</span><a href="../index.html#destinos">Viví Buenos Aires</a><span>/</span><span>Cultura</span></div>
-        <div class="experience-kicker">Viví Buenos Aires · 05</div>
-        <h1>Entendé la ciudad más allá del resultado</h1>
-        <p class="experience-hero-copy">Historia, gastronomía, barrios y expresiones culturales para complementar el viaje deportivo y entender mejor el contexto en el que se vive el fútbol argentino.</p>
-        <div class="experience-hero-actions">
-          <a class="btn primary" href="../index.html#contacto">Solicitar propuesta</a>
-          <a class="btn secondary-light" href="#experiencia">Ver experiencia</a>
+    <div class="wrap sp-culture-hero-content">
+      <div class="sp-breadcrumb">
+        <a href="../index.html">Inicio</a><span>/</span>
+        <a href="../index.html#destinos">Viví Buenos Aires</a><span>/</span>
+        <span>Cultura</span>
+      </div>
+
+      <span class="sp-kicker">Experiencia 05</span>
+      <h1>Entender la ciudad también es parte del viaje</h1>
+      <p class="sp-hero-copy">
+        Historia, gastronomía, arte y fútbol como puertas de entrada a la identidad de Buenos Aires.
+      </p>
+    </div>
+  </header>
+
+  <section class="sp-section">
+    <div class="wrap sp-culture-manifesto">
+      <span>05</span>
+      <h2>El fútbol no se explica solo desde la cancha.</h2>
+      <p>
+        Conocer la cultura del destino ayuda a entender sus clubes, sus barrios,
+        sus rituales y su forma de vivir el deporte.
+      </p>
+    </div>
+  </section>
+
+  <section class="sp-section sp-section-alt">
+    <div class="wrap">
+      <div class="sp-section-head">
+        <div>
+          <span class="sp-kicker">Cuatro capas</span>
+          <h2>Una experiencia más completa</h2>
         </div>
+        <p>Las actividades se combinan según el tiempo disponible y el perfil del grupo.</p>
       </div>
-    </header>
 
-    <section class="experience-facts">
-      <div class="wrap experience-facts-grid"><div class="experience-fact"><span>Enfoque</span><strong>Cultura local</strong></div><div class="experience-fact"><span>Formato</span><strong>Actividades grupales</strong></div><div class="experience-fact"><span>Destino</span><strong>Buenos Aires</strong></div><div class="experience-fact"><span>Ideal para</span><strong>Jóvenes y acompañantes</strong></div></div>
-    </section>
+      <div class="sp-culture-accordion">
+        <article class="sp-culture-item open">
+          <button class="sp-culture-toggle" aria-expanded="true">
+            <span>01</span><strong>Historia</strong><i>+</i>
+          </button>
+          <div class="sp-culture-panel">
+            <div style="background-image:url('../img/buenosaires1.jpg')"></div>
+            <p>Recorridos y relatos para entender cómo creció Buenos Aires y cómo cada barrio construyó una identidad propia.</p>
+          </div>
+        </article>
 
-    <section class="experience-section" id="experiencia">
-      <div class="wrap">
-        <div class="experience-heading"><h2>Fútbol y cultura hablan el mismo idioma</h2><p>La experiencia cultural ayuda a comprender el entorno social e histórico del destino. Cada actividad puede incorporarse al itinerario sin perder de vista los tiempos de descanso y entrenamiento del grupo.</p></div>
-        <div class="feature-grid"><article class="feature-card"><span class="feature-number">01</span><h3>Historia porteña</h3><p>Recorridos que acercan al grupo a la evolución y los principales hitos de Buenos Aires.</p></article><article class="feature-card"><span class="feature-number">02</span><h3>Gastronomía</h3><p>Opciones para conocer sabores locales y compartir momentos de grupo en espacios seleccionados.</p></article><article class="feature-card"><span class="feature-number">03</span><h3>Arte y expresiones</h3><p>Murales, música, arquitectura y manifestaciones culturales presentes en distintos barrios.</p></article><article class="feature-card"><span class="feature-number">04</span><h3>Fútbol como cultura</h3><p>Lectura del fútbol como fenómeno social y parte de la identidad argentina.</p></article></div>
+        <article class="sp-culture-item">
+          <button class="sp-culture-toggle" aria-expanded="false">
+            <span>02</span><strong>Gastronomía</strong><i>+</i>
+          </button>
+          <div class="sp-culture-panel">
+            <div style="background-image:url('../img/cultura1.jpg')"></div>
+            <p>Experiencias gastronómicas seleccionadas para sumar momentos de grupo dentro del itinerario.</p>
+          </div>
+        </article>
+
+        <article class="sp-culture-item">
+          <button class="sp-culture-toggle" aria-expanded="false">
+            <span>03</span><strong>Arte urbano</strong><i>+</i>
+          </button>
+          <div class="sp-culture-panel">
+            <div style="background-image:url('../img/cultura1.jpg')"></div>
+            <p>Murales, arquitectura y expresiones visuales que muestran otra cara de la ciudad.</p>
+          </div>
+        </article>
+
+        <article class="sp-culture-item">
+          <button class="sp-culture-toggle" aria-expanded="false">
+            <span>04</span><strong>Fútbol como cultura</strong><i>+</i>
+          </button>
+          <div class="sp-culture-panel">
+            <div style="background-image:url('../img/partidos1.avif')"></div>
+            <p>Símbolos, canciones, barrios e instituciones para entender al fútbol como fenómeno social.</p>
+          </div>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="experience-section alt">
-      <div class="wrap includes-layout">
-        <div class="includes-copy">
-          <div class="experience-kicker">Programa flexible</div>
-          <h2>Qué puede incluir</h2>
-          <p>Cada propuesta se adapta al perfil del grupo, las fechas del viaje, los objetivos y la disponibilidad de cada actividad.</p>
-        </div>
-        <div class="includes-list"><div class="includes-item"><span>Recorridos culturales</span></div><div class="includes-item"><span>Guía local</span></div><div class="includes-item"><span>Actividades gastronómicas opcionales</span></div><div class="includes-item"><span>Visitas a museos según interés</span></div><div class="includes-item"><span>Traslados internos</span></div><div class="includes-item"><span>Planificación por edades</span></div><div class="includes-item"><span>Opciones para acompañantes</span></div><div class="includes-item"><span>Integración con el itinerario deportivo</span></div></div>
-      </div>
-    </section>
+  <section class="sp-section">
+    <div class="wrap sp-culture-quotes">
+      <div>“La ciudad se entiende mejor cuando se la vive con tiempo.”</div>
 
-    <section class="experience-section">
-      <div class="wrap">
-        <div class="experience-heading"><h2>Cómo lo organizamos</h2><p>Un proceso simple para convertir los objetivos del grupo en un itinerario deportivo y turístico coherente, organizado y a medida.</p></div>
-        <div class="process-grid"><article class="process-step"><span class="step">01</span><h3>Entendemos al grupo</h3><p>Edad, nivel, objetivos deportivos y expectativas del viaje.</p></article><article class="process-step"><span class="step">02</span><h3>Diseñamos la propuesta</h3><p>Combinamos actividades, tiempos y servicios según el perfil del grupo.</p></article><article class="process-step"><span class="step">03</span><h3>Coordinamos la operativa</h3><p>Reservas, traslados, horarios y proveedores en un único programa.</p></article><article class="process-step"><span class="step">04</span><h3>Vivimos la experiencia</h3><p>Acompañamiento en destino y soporte durante toda la actividad.</p></article></div>
-        <div class="audience-strip"><span>Clubes</span><span>Academias</span><span>Instituciones</span><span>Equipos juveniles</span><span>Grupos internacionales</span></div>
-        <a class="subpage-back" href="../index.html#destinos">← Volver a Viví Buenos Aires</a>
+      <div class="sp-culture-mini">
+        <article><span>Para jugadores</span><p>Amplía la experiencia más allá del entrenamiento.</p></article>
+        <article><span>Para acompañantes</span><p>Suma actividades atractivas también para familias y staff.</p></article>
+        <article><span>Para el grupo</span><p>Genera recuerdos compartidos fuera de la competencia.</p></article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="experience-cta">
-      <div class="wrap experience-cta-grid">
-        <div><h2>Sumá cultura al viaje deportivo</h2><p>Contanos quiénes viajan, las fechas estimadas y qué quieren vivir. Diseñamos una propuesta adaptada al grupo.</p></div>
-        <a class="btn primary" href="../index.html#contacto">Hablar con Sportour</a>
+  <section class="sp-page-cta">
+    <div class="wrap sp-page-cta-grid">
+      <div>
+        <span class="sp-kicker">Sportour</span>
+        <h2>Sumá cultura sin perder el foco deportivo</h2>
+        <p>Integramos actividades con tiempos reales y logística de grupo.</p>
       </div>
-    </section>
-  </main>
-  <script src="../js/main.js"></script>
+      <a class="btn primary" href="../index.html#contacto">Armar experiencia</a>
+    </div>
+  </section>
+</main>
+
+<script src="../js/main.js"></script>
 </body>
 </html>
