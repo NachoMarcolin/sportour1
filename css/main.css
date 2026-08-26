@@ -513,12 +513,23 @@ section {
 }
 
 .dest-scroller::-webkit-scrollbar {
-    height: 6px;
+    height: 12px;
+}
+
+.dest-scroller::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .dest-scroller::-webkit-scrollbar-thumb {
     background: var(--line);
+    border-radius: 10px;
 }
+
+.dest-scroller::-webkit-scrollbar-thumb:hover {
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
 
 .dest-card {
     scroll-snap-align: start;
