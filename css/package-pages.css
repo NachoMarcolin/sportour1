@@ -1,0 +1,678 @@
+/* ==========================================================================
+   SPORTOUR — PACKAGE PAGES
+   ========================================================================== */
+
+
+/* ---------- HERO ---------- */
+
+.pkg-detail-hero {
+    position: relative;
+    min-height: 650px;
+
+    display: flex;
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    color: #fff;
+    background: #09111F;
+}
+
+
+.pkg-detail-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.pkg-detail-bg::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(7, 13, 24, .96) 0%,
+            rgba(7, 13, 24, .84) 48%,
+            rgba(7, 13, 24, .28) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(7, 13, 24, .85) 0%,
+            transparent 55%
+        );
+}
+
+
+.pkg-detail-hero-grid {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+
+    gap: 70px;
+    align-items: end;
+
+    padding-top: 100px;
+    padding-bottom: 68px;
+}
+
+
+.pkg-detail-copy {
+    max-width: 860px;
+}
+
+
+/* ---------- BREADCRUMB ---------- */
+
+.pkg-detail-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 26px;
+
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+
+    text-transform: uppercase;
+    letter-spacing: .08em;
+
+    color: rgba(255, 255, 255, .58);
+}
+
+
+.pkg-detail-breadcrumb a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ---------- KICKER / BADGE ---------- */
+
+.pkg-detail-kicker {
+    display: block;
+
+    margin-bottom: 13px;
+
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+
+    text-transform: uppercase;
+    letter-spacing: .12em;
+
+    color: var(--accent);
+}
+
+
+.pkg-featured {
+    display: inline-block;
+
+    margin-bottom: 18px;
+    padding: 6px 9px;
+
+    background: var(--accent);
+
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+
+    text-transform: uppercase;
+    letter-spacing: .06em;
+
+    color: #fff;
+}
+
+
+/* ---------- HERO TEXT ---------- */
+
+.pkg-detail-copy h1 {
+    max-width: 850px;
+
+    font-size: clamp(56px, 8vw, 102px);
+    line-height: .92;
+
+    color: #fff;
+}
+
+
+.pkg-detail-copy > p {
+    max-width: 670px;
+
+    margin-top: 24px;
+
+    font-size: 18px;
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, .72);
+}
+
+
+/* ---------- HERO ACTIONS ---------- */
+
+.pkg-detail-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 28px;
+
+    margin-top: 32px;
+}
+
+
+.pkg-detail-back {
+    padding-bottom: 4px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .38);
+
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    text-decoration: none;
+
+    color: rgba(255, 255, 255, .68);
+}
+
+
+/* ==========================================================================
+   PRICE CARD
+   ========================================================================== */
+
+.pkg-price-card {
+    padding: 27px;
+
+    border: 1px solid rgba(255, 255, 255, .18);
+
+    background: rgba(17, 24, 39, .76);
+
+    backdrop-filter: blur(10px);
+}
+
+
+.pkg-price-card > span,
+.pkg-price-card div span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+
+    text-transform: uppercase;
+    letter-spacing: .07em;
+
+    color: #8DB7FF;
+}
+
+
+.pkg-price-card > strong {
+    display: block;
+
+    margin: 6px 0 4px;
+
+    font-family: 'Anton', sans-serif;
+    font-size: 46px;
+    line-height: 1;
+
+    color: #fff;
+}
+
+
+.pkg-price-card > small {
+    color: rgba(255, 255, 255, .55);
+}
+
+
+.pkg-price-line {
+    height: 1px;
+
+    margin: 22px 0;
+
+    background: rgba(255, 255, 255, .14);
+}
+
+
+.pkg-price-card > div:not(.pkg-price-line) {
+    padding: 11px 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .10);
+}
+
+
+.pkg-price-card b {
+    font-size: 14px;
+    color: #fff;
+}
+
+
+/* ==========================================================================
+   QUICK FACTS
+   ========================================================================== */
+
+.pkg-detail-facts {
+    background: var(--surface);
+
+    border-bottom: 1px solid var(--line);
+}
+
+
+.pkg-detail-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.pkg-detail-facts-grid > div {
+    padding: 22px 24px;
+
+    border-right: 1px solid var(--line);
+}
+
+
+.pkg-detail-facts-grid > div:last-child {
+    border-right: 0;
+}
+
+
+.pkg-detail-facts span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+
+    text-transform: uppercase;
+    letter-spacing: .07em;
+
+    color: var(--ink-soft);
+}
+
+
+.pkg-detail-facts strong {
+    font-size: 14px;
+}
+
+
+/* ==========================================================================
+   GENERAL SECTIONS
+   ========================================================================== */
+
+.pkg-detail-section {
+    padding: 90px 0;
+}
+
+
+.pkg-detail-alt {
+    background: var(--bg-alt);
+
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+
+.pkg-detail-section-head {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+
+    gap: 70px;
+
+    align-items: start;
+
+    margin-bottom: 42px;
+}
+
+
+.pkg-detail-section-head h2,
+.pkg-includes-title h2,
+.pkg-not-layout h2 {
+    font-size: clamp(38px, 5vw, 58px);
+}
+
+
+.pkg-detail-section-head > p,
+.pkg-includes-title > p {
+    max-width: 620px;
+
+    margin: 0;
+
+    color: var(--ink-soft);
+}
+
+
+/* ==========================================================================
+   PILLARS
+   ========================================================================== */
+
+.pkg-detail-pillars {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1px;
+
+    border: 1px solid var(--line);
+
+    background: var(--line);
+}
+
+
+.pkg-detail-pillar {
+    min-height: 260px;
+
+    padding: 27px;
+
+    background: var(--surface);
+
+    transition: transform .22s ease;
+}
+
+
+.pkg-detail-pillar:hover {
+    position: relative;
+    z-index: 2;
+
+    transform: translateY(-5px);
+}
+
+
+.pkg-detail-pillar > span {
+    font-family: 'Anton', sans-serif;
+    font-size: 32px;
+
+    color: var(--accent);
+}
+
+
+.pkg-detail-pillar h3 {
+    margin: 50px 0 10px;
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+
+.pkg-detail-pillar p {
+    margin: 0;
+
+    color: var(--ink-soft);
+
+    font-size: 13.5px;
+}
+
+
+/* ==========================================================================
+   INCLUDES / DOES NOT INCLUDE
+   ========================================================================== */
+
+.pkg-includes-layout,
+.pkg-not-layout {
+    display: grid;
+    grid-template-columns: .75fr 1.25fr;
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+
+.pkg-includes-list,
+.pkg-not-list {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    border-top: 1px solid var(--line);
+}
+
+
+.pkg-includes-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.pkg-includes-list li,
+.pkg-not-list li {
+    display: flex;
+
+    gap: 13px;
+
+    padding: 17px 14px;
+
+    border-bottom: 1px solid var(--line);
+
+    color: var(--ink);
+}
+
+
+.pkg-includes-list li:nth-child(odd) {
+    border-right: 1px solid var(--line);
+}
+
+
+.pkg-includes-list span {
+    flex: 0 0 auto;
+
+    font-family: 'Space Mono', monospace;
+
+    color: var(--accent);
+}
+
+
+.pkg-not-list span {
+    color: var(--ink-soft);
+}
+
+
+/* ==========================================================================
+   PROCESS
+   ========================================================================== */
+
+.pkg-detail-process {
+    padding: 90px 0;
+
+    background: #0D1627;
+
+    color: #fff;
+}
+
+
+.pkg-detail-process .pkg-detail-section-head h2 {
+    color: #fff;
+}
+
+
+.pkg-detail-process .pkg-detail-section-head > p {
+    color: rgba(255, 255, 255, .58);
+}
+
+
+.pkg-process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+.pkg-process-grid article {
+    min-height: 245px;
+
+    padding: 25px;
+
+    border: 1px solid rgba(255, 255, 255, .13);
+
+    background: #111827;
+}
+
+
+.pkg-process-grid article > span {
+    display: block;
+
+    margin-bottom: 55px;
+
+    font-family: 'Anton', sans-serif;
+    font-size: 34px;
+
+    color: var(--accent);
+}
+
+
+.pkg-process-grid h3 {
+    margin-bottom: 9px;
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+
+    text-transform: none;
+}
+
+
+.pkg-process-grid p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, .58);
+
+    font-size: 13px;
+}
+
+
+/* ==========================================================================
+   CTA
+   ========================================================================== */
+
+.pkg-detail-cta {
+    padding: 82px 0;
+
+    background: var(--bg);
+}
+
+
+.pkg-detail-cta-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+
+.pkg-detail-cta h2 {
+    max-width: 800px;
+
+    font-size: clamp(40px, 6vw, 66px);
+}
+
+
+.pkg-detail-cta p {
+    max-width: 630px;
+
+    color: var(--ink-soft);
+}
+
+
+/* ==========================================================================
+   RESPONSIVE — TABLET / NOTEBOOK
+   ========================================================================== */
+
+@media (max-width: 950px) {
+
+    .pkg-detail-hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .pkg-price-card {
+        max-width: 520px;
+    }
+
+
+    .pkg-detail-facts-grid,
+    .pkg-detail-pillars,
+    .pkg-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .pkg-detail-section-head,
+    .pkg-includes-layout,
+    .pkg-not-layout {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .pkg-detail-cta-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ==========================================================================
+   RESPONSIVE — MOBILE
+   ========================================================================== */
+
+@media (max-width: 620px) {
+
+    .pkg-detail-hero {
+        min-height: auto;
+    }
+
+
+    .pkg-detail-hero-grid {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+
+    .pkg-detail-copy h1 {
+        font-size: clamp(48px, 16vw, 70px);
+    }
+
+
+    .pkg-detail-facts-grid,
+    .pkg-detail-pillars,
+    .pkg-process-grid,
+    .pkg-includes-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    .pkg-detail-facts-grid > div,
+    .pkg-includes-list li:nth-child(odd) {
+        border-right: 0;
+    }
+
+
+    .pkg-detail-section,
+    .pkg-detail-process {
+        padding: 68px 0;
+    }
+
+
+    .pkg-detail-actions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
