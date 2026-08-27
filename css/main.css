@@ -1269,3 +1269,207 @@ section {
         text-align: left;
     }
 }
+
+/* ==========================================================================
+   PROMOCIONES / BENEFICIOS
+   ========================================================================== */
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+/* ---------- CARD ---------- */
+
+.promo {
+    position: relative;
+
+    min-height: 280px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 28px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--line);
+
+    overflow: hidden;
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+
+.promo:hover {
+    transform: translateY(-5px);
+
+    border-color: var(--accent);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, .16);
+}
+
+
+/* ---------- PROMOS DESTACADAS ---------- */
+
+.promo.hi {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(59, 130, 246, .10),
+            transparent 60%
+        ),
+        var(--surface);
+}
+
+
+.promo.hi::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background: var(--accent);
+}
+
+
+/* ---------- PARTE SUPERIOR ---------- */
+
+.promo-top {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 42px;
+}
+
+
+.promo-number {
+    font-size: 11px;
+
+    color: var(--accent);
+}
+
+
+.promo .tag {
+    padding: 5px 8px;
+
+    border: 1px solid var(--line);
+
+    font-size: 9px;
+
+    text-transform: uppercase;
+    letter-spacing: .07em;
+
+    color: var(--ink-soft);
+}
+
+
+/* ---------- CONTENIDO ---------- */
+
+.promo-content {
+    max-width: 520px;
+}
+
+
+.promo h3 {
+    max-width: 500px;
+
+    margin-bottom: 14px;
+
+    font-family: 'Anton', sans-serif;
+
+    font-size: clamp(27px, 3vw, 38px);
+    line-height: 1;
+
+    text-transform: uppercase;
+
+    color: var(--ink);
+}
+
+
+.promo p {
+    max-width: 52ch;
+
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.55;
+
+    color: var(--ink-soft);
+}
+
+
+/* ---------- CÓDIGO / BENEFICIO ---------- */
+
+.promo .code {
+    width: fit-content;
+
+    margin-top: 32px;
+    padding-top: 12px;
+
+    border-top: 1px solid var(--line);
+
+    font-size: 10px;
+
+    letter-spacing: .06em;
+    text-transform: uppercase;
+
+    color: var(--ink);
+}
+
+
+.promo.hi .code {
+    color: var(--accent);
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 760px) {
+
+    .promo-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .promo {
+        min-height: 250px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .promo {
+        padding: 22px;
+    }
+
+
+    .promo-top {
+        margin-bottom: 30px;
+    }
+
+
+    .promo h3 {
+        font-size: 28px;
+    }
+
+}
