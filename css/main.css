@@ -1096,20 +1096,24 @@ section {
 
 
 /* ---------- PACKAGES (ticket cards) ---------- */
+#paquetes .wrap {
+    max-width: 1450px;
+}
 
 .pkg-grid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
 
 @media (max-width: 760px) {
-
     .pkg-grid {
         grid-template-columns: 1fr;
     }
-
 }
+
+
+/* ---------- CARD ---------- */
 
 .ticket {
     display: grid;
@@ -1120,6 +1124,7 @@ section {
 
     position: relative;
 
+    /* Para que toda la card sea clickeable */
     text-decoration: none;
     color: inherit;
     cursor: pointer;
@@ -1130,84 +1135,137 @@ section {
         box-shadow .25s ease;
 }
 
+
+/* ---------- HOVER ---------- */
+
 .ticket:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
 
     border-color: var(--accent);
 
-    box-shadow:
-        0 12px 30px rgba(0,0,0,.18);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, .16);
 }
 
 .ticket:hover .price {
     color: var(--accent);
 }
 
-.ticket-stub .price {
-    font-family: 'Anton';
-    font-size: 26px;
 
-    transition: color .2s ease;
-}
+/* ---------- CONTENIDO ---------- */
 
 .ticket-main {
     padding: 24px;
+
     display: flex;
     flex-direction: column;
+
     gap: 10px;
 }
 
 .ticket-main .route {
     font-family: 'Space Mono', monospace;
     font-size: 11px;
+
     color: var(--ink-soft);
+
     text-transform: uppercase;
     letter-spacing: .06em;
 }
 
 .ticket-main h3 {
-    font-family: 'Work Sans';
+    font-family: 'Work Sans', sans-serif;
+
     font-weight: 800;
     text-transform: none;
+
     font-size: 21px;
+    line-height: 1.15;
+
     letter-spacing: 0;
 }
 
 .ticket-main p {
     margin: 0;
+
     color: var(--ink-soft);
+
     font-size: 14px;
+    line-height: 1.5;
 }
+
+
+/* ---------- DATOS INFERIORES ---------- */
 
 .ticket-meta {
     display: flex;
+
     gap: 18px;
+
     margin-top: auto;
     padding-top: 14px;
+
     font-family: 'Space Mono', monospace;
     font-size: 11.5px;
 }
 
 .ticket-meta div span {
     display: block;
+
     color: var(--ink-soft);
+
     font-size: 10px;
+
     text-transform: uppercase;
 }
 
+
+/* ---------- PRECIO ---------- */
+
 .ticket-stub {
     border-left: 1px dashed var(--line);
+
     background: var(--bg-alt);
+
     display: flex;
     flex-direction: column;
+
     align-items: center;
     justify-content: center;
+
     gap: 6px;
+
     padding: 14px 8px;
+
     text-align: center;
 }
 
 .ticket-stub .price {
-    font-family: 'Anton';
+    font-family: 'Anton', sans-serif;
+
     font-size: 26px;
+    line-height: 1;
+
+    white-space: nowrap;
+
+    transition: color .2s ease;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 560px) {
+
+    .ticket {
+        grid-template-columns: 1fr;
+    }
+
+    .ticket-stub {
+        border-left: 0;
+        border-top: 1px dashed var(--line);
+
+        padding: 18px;
+
+        align-items: flex-start;
+        text-align: left;
+    }
 }
