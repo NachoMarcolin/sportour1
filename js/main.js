@@ -172,3 +172,40 @@
     });
   });
 })();
+
+
+/* ==========================================================================
+   CARRUSEL DE ALOJAMIENTOS
+   ========================================================================== */
+
+(function () {
+
+    const carousel = document.getElementById('hotel-carousel');
+
+    const prev = document.getElementById('hotel-prev');
+    const next = document.getElementById('hotel-next');
+
+
+    if (!carousel || !prev || !next) return;
+
+
+    next.addEventListener('click', function () {
+
+        carousel.scrollBy({
+            left: carousel.clientWidth * 0.75,
+            behavior: 'smooth'
+        });
+
+    });
+
+
+    prev.addEventListener('click', function () {
+
+        carousel.scrollBy({
+            left: -carousel.clientWidth * 0.75,
+            behavior: 'smooth'
+        });
+
+    });
+
+})();
