@@ -1,375 +1,924 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SporTour — Turismo deportivo</title>
-  <meta name="description" content="Viajes, paquetes y alojamiento para eventos deportivos: maratones, ciclismo, trekking y giras de hinchada.">
+<html lang="es" data-theme="dark">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>SporTour — Turismo deportivo</title>
+
+    <meta
+        name="description"
+        content="Experiencias de turismo deportivo enfocadas en fútbol argentino para clubes, academias y jóvenes futbolistas."
+    >
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="./css/main.css"
+    >
 
 </head>
+
+
 <body>
 
-  <nav class="nav">
+
+<!-- =========================================================
+     NAV
+========================================================== -->
+
+<nav class="nav">
+
     <div class="nav-inner">
-      <a class="brand" href="#top"><span class="dot"></span><img src="./img/logo-blanco.png" alt="logo-sportour"></a>
-      <ul class="navlinks" id="navlinks">
-        <li><a href="#servicios">Experiencia</a></li>
-        <li><a href="#destinos">Servicios</a></li>
-        <li><a href="#paquetes">Paquetes</a></li>
-        <li><a href="#promociones">Promos</a></li>
-        <li><a href="#alojamiento">Alojamiento</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
 
-      </ul>
-      <a class="nav-cta" href="#contacto">Cotizar viaje</a>
-      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navlinks"><span></span></button>
+
+        <!-- LOGO -->
+
+        <a
+            class="brand"
+            href="#top"
+        >
+
+            <span class="dot"></span>
+
+            <img
+                src="./img/logo-blanco.png"
+                alt="SporTour"
+            >
+
+        </a>
+
+
+        <!-- LINKS -->
+
+        <ul
+            class="navlinks"
+            id="navlinks"
+        >
+
+            <li>
+                <a
+                    href="#servicios"
+                    data-i18n="nav.experience"
+                >
+                    Experiencia
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="#destinos"
+                    data-i18n="nav.services"
+                >
+                    Servicios
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="#paquetes"
+                    data-i18n="nav.packages"
+                >
+                    Paquetes
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="#promociones"
+                    data-i18n="nav.benefits"
+                >
+                    Promos
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="#alojamiento"
+                    data-i18n="nav.accommodation"
+                >
+                    Alojamiento
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="#nosotros"
+                    data-i18n="nav.about"
+                >
+                    Nosotros
+                </a>
+            </li>
+
+        </ul>
+
+
+<!-- IDIOMA -->
+
+<div class="language-switcher">
+
+    <button
+        class="lang-btn"
+        data-lang="en"
+        type="button"
+    >
+        <span>EN</span>
+
+        <img
+            src="./img/bandera-eeuu.webp"
+            alt="English"
+            class="lang-flag"
+        >
+    </button>
+
+    <span class="lang-divider">|</span>
+
+    <button
+        class="lang-btn active"
+        data-lang="es"
+        type="button"
+    >
+        <span>ES</span>
+
+        <img
+            src="./img/bandera-españa.webp"
+            alt="Español"
+            class="lang-flag"
+        >
+    </button>
+
+</div>
+
+
+        <!-- CTA -->
+
+        <a
+            class="nav-cta"
+            href="#contacto"
+            data-i18n="nav.quote"
+        >
+            Cotizar viaje
+        </a>
+
+
+        <!-- MENU MOBILE -->
+
+        <button
+            class="burger"
+            id="burger"
+            data-i18n-aria-label="nav.menu"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="navlinks"
+        >
+
+            <span></span>
+
+        </button>
+
     </div>
-  </nav>
 
-  <main id="top">
+</nav>
 
 
-    <!-- HERO -->
+
+<!-- =========================================================
+     MAIN
+========================================================== -->
+
+<main id="top">
+
+
+<!-- =========================================================
+     HERO
+========================================================== -->
+
 <header class="hero">
 
-  <div class="wrap hero-layout">
+    <div class="wrap hero-layout">
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <div class="hero-main">
 
-      <div class="eyebrow">
-        Turismo deportivo · Buenos Aires
-      </div>
+        <!-- CONTENIDO PRINCIPAL -->
 
-      <h1>
-        Viaja para<br>
-        aprender.<br>
-        Entrena para<br>
-        <em>crecer.</em>
-      </h1>
+        <div class="hero-main">
 
-      <p class="hero-description">
-        Viví el fútbol argentino desde adentro.
-        Entrenamientos, clubes y experiencias únicas en Buenos Aires
-        para crecer dentro y fuera de la cancha.
-      </p>
 
-      <div class="hero-actions">
+            <div
+                class="eyebrow"
+                data-i18n="hero.eyebrow"
+            >
+                Turismo deportivo · Buenos Aires
+            </div>
 
-        <a class="btn primary hero-primary" href="#destinos">
-          Explorar experiencias
-          <span>→</span>
-        </a>
 
-        <a class="hero-text-link" href="#contacto">
-          Hablar con un asesor
-          <span>↗</span>
-        </a>
+            <h1 data-i18n-html="hero.title">
 
-      </div>
+                Viajá para<br>
+                aprender.<br>
+                Entrená para<br>
+                <em>crecer.</em>
+
+            </h1>
+
+
+            <p
+                class="hero-description"
+                data-i18n="hero.description"
+            >
+                Viví el fútbol argentino desde adentro.
+                Entrenamientos, clubes y experiencias únicas en Buenos Aires
+                para crecer dentro y fuera de la cancha.
+            </p>
+
+
+            <div class="hero-actions">
+
+
+                <a
+                    class="btn primary hero-primary"
+                    href="#destinos"
+                >
+
+                    <span data-i18n="hero.explore">
+                        Explorar experiencias
+                    </span>
+
+                    <span>→</span>
+
+                </a>
+
+
+                <a
+                    class="hero-text-link"
+                    href="#contacto"
+                >
+
+                    <span data-i18n="hero.advisor">
+                        Hablar con un asesor
+                    </span>
+
+                    <span>↗</span>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- INFORMACIÓN DERECHA -->
+
+        <aside class="hero-meta">
+
+
+            <div class="hero-meta-top">
+
+                <span>
+                    BA / ARG
+                </span>
+
+                <span>
+                    SPORTOUR 2026
+                </span>
+
+            </div>
+
+
+            <div class="hero-meta-data">
+
+
+                <div>
+
+                    <span data-i18n="hero.destinationLabel">
+                        DESTINO
+                    </span>
+
+                    <strong>
+                        Buenos Aires
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span data-i18n="hero.experienceLabel">
+                        EXPERIENCIA
+                    </span>
+
+                    <strong data-i18n="hero.experienceValue">
+                        Fútbol argentino
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span data-i18n="hero.formatLabel">
+                        FORMATO
+                    </span>
+
+                    <strong data-i18n="hero.formatValue">
+                        Viajes grupales
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span data-i18n="hero.agesLabel">
+                        EDADES
+                    </span>
+
+                    <strong data-i18n="hero.agesValue">
+                        14 — 21 años
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="hero-coordinates">
+
+                34°36′S<br>
+                58°23′O
+
+            </div>
+
+
+        </aside>
 
     </div>
 
 
-    <!-- INFORMACIÓN LATERAL -->
-    <aside class="hero-meta">
-
-      <div class="hero-meta-top">
-        <span>BA / ARG</span>
-        <span>SPORTOUR 2026</span>
-      </div>
-
-      <div class="hero-meta-data">
-
-        <div>
-          <span>DESTINO</span>
-          <strong>Buenos Aires</strong>
-        </div>
-
-        <div>
-          <span>EXPERIENCIA</span>
-          <strong>Fútbol argentino</strong>
-        </div>
-
-        <div>
-          <span>FORMATO</span>
-          <strong>Viajes grupales</strong>
-        </div>
-
-        <div>
-          <span>EDADES</span>
-          <strong>14 — 21 años</strong>
-        </div>
-
-      </div>
-
-      <div class="hero-coordinates">
-        34°36′S<br>
-        58°23′O
-      </div>
-
-    </aside>
-
-  </div>
-
-
-  <!-- TEXTO DECORATIVO DE FONDO -->
-  <div class="hero-background-text">
-    BUENOS AIRES
-  </div>
+    <div class="hero-background-text">
+        BUENOS AIRES
+    </div>
 
 </header>
 
-    <!-- SERVICIOS -->
-    <section class="section" id="servicios">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Experiencia completa</h2>
-          <span class="section-num mono">01 / Qué hacemos</span>
-        </div>
-        <p class="section-lede">Todo lo necesario para vivir el fútbol argentino desde adentro. Organizamos cada detalle del viaje para que el equipo pueda enfocarse en entrenar, aprender y disfrutar Buenos Aires.</p>
-      </div>
-      <div class="wrap">
-        <div class="services-grid">
-          <div class="service">
-            <span class="idx mono">01</span>
-            <h3>Entrenamientos de fútbol</h3>
-            <p>Sesiones de tecnificación con profesionales del fútbol argentino, adaptadas al nivel y objetivos de cada equipo.</p>
-          </div>
-          <div class="service">
-            <span class="idx mono">02</span>
-            <h3>Experiencias en clubes</h3>
-            <p>Visitas a clubes, estadios y centros de entrenamiento, con posibilidad de presenciar entrenamientos y partidos del fútbol argentino.</p>
-          </div>
-          <div class="service">
-            <span class="idx mono">03</span>
-            <h3>Alojamiento deportivo</h3>
-            <p>Opciones de hospedaje seleccionadas según las necesidades, cantidad de jugadores y presupuesto de cada grupo.</p>
-          </div>
-          <div class="service">
-            <span class="idx mono">04</span>
-            <h3>Transporte</h3>
-            <p>Traslados desde y hacia el aeropuerto y transporte durante todas las actividades incluidas en el programa.</p>
-          </div>
-          <div class="service">
-            <span class="idx mono">05</span>
-            <h3>Gastronomía</h3>
-            <p>Servicio de comidas durante la estadía, organizado de acuerdo con el cronograma y las necesidades del equipo.</p>
-          </div>
-          <div class="service">
-            <span class="idx mono">06</span>
-            <h3>Experiencias en Buenos Aires</h3>
-            <p>Recorridos por los principales puntos culturales y turísticos de la ciudad para complementar la experiencia deportiva.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICIOS -->
- <section class="section alt" id="destinos">
-
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Viví Buenos Aires</h2>
-      <span class="section-num mono">02 / Servicios</span>
-    </div>
-
-    <p class="section-lede">
-      Una selección de destinos activos hoy, elegidos por su calendario deportivo,
-      altura, clima y comunidad local.
-    </p>
-  </div>
-
-  <div class="wrap">
-    <div class="dest-scroller">
-
-      <!-- FÚTBOL ARGENTINO -->
-      <a class="dest-card" href="./pages/futbol-argentino.html">
-
-        <div
-          class="dest-photo"
-          style="background-image:url('./img/equipofutbol1.jpg')">
-        </div>
-
-        <div class="dest-body">
-          <h3>Fútbol argentino</h3>
-
-          <p>
-            Conocé desde adentro la pasión, la identidad y la forma de vivir
-            el fútbol en Argentina.
-          </p>
-
-          <div class="dest-tags">
-            <span>Pasión</span>
-            <span>Identidad</span>
-            <span>Tradición</span>
-          </div>
-        </div>
-
-      </a>
 
 
-      <!-- CLUBES Y ESTADIOS -->
-      <a class="dest-card" href="./pages/clubes-estadios.html">
+<!-- =========================================================
+     EXPERIENCIA COMPLETA
+========================================================== -->
 
-        <div
-          class="dest-photo"
-          style="background-image:url('./img/estadio1.jpg')">
-        </div>
-
-        <div class="dest-body">
-          <h3>Clubes y estadios</h3>
-
-          <p>
-            Visitá instituciones, estadios y espacios emblemáticos
-            del fútbol argentino.
-          </p>
-
-          <div class="dest-tags">
-            <span>Visitas</span>
-            <span>Historia</span>
-            <span>Infraestructuras</span>
-          </div>
-        </div>
-
-      </a>
-
-
-      <!-- ENTRENAMIENTO -->
-      <a class="dest-card" href="./pages/entrenamiento.html">
-
-        <div
-          class="dest-photo"
-          style="background-image:url('./img/entrenamientos1.jpg')">
-        </div>
-
-        <div class="dest-body">
-          <h3>Entrenamiento</h3>
-
-          <p>
-            Participá de sesiones de tecnificación junto a profesionales
-            del fútbol local.
-          </p>
-
-          <div class="dest-tags">
-            <span>Tecnificación</span>
-            <span>Profesionales</span>
-            <span>Desarrollo</span>
-          </div>
-        </div>
-
-      </a>
-
-
-      <!-- BUENOS AIRES -->
-      <a class="dest-card" href="./pages/buenos-aires.html">
-
-        <div
-          class="dest-photo"
-          style="background-image:url('./img/buenosaires1.jpg')">
-        </div>
-
-        <div class="dest-body">
-          <h3>Buenos Aires</h3>
-
-          <p>
-            Descubrí una ciudad marcada por el fútbol, la historia
-            y una cultura única.
-          </p>
-
-          <div class="dest-tags">
-            <span>Ciudad</span>
-            <span>Turismo</span>
-            <span>Experiencia</span>
-          </div>
-        </div>
-
-      </a>
-
-
-      <!-- CULTURA -->
-      <a class="dest-card" href="./pages/cultura.html">
-
-        <div
-          class="dest-photo"
-          style="background-image:url('./img/cultura1.jpg')">
-        </div>
-
-        <div class="dest-body">
-          <h3>Cultura</h3>
-
-          <p>
-            Recorré los principales puntos turísticos
-            y culturales de Buenos Aires.
-          </p>
-
-          <div class="dest-tags">
-            <span>Historia</span>
-            <span>Gastronomía</span>
-            <span>Recorridos</span>
-          </div>
-        </div>
-
-      </a>
-
-
-      <!-- PARTIDOS -->
-      <a class="dest-card" href="./pages/partidos.html">
-
-        <div
-          class="dest-photo"
-          style="background-image:url('./img/partidos1.avif')">
-        </div>
-
-        <div class="dest-body">
-          <h3>Partidos</h3>
-
-          <p>
-            Viví la experiencia de asistir a encuentros del fútbol argentino
-            y sentir su ambiente desde las tribunas.
-          </p>
-
-          <div class="dest-tags">
-            <span>Competencia</span>
-            <span>Tribuna</span>
-            <span>Fútbol en vivo</span>
-          </div>
-        </div>
-
-      </a>
-
-    </div>
-  </div>
-
-</section>
-
-
-    <!-- PAQUETES -->
-<!-- PAQUETES -->
-<section class="section" id="paquetes">
+<section
+    class="section"
+    id="servicios"
+>
 
     <div class="wrap">
 
         <div class="section-head">
-            <h2>Paquetes de viaje</h2>
 
-            <span class="section-num mono">
-                03 / Programas Sportour
+            <h2 data-i18n="services.title">
+                Experiencia completa
+            </h2>
+
+            <span
+                class="section-num mono"
+                data-i18n="services.number"
+            >
+                01 / Qué hacemos
             </span>
+
         </div>
 
-        <p class="section-lede">
-            Programas grupales en Buenos Aires diseñados para clubes y academias
-            que buscan entrenar, competir y vivir el fútbol argentino desde adentro.
-            Pasaje aéreo no incluido.
+
+        <p
+            class="section-lede"
+            data-i18n="services.lede"
+        >
+            Todo lo necesario para vivir el fútbol argentino desde adentro.
+            Organizamos cada detalle del viaje para que el equipo pueda
+            enfocarse en entrenar, aprender y disfrutar Buenos Aires.
         </p>
 
     </div>
+
+
+    <div class="wrap">
+
+        <div class="services-grid">
+
+
+            <div class="service">
+
+                <span class="idx mono">
+                    01
+                </span>
+
+                <h3 data-i18n="services.trainingTitle">
+                    Entrenamientos de fútbol
+                </h3>
+
+                <p data-i18n="services.trainingText">
+                    Sesiones de tecnificación con profesionales del fútbol argentino,
+                    adaptadas al nivel y objetivos de cada equipo.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <span class="idx mono">
+                    02
+                </span>
+
+                <h3 data-i18n="services.clubsTitle">
+                    Experiencias en clubes
+                </h3>
+
+                <p data-i18n="services.clubsText">
+                    Visitas a clubes, estadios y centros de entrenamiento,
+                    con posibilidad de presenciar entrenamientos y partidos
+                    del fútbol argentino.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <span class="idx mono">
+                    03
+                </span>
+
+                <h3 data-i18n="services.hotelTitle">
+                    Alojamiento deportivo
+                </h3>
+
+                <p data-i18n="services.hotelText">
+                    Opciones de hospedaje seleccionadas según las necesidades,
+                    cantidad de jugadores y presupuesto de cada grupo.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <span class="idx mono">
+                    04
+                </span>
+
+                <h3 data-i18n="services.transportTitle">
+                    Transporte
+                </h3>
+
+                <p data-i18n="services.transportText">
+                    Traslados desde y hacia el aeropuerto y transporte durante
+                    todas las actividades incluidas en el programa.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <span class="idx mono">
+                    05
+                </span>
+
+                <h3 data-i18n="services.foodTitle">
+                    Gastronomía
+                </h3>
+
+                <p data-i18n="services.foodText">
+                    Servicio de comidas durante la estadía, organizado de acuerdo
+                    con el cronograma y las necesidades del equipo.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <span class="idx mono">
+                    06
+                </span>
+
+                <h3 data-i18n="services.cityTitle">
+                    Experiencias en Buenos Aires
+                </h3>
+
+                <p data-i18n="services.cityText">
+                    Recorridos por los principales puntos culturales y turísticos
+                    de la ciudad para complementar la experiencia deportiva.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SERVICIOS / BUENOS AIRES
+========================================================== -->
+
+<section
+    class="section alt"
+    id="destinos"
+>
+
+    <div class="wrap">
+
+        <div class="section-head">
+
+            <h2 data-i18n="destinations.title">
+                Viví Buenos Aires
+            </h2>
+
+            <span
+                class="section-num mono"
+                data-i18n="destinations.number"
+            >
+                02 / Servicios
+            </span>
+
+        </div>
+
+
+        <p
+            class="section-lede"
+            data-i18n="destinations.lede"
+        >
+            Una selección de experiencias para conocer el fútbol argentino
+            desde adentro y descubrir Buenos Aires dentro y fuera de la cancha.
+        </p>
+
+    </div>
+
+
+
+    <div class="wrap">
+
+        <div class="dest-scroller">
+
+
+            <!-- FÚTBOL ARGENTINO -->
+
+            <a
+                class="dest-card"
+                href="./pages/futbol-argentino.html"
+            >
+
+                <div
+                    class="dest-photo"
+                    style="background-image:url('./img/equipofutbol1.jpg')"
+                >
+                </div>
+
+
+                <div class="dest-body">
+
+                    <h3 data-i18n="destinations.argFootballTitle">
+                        Fútbol argentino
+                    </h3>
+
+                    <p data-i18n="destinations.argFootballText">
+                        Conocé desde adentro la pasión, la identidad y
+                        la forma de vivir el fútbol en Argentina.
+                    </p>
+
+
+                    <div class="dest-tags">
+
+                        <span data-i18n="tag.passion">
+                            Pasión
+                        </span>
+
+                        <span data-i18n="tag.identity">
+                            Identidad
+                        </span>
+
+                        <span data-i18n="tag.tradition">
+                            Tradición
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- CLUBES -->
+
+            <a
+                class="dest-card"
+                href="./pages/clubes-estadios.html"
+            >
+
+                <div
+                    class="dest-photo"
+                    style="background-image:url('./img/estadio1.jpg')"
+                >
+                </div>
+
+
+                <div class="dest-body">
+
+                    <h3 data-i18n="destinations.clubsTitle">
+                        Clubes y estadios
+                    </h3>
+
+                    <p data-i18n="destinations.clubsText">
+                        Visitá instituciones, estadios y espacios emblemáticos
+                        del fútbol argentino.
+                    </p>
+
+
+                    <div class="dest-tags">
+
+                        <span data-i18n="tag.visits">
+                            Visitas
+                        </span>
+
+                        <span data-i18n="tag.history">
+                            Historia
+                        </span>
+
+                        <span data-i18n="tag.infrastructure">
+                            Infraestructuras
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- ENTRENAMIENTO -->
+
+            <a
+                class="dest-card"
+                href="./pages/entrenamiento.html"
+            >
+
+                <div
+                    class="dest-photo"
+                    style="background-image:url('./img/entrenamientos1.jpg')"
+                >
+                </div>
+
+
+                <div class="dest-body">
+
+                    <h3 data-i18n="destinations.trainingTitle">
+                        Entrenamiento
+                    </h3>
+
+                    <p data-i18n="destinations.trainingText">
+                        Participá de sesiones de tecnificación junto a profesionales
+                        del fútbol local.
+                    </p>
+
+
+                    <div class="dest-tags">
+
+                        <span data-i18n="tag.developmentTraining">
+                            Tecnificación
+                        </span>
+
+                        <span data-i18n="tag.professionals">
+                            Profesionales
+                        </span>
+
+                        <span data-i18n="tag.development">
+                            Desarrollo
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- BUENOS AIRES -->
+
+            <a
+                class="dest-card"
+                href="./pages/buenos-aires.html"
+            >
+
+                <div
+                    class="dest-photo"
+                    style="background-image:url('./img/buenosaires1.jpg')"
+                >
+                </div>
+
+
+                <div class="dest-body">
+
+                    <h3>
+                        Buenos Aires
+                    </h3>
+
+                    <p data-i18n="destinations.baText">
+                        Descubrí una ciudad marcada por el fútbol,
+                        la historia y una cultura única.
+                    </p>
+
+
+                    <div class="dest-tags">
+
+                        <span data-i18n="tag.city">
+                            Ciudad
+                        </span>
+
+                        <span data-i18n="tag.tourism">
+                            Turismo
+                        </span>
+
+                        <span data-i18n="tag.experience">
+                            Experiencia
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- CULTURA -->
+
+            <a
+                class="dest-card"
+                href="./pages/cultura.html"
+            >
+
+                <div
+                    class="dest-photo"
+                    style="background-image:url('./img/cultura1.jpg')"
+                >
+                </div>
+
+
+                <div class="dest-body">
+
+                    <h3 data-i18n="destinations.cultureTitle">
+                        Cultura
+                    </h3>
+
+                    <p data-i18n="destinations.cultureText">
+                        Recorré los principales puntos turísticos
+                        y culturales de Buenos Aires.
+                    </p>
+
+
+                    <div class="dest-tags">
+
+                        <span data-i18n="tag.history">
+                            Historia
+                        </span>
+
+                        <span data-i18n="tag.food">
+                            Gastronomía
+                        </span>
+
+                        <span data-i18n="tag.tours">
+                            Recorridos
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- PARTIDOS -->
+
+            <a
+                class="dest-card"
+                href="./pages/partidos.html"
+            >
+
+                <div
+                    class="dest-photo"
+                    style="background-image:url('./img/partidos1.avif')"
+                >
+                </div>
+
+
+                <div class="dest-body">
+
+                    <h3 data-i18n="destinations.matchesTitle">
+                        Partidos
+                    </h3>
+
+                    <p data-i18n="destinations.matchesText">
+                        Viví la experiencia de asistir a encuentros
+                        del fútbol argentino y sentir su ambiente
+                        desde las tribunas.
+                    </p>
+
+
+                    <div class="dest-tags">
+
+                        <span data-i18n="tag.competition">
+                            Competencia
+                        </span>
+
+                        <span data-i18n="tag.stands">
+                            Tribuna
+                        </span>
+
+                        <span data-i18n="tag.liveFootball">
+                            Fútbol en vivo
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PAQUETES
+========================================================== -->
+
+<section
+    class="section"
+    id="paquetes"
+>
+
+    <div class="wrap">
+
+        <div class="section-head">
+
+            <h2 data-i18n="packages.title">
+                Paquetes de viaje
+            </h2>
+
+            <span
+                class="section-num mono"
+                data-i18n="packages.number"
+            >
+                03 / Programas Sportour
+            </span>
+
+        </div>
+
+
+        <p
+            class="section-lede"
+            data-i18n="packages.lede"
+        >
+            Programas grupales en Buenos Aires diseñados para clubes
+            y academias que buscan entrenar, competir y vivir el fútbol
+            argentino desde adentro. Pasaje aéreo no incluido.
+        </p>
+
+    </div>
+
 
 
     <div class="wrap">
@@ -377,255 +926,433 @@
         <div class="pkg-grid">
 
 
+            <!-- TRAINING -->
 
-    <!-- SPORTOUR TRAINING -->
-    <a class="ticket" href="./pages/paquete-training.html">
+            <a
+                class="ticket"
+                href="./pages/paquete-training.html"
+            >
 
-        <div class="ticket-main">
+                <div class="ticket-main">
 
-            <span class="route mono">
-                FÚTBOL ARGENTINO / BUENOS AIRES
-            </span>
+                    <span
+                        class="route mono"
+                        data-i18n="packages.trainingRoute"
+                    >
+                        FÚTBOL ARGENTINO / BUENOS AIRES
+                    </span>
 
-            <h3>Sportour Training</h3>
 
-            <p>
-                Entrenamiento intensivo, partido amistoso, visita a un club,
-                alojamiento y traslados deportivos.
-            </p>
+                    <h3>
+                        Sportour Training
+                    </h3>
 
-            <div class="ticket-meta">
 
-                <div>
-                    <span>Duración</span>
-                    7 días
+                    <p data-i18n="packages.trainingText">
+                        Entrenamiento intensivo, partido amistoso,
+                        visita a un club, alojamiento y traslados deportivos.
+                    </p>
+
+
+                    <div class="ticket-meta">
+
+
+                        <div>
+
+                            <span data-i18n="packages.duration">
+                                Duración
+                            </span>
+
+                            <span data-i18n="packages.trainingDays">
+                                7 días
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <span data-i18n="packages.trainings">
+                                Entrenamientos
+                            </span>
+
+                            <span data-i18n="packages.trainingSessions">
+                                5 sesiones
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <span data-i18n="packages.modality">
+                                Modalidad
+                            </span>
+
+                            <span data-i18n="packages.group">
+                                Grupal
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
                 </div>
 
-                <div>
-                    <span>Entrenamientos</span>
-                    5 sesiones
+
+                <div class="ticket-stub">
+
+                    <span class="price">
+                        USD 3.150
+                    </span>
+
+                    <span data-i18n="packages.perPlayer">
+                        por jugador
+                    </span>
+
+                    <span>
+                        TRAINING
+                    </span>
+
                 </div>
 
-                <div>
-                    <span>Modalidad</span>
-                    Grupal
+            </a>
+
+
+
+            <!-- EXPERIENCE -->
+
+            <a
+                class="ticket"
+                href="./pages/paquete-experience.html"
+            >
+
+                <div class="ticket-main">
+
+                    <span
+                        class="route mono"
+                        data-i18n="packages.experienceRoute"
+                    >
+                        FÚTBOL + CIUDAD / BUENOS AIRES
+                    </span>
+
+
+                    <h3>
+                        Sportour Experience
+                    </h3>
+
+
+                    <p data-i18n="packages.experienceText">
+                        Entrenamientos, clubes, partido profesional
+                        y una experiencia completa por Buenos Aires.
+                    </p>
+
+
+                    <div class="ticket-meta">
+
+
+                        <div>
+
+                            <span data-i18n="packages.duration">
+                                Duración
+                            </span>
+
+                            <span data-i18n="packages.experienceDays">
+                                8 días
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <span data-i18n="packages.trainings">
+                                Entrenamientos
+                            </span>
+
+                            <span data-i18n="packages.experienceSessions">
+                                6 sesiones
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <span data-i18n="packages.modality">
+                                Modalidad
+                            </span>
+
+                            <span data-i18n="packages.group">
+                                Grupal
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
                 </div>
 
-            </div>
+
+                <div class="ticket-stub">
+
+                    <span class="price">
+                        USD 3.850
+                    </span>
+
+                    <span data-i18n="packages.perPlayer">
+                        por jugador
+                    </span>
+
+                    <span>
+                        EXPERIENCE
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- PRO -->
+
+            <a
+                class="ticket"
+                href="./pages/paquete-pro.html"
+            >
+
+                <div class="ticket-main">
+
+                    <span
+                        class="route mono"
+                        data-i18n="packages.proRoute"
+                    >
+                        TECNIFICACIÓN / BUENOS AIRES
+                    </span>
+
+
+                    <h3>
+                        Sportour Pro
+                    </h3>
+
+
+                    <p data-i18n="packages.proText">
+                        Programa avanzado con 9 entrenamientos,
+                        2 amistosos, evaluaciones deportivas
+                        y visitas profesionales.
+                    </p>
+
+
+                    <div class="ticket-meta">
+
+
+                        <div>
+
+                            <span data-i18n="packages.duration">
+                                Duración
+                            </span>
+
+                            <span data-i18n="packages.proDays">
+                                11 días
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <span data-i18n="packages.trainings">
+                                Entrenamientos
+                            </span>
+
+                            <span data-i18n="packages.proSessions">
+                                9 sesiones
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <span data-i18n="packages.friendlies">
+                                Amistosos
+                            </span>
+
+                            <span data-i18n="packages.twoMatches">
+                                2 partidos
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="ticket-stub">
+
+                    <span class="price">
+                        USD 4.750
+                    </span>
+
+                    <span data-i18n="packages.perPlayer">
+                        por jugador
+                    </span>
+
+                    <span>
+                        PRO
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- ELITE -->
+
+            <a
+                class="ticket"
+                href="./pages/paquete-elite.html"
+            >
+
+                <div class="ticket-main">
+
+                    <span
+                        class="route mono"
+                        data-i18n="packages.eliteRoute"
+                    >
+                        INMERSIÓN TOTAL / BUENOS AIRES
+                    </span>
+
+
+                    <h3>
+                        Sportour Elite
+                    </h3>
+
+
+                    <p data-i18n="packages.eliteText">
+                        La experiencia más completa: 12 entrenamientos,
+                        3 amistosos y una inmersión total
+                        en el fútbol argentino.
+                    </p>
+
+
+                    <div class="ticket-meta">
+
+
+                        <div>
+
+                            <span data-i18n="packages.duration">
+                                Duración
+                            </span>
+
+                            <span data-i18n="packages.eliteDays">
+                                14 días
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <span data-i18n="packages.trainings">
+                                Entrenamientos
+                            </span>
+
+                            <span data-i18n="packages.eliteSessions">
+                                12 sesiones
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <span data-i18n="packages.friendlies">
+                                Amistosos
+                            </span>
+
+                            <span data-i18n="packages.threeMatches">
+                                3 partidos
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="ticket-stub">
+
+                    <span class="price">
+                        USD 5.950
+                    </span>
+
+                    <span data-i18n="packages.perPlayer">
+                        por jugador
+                    </span>
+
+                    <span>
+                        ELITE
+                    </span>
+
+                </div>
+
+            </a>
+
 
         </div>
 
-        <div class="ticket-stub">
+    </div>
 
-            <span class="price">
-                USD 3.150
-            </span>
-
-            <span>
-                por jugador
-            </span>
-
-            <span>
-                TRAINING
-            </span>
-
-        </div>
-
-    </a>
+</section>
 
 
-    <!-- SPORTOUR EXPERIENCE -->
-    <a class="ticket" href="./pages/paquete-experience.html">
 
-        <div class="ticket-main">
+<!-- =========================================================
+     BENEFICIOS
+========================================================== -->
 
-            <span class="route mono">
-                FÚTBOL + CIUDAD / BUENOS AIRES
-            </span>
-
-            <h3>Sportour Experience</h3>
-
-            <p>
-                Entrenamientos, clubes, partido profesional y una experiencia
-                completa por Buenos Aires.
-            </p>
-
-            <div class="ticket-meta">
-
-                <div>
-                    <span>Duración</span>
-                    8 días
-                </div>
-
-                <div>
-                    <span>Entrenamientos</span>
-                    6 sesiones
-                </div>
-
-                <div>
-                    <span>Modalidad</span>
-                    Grupal
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="ticket-stub">
-
-            <span class="price">
-                USD 3.850
-            </span>
-
-            <span>
-                por jugador
-            </span>
-
-            <span>
-                EXPERIENCE
-            </span>
-
-        </div>
-
-    </a>
-
-
-    <!-- SPORTOUR PRO -->
-    <a class="ticket" href="./pages/paquete-pro.html">
-
-        <div class="ticket-main">
-
-            <span class="route mono">
-                TECNIFICACIÓN / BUENOS AIRES
-            </span>
-
-            <h3>Sportour Pro</h3>
-
-            <p>
-                Programa avanzado con 9 entrenamientos, 2 amistosos,
-                evaluaciones deportivas y visitas profesionales.
-            </p>
-
-            <div class="ticket-meta">
-
-                <div>
-                    <span>Duración</span>
-                    11 días
-                </div>
-
-                <div>
-                    <span>Entrenamientos</span>
-                    9 sesiones
-                </div>
-
-                <div>
-                    <span>Amistosos</span>
-                    2 partidos
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="ticket-stub">
-
-            <span class="price">
-                USD 4.750
-            </span>
-
-            <span>
-                por jugador
-            </span>
-
-            <span>
-                PRO
-            </span>
-
-        </div>
-
-    </a>
-
-
-    <!-- SPORTOUR ELITE -->
-    <a class="ticket" href="./pages/paquete-elite.html">
-
-        <div class="ticket-main">
-
-            <span class="route mono">
-                INMERSIÓN TOTAL / BUENOS AIRES
-            </span>
-
-            <h3>Sportour Elite</h3>
-
-            <p>
-                La experiencia más completa: 12 entrenamientos,
-                3 amistosos y una inmersión total en el fútbol argentino.
-            </p>
-
-            <div class="ticket-meta">
-
-                <div>
-                    <span>Duración</span>
-                    14 días
-                </div>
-
-                <div>
-                    <span>Entrenamientos</span>
-                    12 sesiones
-                </div>
-
-                <div>
-                    <span>Amistosos</span>
-                    3 partidos
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="ticket-stub">
-
-            <span class="price">
-                USD 5.950
-            </span>
-
-            <span>
-                por jugador
-            </span>
-
-            <span>
-                ELITE
-            </span>
-
-        </div>
-
-    </a>
-
-</div>
-      </div>
-    </section>
-
-<!-- PROMOCIONES -->
-<section class="section alt" id="promociones">
+<section
+    class="section alt"
+    id="promociones"
+>
 
     <div class="wrap">
 
         <div class="section-head">
 
-            <h2>Beneficios Sportour</h2>
+            <h2 data-i18n="benefits.title">
+                Beneficios Sportour
+            </h2>
 
-            <span class="section-num mono">
+            <span
+                class="section-num mono"
+                data-i18n="benefits.number"
+            >
                 04 / Ventajas para tu equipo
             </span>
 
         </div>
 
-        <p class="section-lede">
-            Beneficios pensados para delegaciones que organizan su experiencia
-            con anticipación, viajan en grupo o vuelven a elegir Sportour.
+
+        <p
+            class="section-lede"
+            data-i18n="benefits.lede"
+        >
+            Beneficios pensados para delegaciones que organizan
+            su experiencia con anticipación, viajan en grupo
+            o vuelven a elegir Sportour.
         </p>
 
     </div>
+
 
 
     <div class="wrap">
@@ -633,7 +1360,8 @@
         <div class="promo-grid">
 
 
-            <!-- RESERVA ANTICIPADA -->
+            <!-- 01 -->
+
             <div class="promo hi">
 
                 <div class="promo-top">
@@ -642,24 +1370,29 @@
                         01
                     </span>
 
-                    <span class="tag mono">
+                    <span
+                        class="tag mono"
+                        data-i18n="benefits.earlyTag"
+                    >
                         Reserva anticipada
                     </span>
 
                 </div>
 
+
                 <div class="promo-content">
 
-                    <h3>
+                    <h3 data-i18n="benefits.earlyTitle">
                         15% OFF reservando con 60 días
                     </h3>
 
-                    <p>
-                        Beneficio para delegaciones que confirman su programa
-                        con al menos 60 días de anticipación.
+                    <p data-i18n="benefits.earlyText">
+                        Beneficio para delegaciones que confirman
+                        su programa con al menos 60 días de anticipación.
                     </p>
 
                 </div>
+
 
                 <span class="code mono">
                     ANTICIPA15
@@ -668,7 +1401,9 @@
             </div>
 
 
-            <!-- GRUPOS -->
+
+            <!-- 02 -->
+
             <div class="promo">
 
                 <div class="promo-top">
@@ -677,33 +1412,43 @@
                         02
                     </span>
 
-                    <span class="tag mono">
+                    <span
+                        class="tag mono"
+                        data-i18n="benefits.groupTag"
+                    >
                         Beneficio grupal
                     </span>
 
                 </div>
 
+
                 <div class="promo-content">
 
-                    <h3>
+                    <h3 data-i18n="benefits.groupTitle">
                         Cada 6 jugadores, 1 sin cargo
                     </h3>
 
-                    <p>
-                        Una ventaja especial para clubes, academias y delegaciones
-                        que viajan juntas.
+                    <p data-i18n="benefits.groupText">
+                        Una ventaja especial para clubes,
+                        academias y delegaciones que viajan juntas.
                     </p>
 
                 </div>
 
-                <span class="code mono">
+
+                <span
+                    class="code mono"
+                    data-i18n="benefits.groupCode"
+                >
                     CONSULTAR POR GRUPO
                 </span>
 
             </div>
 
 
-            <!-- REFERIDOS -->
+
+            <!-- 03 -->
+
             <div class="promo">
 
                 <div class="promo-top">
@@ -712,33 +1457,43 @@
                         03
                     </span>
 
-                    <span class="tag mono">
+                    <span
+                        class="tag mono"
+                        data-i18n="benefits.referralTag"
+                    >
                         Referidos
                     </span>
 
                 </div>
 
+
                 <div class="promo-content">
 
-                    <h3>
+                    <h3 data-i18n="benefits.referralTitle">
                         USD 30 de crédito
                     </h3>
 
-                    <p>
+                    <p data-i18n="benefits.referralText">
                         Recibí crédito por cada nuevo jugador o delegación
                         que llegue a Sportour a través de tu recomendación.
                     </p>
 
                 </div>
 
-                <span class="code mono">
+
+                <span
+                    class="code mono"
+                    data-i18n="benefits.referralCode"
+                >
                     BENEFICIO POR REFERIDO
                 </span>
 
             </div>
 
 
-            <!-- TEMPORADA BAJA -->
+
+            <!-- 04 -->
+
             <div class="promo hi">
 
                 <div class="promo-top">
@@ -747,27 +1502,35 @@
                         04
                     </span>
 
-                    <span class="tag mono">
+                    <span
+                        class="tag mono"
+                        data-i18n="benefits.lowTag"
+                    >
                         Temporada baja
                     </span>
 
                 </div>
 
+
                 <div class="promo-content">
 
-                    <h3>
+                    <h3 data-i18n="benefits.lowTitle">
                         2x1 en alojamiento
                     </h3>
 
-                    <p>
-                        Beneficio especial en fechas seleccionadas de temporada baja,
-                        sujeto a disponibilidad.
+                    <p data-i18n="benefits.lowText">
+                        Beneficio especial en fechas seleccionadas
+                        de temporada baja, sujeto a disponibilidad.
                     </p>
 
                 </div>
 
-                <span class="code mono">
-                    (agregar meses)
+
+                <span
+                    class="code mono"
+                    data-i18n="benefits.lowCode"
+                >
+                    CONSULTAR FECHAS
                 </span>
 
             </div>
@@ -779,42 +1542,66 @@
 
 </section>
 
-<!-- ALOJAMIENTO -->
-<section class="section hotel-section" id="alojamiento">
+
+
+<!-- =========================================================
+     ALOJAMIENTO
+========================================================== -->
+
+<section
+    class="section hotel-section"
+    id="alojamiento"
+>
 
     <div class="wrap">
 
         <div class="section-head">
 
-            <h2>Dónde se hospeda tu equipo</h2>
+            <h2 data-i18n="hotels.title">
+                Dónde se hospeda tu equipo
+            </h2>
 
-            <span class="section-num mono">
+            <span
+                class="section-num mono"
+                data-i18n="hotels.number"
+            >
                 05 / Alojamiento Sportour
             </span>
 
         </div>
 
+
         <div class="hotel-intro">
 
-            <p class="section-lede">
-                Alojamientos seleccionados para recibir delegaciones deportivas,
-                con espacios, servicios y ubicaciones pensadas para acompañar
-                cada programa Sportour.
+            <p
+                class="section-lede"
+                data-i18n="hotels.lede"
+            >
+                Alojamientos seleccionados para recibir delegaciones
+                deportivas, con espacios, servicios y ubicaciones
+                pensadas para acompañar cada programa Sportour.
             </p>
+
 
             <div class="hotel-controls">
 
                 <button
                     class="hotel-arrow"
                     id="hotel-prev"
-                    aria-label="Hotel anterior">
+                    data-i18n-aria-label="hotels.previous"
+                    aria-label="Hotel anterior"
+                    type="button"
+                >
                     ←
                 </button>
 
                 <button
                     class="hotel-arrow"
                     id="hotel-next"
-                    aria-label="Hotel siguiente">
+                    data-i18n-aria-label="hotels.next"
+                    aria-label="Hotel siguiente"
+                    type="button"
+                >
                     →
                 </button>
 
@@ -825,19 +1612,26 @@
     </div>
 
 
+
     <div class="wrap hotel-wrap">
 
-        <div class="hotel-carousel" id="hotel-carousel">
+        <div
+            class="hotel-carousel"
+            id="hotel-carousel"
+        >
 
 
-            <!-- HOTEL TRAINING -->
+            <!-- TRAINING HOTEL -->
+
             <a
                 class="hotel-card"
-                href="./pages/hotel-training.html">
+                href="./pages/hotel-training.html"
+            >
 
                 <div
                     class="hotel-photo"
-                    style="background-image:url('./img/hotel-training-habitación.png')">
+                    style="background-image:url('./img/hotel-training-habitación.png')"
+                >
 
                     <span class="hotel-package mono">
                         Sportour Training
@@ -845,28 +1639,38 @@
 
                 </div>
 
+
                 <div class="hotel-info">
 
                     <div>
-                        <span class="hotel-type mono">
+
+                        <span
+                            class="hotel-type mono"
+                            data-i18n="hotels.trainingType"
+                        >
                             Alojamiento deportivo
                         </span>
 
-                        <h3>Training Hotel</h3>
+                        <h3>
+                            Training Hotel
+                        </h3>
 
-                        <p>
-                            Una opción funcional y cómoda para equipos que priorizan
-                            entrenamiento, descanso y cercanía a las instalaciones deportivas.
+                        <p data-i18n="hotels.trainingText">
+                            Una opción funcional y cómoda para equipos
+                            que priorizan entrenamiento, descanso
+                            y cercanía a las instalaciones deportivas.
                         </p>
+
                     </div>
+
 
                     <div class="hotel-bottom">
 
-                        <span>
+                        <span data-i18n="hotels.includedTraining">
                             Incluido en Training
                         </span>
 
-                        <strong>
+                        <strong data-i18n="hotels.view">
                             Ver alojamiento →
                         </strong>
 
@@ -877,14 +1681,18 @@
             </a>
 
 
-            <!-- HOTEL EXPERIENCE -->
+
+            <!-- EXPERIENCE HOTEL -->
+
             <a
                 class="hotel-card"
-                href="./pages/hotel-experience.html">
+                href="./pages/hotel-experience.html"
+            >
 
                 <div
                     class="hotel-photo"
-                    style="background-image:url('./img/experience-habitacion.jpg')">
+                    style="background-image:url('./img/experience-habitacion.jpg')"
+                >
 
                     <span class="hotel-package mono">
                         Sportour Experience
@@ -892,28 +1700,37 @@
 
                 </div>
 
+
                 <div class="hotel-info">
 
                     <div>
-                        <span class="hotel-type mono">
+
+                        <span
+                            class="hotel-type mono"
+                            data-i18n="hotels.experienceType"
+                        >
                             Hotel urbano
                         </span>
 
-                        <h3>Experience Hotel</h3>
+                        <h3>
+                            Experience Hotel
+                        </h3>
 
-                        <p>
+                        <p data-i18n="hotels.experienceText">
                             Ubicación estratégica para combinar entrenamientos,
                             visitas a clubes y recorridos por Buenos Aires.
                         </p>
+
                     </div>
+
 
                     <div class="hotel-bottom">
 
-                        <span>
+                        <span data-i18n="hotels.includedExperience">
                             Incluido en Experience
                         </span>
 
-                        <strong>
+                        <strong data-i18n="hotels.view">
                             Ver alojamiento →
                         </strong>
 
@@ -924,14 +1741,18 @@
             </a>
 
 
-            <!-- HOTEL PRO -->
+
+            <!-- PRO -->
+
             <a
                 class="hotel-card"
-                href="./pages/hotel-pro.html">
+                href="./pages/hotel-pro.html"
+            >
 
                 <div
                     class="hotel-photo"
-                    style="background-image:url('./img/pro-habitacion.avif')">
+                    style="background-image:url('./img/pro-habitacion.avif')"
+                >
 
                     <span class="hotel-package mono">
                         Sportour Pro
@@ -939,28 +1760,38 @@
 
                 </div>
 
+
                 <div class="hotel-info">
 
                     <div>
-                        <span class="hotel-type mono">
+
+                        <span
+                            class="hotel-type mono"
+                            data-i18n="hotels.proType"
+                        >
                             Performance residence
                         </span>
 
-                        <h3>Pro Residence</h3>
+                        <h3>
+                            Pro Residence
+                        </h3>
 
-                        <p>
-                            Pensado para estadías más largas, con servicios orientados
-                            al descanso, alimentación y recuperación del jugador.
+                        <p data-i18n="hotels.proText">
+                            Pensado para estadías más largas,
+                            con servicios orientados al descanso,
+                            alimentación y recuperación del jugador.
                         </p>
+
                     </div>
+
 
                     <div class="hotel-bottom">
 
-                        <span>
+                        <span data-i18n="hotels.includedPro">
                             Incluido en Pro
                         </span>
 
-                        <strong>
+                        <strong data-i18n="hotels.view">
                             Ver alojamiento →
                         </strong>
 
@@ -971,14 +1802,18 @@
             </a>
 
 
-            <!-- HOTEL ELITE -->
+
+            <!-- ELITE -->
+
             <a
                 class="hotel-card"
-                href="./pages/hotel-elite.html">
+                href="./pages/hotel-elite.html"
+            >
 
                 <div
                     class="hotel-photo"
-                    style="background-image:url('./img/elite-habitacion.jpg')">
+                    style="background-image:url('./img/elite-habitacion.jpg')"
+                >
 
                     <span class="hotel-package mono">
                         Sportour Elite
@@ -986,28 +1821,38 @@
 
                 </div>
 
+
                 <div class="hotel-info">
 
                     <div>
-                        <span class="hotel-type mono">
+
+                        <span
+                            class="hotel-type mono"
+                            data-i18n="hotels.eliteType"
+                        >
                             Premium team residence
                         </span>
 
-                        <h3>Elite Residence</h3>
+                        <h3>
+                            Elite Residence
+                        </h3>
 
-                        <p>
-                            La opción de mayor nivel para delegaciones que buscan
-                            privacidad, comodidad y servicios durante una estadía intensiva.
+                        <p data-i18n="hotels.eliteText">
+                            La opción de mayor nivel para delegaciones
+                            que buscan privacidad, comodidad y servicios
+                            durante una estadía intensiva.
                         </p>
+
                     </div>
+
 
                     <div class="hotel-bottom">
 
-                        <span>
+                        <span data-i18n="hotels.includedElite">
                             Incluido en Elite
                         </span>
 
-                        <strong>
+                        <strong data-i18n="hotels.view">
                             Ver alojamiento →
                         </strong>
 
@@ -1024,105 +1869,1564 @@
 
 </section>
 
-    <!-- SOBRE NOSOTROS -->
-    <section class="section alt" id="nosotros">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Sobre nosotros</h2>
-          <span class="section-num mono">06 / Quiénes somos</span>
-        </div>
-        <div class="about-grid">
-          <div class="about-copy">
-            <p>SporTour nació en 2014 cuando un grupo de corredores amateur se cansó de armar sus propios viajes a maratones a los ponchazos: vuelos por un lado, alojamiento por otro, y la inscripción a la carrera resuelta a último momento.</p>
-            <p>Hoy somos un equipo de agentes de viaje que también entrena, compite y viaja a ver a su equipo. Eso cambia cómo armamos cada paquete: sabemos a qué hora hay que estar en la largada y por qué el desayuno del hotel importa tanto como el precio de la habitación.</p>
-          </div>
-          <ul class="about-list">
-            <li><span class="y mono">2014</span><span class="t"><strong> Primer viaje grupal</strong> a la Maratón de Buenos Aires con 22 corredores.</span></li>
-            <li><span class="y mono">2017</span><span class="t"><strong> Primera gira de hinchada</strong> internacional, a Brasil.</span></li>
-            <li><span class="y mono">2020</span><span class="t"><strong> Apertura del área de alojamiento deportivo</strong> con los primeros centros de altura.</span></li>
-            <li><span class="y mono">2023</span><span class="t"><strong> 34 destinos activos</strong> y equipo de guías y coaches locales en 4 países.</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
 
-    <!-- CONTACTO -->
-    <section class="section" id="contacto">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Contacto</h2>
-          <span class="section-num mono">07 / Armemos tu viaje</span>
-        </div>
-        <div class="contact-grid">
-          <form onsubmit="return false;">
-            <div class="field">
-              <label for="f-nombre">Nombre y apellido</label>
-              <input id="f-nombre" type="text" placeholder="Tu nombre" required>
-            </div>
-            <div class="field">
-              <label for="f-email">Email</label>
-              <input id="f-email" type="email" placeholder="vos@email.com" required>
-            </div>
-            <div class="field">
-              <label for="f-interes">Me interesa</label>
-              <select id="f-interes">
-                <option>Un paquete armado</option>
-                <option>Un viaje a medida</option>
-                <option>Alojamiento deportivo</option>
-                <option>Viaje para un grupo o equipo</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="f-msg">Contanos tu plan</label>
-              <textarea id="f-msg" placeholder="Destino, fecha estimada, cantidad de personas..."></textarea>
-            </div>
-            <button class="btn primary" type="submit" style="border:none; cursor:pointer;">Enviar consulta</button>
-          </form>
-          <div class="contact-info">
-            <div class="info-row">
-              <span class="k mono">Email</span>
-              <span class="v"><a href="mailto:hola@sportour.example">hola@sportour.example</a></span>
-            </div>
-            <div class="info-row">
-              <span class="k mono">WhatsApp</span>
-              <span class="v"><a href="#">+54 9 11 5555-0134</a></span>
-            </div>
-            <div class="info-row">
-              <span class="k mono">Oficina</span>
-              <span class="v">Av. Córdoba 2150, CABA, Argentina<br>Lun a vie, 10 a 19 h</span>
-            </div>
-            <div>
-              <span class="k mono" style="display:block; margin-bottom:10px;">Seguinos</span>
-              <div class="socials">
-                <a href="#">Instagram</a>
-                <a href="#">Strava</a>
-                <a href="#">YouTube</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-  </main>
+<!-- =========================================================
+     SOBRE NOSOTROS
+========================================================== -->
 
-  <footer>
+<section
+    class="section alt"
+    id="nosotros"
+>
+
     <div class="wrap">
-      <div class="foot-grid">
-        <a class="brand" href="#top"><span class="dot"></span>SPORTOUR</a>
-        <ul class="foot-links">
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#destinos">Destinos</a></li>
-          <li><a href="#paquetes">Paquetes</a></li>
-          <li><a href="#alojamiento">Alojamiento</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </div>
-      <p class="foot-fine">© 2026 SporTour · Contenido de ejemplo para demostración. Precios y datos de contacto ilustrativos.</p>
-    </div>
-  </footer>
 
-  <script src="./js/main.js"></script>
+
+        <div class="section-head">
+
+            <h2 data-i18n="about.title">
+                Sobre nosotros
+            </h2>
+
+            <span
+                class="section-num mono"
+                data-i18n="about.number"
+            >
+                06 / Quiénes somos
+            </span>
+
+        </div>
+
+
+
+        <div class="about-grid">
+
+
+            <div class="about-copy">
+
+                <p data-i18n="about.text1">
+                    SporTour nació en 2014 cuando un grupo de corredores
+                    amateur se cansó de armar sus propios viajes deportivos
+                    por separado.
+                </p>
+
+                <p data-i18n="about.text2">
+                    Hoy somos un equipo que organiza experiencias deportivas
+                    completas, combinando viajes, alojamiento, entrenamiento
+                    y actividades alrededor del deporte.
+                </p>
+
+            </div>
+
+
+            <ul class="about-list">
+
+
+                <li>
+
+                    <span class="y mono">
+                        2014
+                    </span>
+
+                    <span
+                        class="t"
+                        data-i18n-html="about.year2014"
+                    >
+                        <strong>Primer viaje grupal</strong>
+                        a Buenos Aires.
+                    </span>
+
+                </li>
+
+
+                <li>
+
+                    <span class="y mono">
+                        2017
+                    </span>
+
+                    <span
+                        class="t"
+                        data-i18n-html="about.year2017"
+                    >
+                        <strong>Primer programa deportivo internacional</strong>
+                        para grupos.
+                    </span>
+
+                </li>
+
+
+                <li>
+
+                    <span class="y mono">
+                        2020
+                    </span>
+
+                    <span
+                        class="t"
+                        data-i18n-html="about.year2020"
+                    >
+                        <strong>Desarrollo del área de alojamiento deportivo</strong>
+                        para delegaciones.
+                    </span>
+
+                </li>
+
+
+                <li>
+
+                    <span class="y mono">
+                        2026
+                    </span>
+
+                    <span
+                        class="t"
+                        data-i18n-html="about.year2026"
+                    >
+                        <strong>Nueva propuesta Sportour</strong>
+                        enfocada en experiencias de fútbol en Buenos Aires.
+                    </span>
+
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACTO
+========================================================== -->
+
+<section
+    class="section"
+    id="contacto"
+>
+
+    <div class="wrap">
+
+
+        <div class="section-head">
+
+            <h2 data-i18n="contact.title">
+                Contacto
+            </h2>
+
+            <span
+                class="section-num mono"
+                data-i18n="contact.number"
+            >
+                07 / Armemos tu viaje
+            </span>
+
+        </div>
+
+
+
+        <div class="contact-grid">
+
+
+            <!-- FORM -->
+
+            <form onsubmit="return false;">
+
+
+                <div class="field">
+
+                    <label
+                        for="f-nombre"
+                        data-i18n="contact.name"
+                    >
+                        Nombre y apellido
+                    </label>
+
+                    <input
+                        id="f-nombre"
+                        type="text"
+                        data-i18n-placeholder="contact.namePlaceholder"
+                        placeholder="Tu nombre"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label for="f-email">
+                        Email
+                    </label>
+
+                    <input
+                        id="f-email"
+                        type="email"
+                        placeholder="vos@email.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label
+                        for="f-interes"
+                        data-i18n="contact.interest"
+                    >
+                        Me interesa
+                    </label>
+
+
+                    <select id="f-interes">
+
+                        <option data-i18n="contact.optionPackage">
+                            Un paquete armado
+                        </option>
+
+                        <option data-i18n="contact.optionCustom">
+                            Un viaje a medida
+                        </option>
+
+                        <option data-i18n="contact.optionHotel">
+                            Alojamiento deportivo
+                        </option>
+
+                        <option data-i18n="contact.optionGroup">
+                            Viaje para un grupo o equipo
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label
+                        for="f-msg"
+                        data-i18n="contact.plan"
+                    >
+                        Contanos tu plan
+                    </label>
+
+                    <textarea
+                        id="f-msg"
+                        data-i18n-placeholder="contact.planPlaceholder"
+                        placeholder="Destino, fecha estimada, cantidad de personas..."
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    class="btn primary"
+                    type="submit"
+                    style="border:none; cursor:pointer;"
+                    data-i18n="contact.send"
+                >
+                    Enviar consulta
+                </button>
+
+
+            </form>
+
+
+
+            <!-- INFO -->
+
+            <div class="contact-info">
+
+
+                <div class="info-row">
+
+                    <span class="k mono">
+                        Email
+                    </span>
+
+                    <span class="v">
+
+                        <a href="mailto:hola@sportour.example">
+                            hola@sportour.example
+                        </a>
+
+                    </span>
+
+                </div>
+
+
+                <div class="info-row">
+
+                    <span class="k mono">
+                        WhatsApp
+                    </span>
+
+                    <span class="v">
+
+                        <a href="#">
+                            +54 9 11 5555-0134
+                        </a>
+
+                    </span>
+
+                </div>
+
+
+                <div class="info-row">
+
+                    <span
+                        class="k mono"
+                        data-i18n="contact.office"
+                    >
+                        Oficina
+                    </span>
+
+                    <span
+                        class="v"
+                        data-i18n-html="contact.officeValue"
+                    >
+                        Av. Córdoba 2150, CABA, Argentina<br>
+                        Lun a vie, 10 a 19 h
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <span
+                        class="k mono"
+                        style="display:block; margin-bottom:10px;"
+                        data-i18n="contact.follow"
+                    >
+                        Seguinos
+                    </span>
+
+
+                    <div class="socials">
+
+                        <a href="#">
+                            Instagram
+                        </a>
+
+                        <a href="#">
+                            TikTok
+                        </a>
+
+                        <a href="#">
+                            YouTube
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================== -->
+
+<footer>
+
+    <div class="wrap">
+
+        <div class="foot-grid">
+
+
+            <a
+                class="brand"
+                href="#top"
+            >
+                SPORTOUR
+            </a>
+
+
+            <ul class="foot-links">
+
+                <li>
+                    <a
+                        href="#servicios"
+                        data-i18n="nav.experience"
+                    >
+                        Experiencia
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#destinos"
+                        data-i18n="nav.services"
+                    >
+                        Servicios
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#paquetes"
+                        data-i18n="nav.packages"
+                    >
+                        Paquetes
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#alojamiento"
+                        data-i18n="nav.accommodation"
+                    >
+                        Alojamiento
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#nosotros"
+                        data-i18n="nav.about"
+                    >
+                        Nosotros
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#contacto"
+                        data-i18n="contact.title"
+                    >
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <p
+            class="foot-fine"
+            data-i18n="footer.copy"
+        >
+            © 2026 SporTour · Turismo deportivo y experiencias de fútbol en Buenos Aires.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     JS PRINCIPAL
+========================================================== -->
+
+<script src="./js/main.js"></script>
+
+
+
+<!-- =========================================================
+     TRADUCCIONES ES / EN
+========================================================== -->
+
+<script>
+
+const translations = {
+
+
+    /* =========================================================
+       ESPAÑOL
+    ========================================================== */
+
+    es: {
+
+        pageTitle:
+            "SporTour — Turismo deportivo",
+
+        pageDescription:
+            "Experiencias de turismo deportivo enfocadas en fútbol argentino para clubes, academias y jóvenes futbolistas.",
+
+
+        /* NAV */
+
+        "nav.experience": "Experiencia",
+        "nav.services": "Servicios",
+        "nav.packages": "Paquetes",
+        "nav.benefits": "Promos",
+        "nav.accommodation": "Alojamiento",
+        "nav.about": "Nosotros",
+        "nav.quote": "Cotizar viaje",
+        "nav.menu": "Abrir menú",
+
+
+        /* HERO */
+
+        "hero.eyebrow":
+            "Turismo deportivo · Buenos Aires",
+
+        "hero.title": `
+            Viajá para<br>
+            aprender.<br>
+            Entrená para<br>
+            <em>crecer.</em>
+        `,
+
+        "hero.description":
+            "Viví el fútbol argentino desde adentro. Entrenamientos, clubes y experiencias únicas en Buenos Aires para crecer dentro y fuera de la cancha.",
+
+        "hero.explore":
+            "Explorar experiencias",
+
+        "hero.advisor":
+            "Hablar con un asesor",
+
+        "hero.destinationLabel":
+            "DESTINO",
+
+        "hero.experienceLabel":
+            "EXPERIENCIA",
+
+        "hero.experienceValue":
+            "Fútbol argentino",
+
+        "hero.formatLabel":
+            "FORMATO",
+
+        "hero.formatValue":
+            "Viajes grupales",
+
+        "hero.agesLabel":
+            "EDADES",
+
+        "hero.agesValue":
+            "14 — 21 años",
+
+
+        /* EXPERIENCIA */
+
+        "services.title":
+            "Experiencia completa",
+
+        "services.number":
+            "01 / Qué hacemos",
+
+        "services.lede":
+            "Todo lo necesario para vivir el fútbol argentino desde adentro. Organizamos cada detalle del viaje para que el equipo pueda enfocarse en entrenar, aprender y disfrutar Buenos Aires.",
+
+        "services.trainingTitle":
+            "Entrenamientos de fútbol",
+
+        "services.trainingText":
+            "Sesiones de tecnificación con profesionales del fútbol argentino, adaptadas al nivel y objetivos de cada equipo.",
+
+        "services.clubsTitle":
+            "Experiencias en clubes",
+
+        "services.clubsText":
+            "Visitas a clubes, estadios y centros de entrenamiento, con posibilidad de presenciar entrenamientos y partidos del fútbol argentino.",
+
+        "services.hotelTitle":
+            "Alojamiento deportivo",
+
+        "services.hotelText":
+            "Opciones de hospedaje seleccionadas según las necesidades, cantidad de jugadores y presupuesto de cada grupo.",
+
+        "services.transportTitle":
+            "Transporte",
+
+        "services.transportText":
+            "Traslados desde y hacia el aeropuerto y transporte durante todas las actividades incluidas en el programa.",
+
+        "services.foodTitle":
+            "Gastronomía",
+
+        "services.foodText":
+            "Servicio de comidas durante la estadía, organizado de acuerdo con el cronograma y las necesidades del equipo.",
+
+        "services.cityTitle":
+            "Experiencias en Buenos Aires",
+
+        "services.cityText":
+            "Recorridos por los principales puntos culturales y turísticos de la ciudad para complementar la experiencia deportiva.",
+
+
+        /* SERVICIOS */
+
+        "destinations.title":
+            "Viví Buenos Aires",
+
+        "destinations.number":
+            "02 / Servicios",
+
+        "destinations.lede":
+            "Una selección de experiencias para conocer el fútbol argentino desde adentro y descubrir Buenos Aires dentro y fuera de la cancha.",
+
+        "destinations.argFootballTitle":
+            "Fútbol argentino",
+
+        "destinations.argFootballText":
+            "Conocé desde adentro la pasión, la identidad y la forma de vivir el fútbol en Argentina.",
+
+        "destinations.clubsTitle":
+            "Clubes y estadios",
+
+        "destinations.clubsText":
+            "Visitá instituciones, estadios y espacios emblemáticos del fútbol argentino.",
+
+        "destinations.trainingTitle":
+            "Entrenamiento",
+
+        "destinations.trainingText":
+            "Participá de sesiones de tecnificación junto a profesionales del fútbol local.",
+
+        "destinations.baText":
+            "Descubrí una ciudad marcada por el fútbol, la historia y una cultura única.",
+
+        "destinations.cultureTitle":
+            "Cultura",
+
+        "destinations.cultureText":
+            "Recorré los principales puntos turísticos y culturales de Buenos Aires.",
+
+        "destinations.matchesTitle":
+            "Partidos",
+
+        "destinations.matchesText":
+            "Viví la experiencia de asistir a encuentros del fútbol argentino y sentir su ambiente desde las tribunas.",
+
+
+        /* TAGS */
+
+        "tag.passion": "Pasión",
+        "tag.identity": "Identidad",
+        "tag.tradition": "Tradición",
+        "tag.visits": "Visitas",
+        "tag.history": "Historia",
+        "tag.infrastructure": "Infraestructuras",
+        "tag.developmentTraining": "Tecnificación",
+        "tag.professionals": "Profesionales",
+        "tag.development": "Desarrollo",
+        "tag.city": "Ciudad",
+        "tag.tourism": "Turismo",
+        "tag.experience": "Experiencia",
+        "tag.food": "Gastronomía",
+        "tag.tours": "Recorridos",
+        "tag.competition": "Competencia",
+        "tag.stands": "Tribuna",
+        "tag.liveFootball": "Fútbol en vivo",
+
+
+        /* PAQUETES */
+
+        "packages.title":
+            "Paquetes de viaje",
+
+        "packages.number":
+            "03 / Programas Sportour",
+
+        "packages.lede":
+            "Programas grupales en Buenos Aires diseñados para clubes y academias que buscan entrenar, competir y vivir el fútbol argentino desde adentro. Pasaje aéreo no incluido.",
+
+        "packages.trainingRoute":
+            "FÚTBOL ARGENTINO / BUENOS AIRES",
+
+        "packages.trainingText":
+            "Entrenamiento intensivo, partido amistoso, visita a un club, alojamiento y traslados deportivos.",
+
+        "packages.experienceRoute":
+            "FÚTBOL + CIUDAD / BUENOS AIRES",
+
+        "packages.experienceText":
+            "Entrenamientos, clubes, partido profesional y una experiencia completa por Buenos Aires.",
+
+        "packages.proRoute":
+            "TECNIFICACIÓN / BUENOS AIRES",
+
+        "packages.proText":
+            "Programa avanzado con 9 entrenamientos, 2 amistosos, evaluaciones deportivas y visitas profesionales.",
+
+        "packages.eliteRoute":
+            "INMERSIÓN TOTAL / BUENOS AIRES",
+
+        "packages.eliteText":
+            "La experiencia más completa: 12 entrenamientos, 3 amistosos y una inmersión total en el fútbol argentino.",
+
+        "packages.duration": "Duración",
+        "packages.trainings": "Entrenamientos",
+        "packages.friendlies": "Amistosos",
+        "packages.modality": "Modalidad",
+        "packages.group": "Grupal",
+
+        "packages.trainingDays": "7 días",
+        "packages.experienceDays": "8 días",
+        "packages.proDays": "11 días",
+        "packages.eliteDays": "14 días",
+
+        "packages.trainingSessions": "5 sesiones",
+        "packages.experienceSessions": "6 sesiones",
+        "packages.proSessions": "9 sesiones",
+        "packages.eliteSessions": "12 sesiones",
+
+        "packages.twoMatches": "2 partidos",
+        "packages.threeMatches": "3 partidos",
+
+        "packages.perPlayer":
+            "por jugador",
+
+
+        /* BENEFICIOS */
+
+        "benefits.title":
+            "Beneficios Sportour",
+
+        "benefits.number":
+            "04 / Ventajas para tu equipo",
+
+        "benefits.lede":
+            "Beneficios pensados para delegaciones que organizan su experiencia con anticipación, viajan en grupo o vuelven a elegir Sportour.",
+
+        "benefits.earlyTag":
+            "Reserva anticipada",
+
+        "benefits.earlyTitle":
+            "15% OFF reservando con 60 días",
+
+        "benefits.earlyText":
+            "Beneficio para delegaciones que confirman su programa con al menos 60 días de anticipación.",
+
+        "benefits.groupTag":
+            "Beneficio grupal",
+
+        "benefits.groupTitle":
+            "Cada 6 jugadores, 1 sin cargo",
+
+        "benefits.groupText":
+            "Una ventaja especial para clubes, academias y delegaciones que viajan juntas.",
+
+        "benefits.groupCode":
+            "CONSULTAR POR GRUPO",
+
+        "benefits.referralTag":
+            "Referidos",
+
+        "benefits.referralTitle":
+            "USD 30 de crédito",
+
+        "benefits.referralText":
+            "Recibí crédito por cada nuevo jugador o delegación que llegue a Sportour a través de tu recomendación.",
+
+        "benefits.referralCode":
+            "BENEFICIO POR REFERIDO",
+
+        "benefits.lowTag":
+            "Temporada baja",
+
+        "benefits.lowTitle":
+            "2x1 en alojamiento",
+
+        "benefits.lowText":
+            "Beneficio especial en fechas seleccionadas de temporada baja, sujeto a disponibilidad.",
+
+        "benefits.lowCode":
+            "CONSULTAR FECHAS",
+
+
+        /* HOTELES */
+
+        "hotels.title":
+            "Dónde se hospeda tu equipo",
+
+        "hotels.number":
+            "05 / Alojamiento Sportour",
+
+        "hotels.lede":
+            "Alojamientos seleccionados para recibir delegaciones deportivas, con espacios, servicios y ubicaciones pensadas para acompañar cada programa Sportour.",
+
+        "hotels.previous":
+            "Hotel anterior",
+
+        "hotels.next":
+            "Hotel siguiente",
+
+        "hotels.trainingType":
+            "Alojamiento deportivo",
+
+        "hotels.trainingText":
+            "Una opción funcional y cómoda para equipos que priorizan entrenamiento, descanso y cercanía a las instalaciones deportivas.",
+
+        "hotels.experienceType":
+            "Hotel urbano",
+
+        "hotels.experienceText":
+            "Ubicación estratégica para combinar entrenamientos, visitas a clubes y recorridos por Buenos Aires.",
+
+        "hotels.proType":
+            "Performance residence",
+
+        "hotels.proText":
+            "Pensado para estadías más largas, con servicios orientados al descanso, alimentación y recuperación del jugador.",
+
+        "hotels.eliteType":
+            "Premium team residence",
+
+        "hotels.eliteText":
+            "La opción de mayor nivel para delegaciones que buscan privacidad, comodidad y servicios durante una estadía intensiva.",
+
+        "hotels.includedTraining":
+            "Incluido en Training",
+
+        "hotels.includedExperience":
+            "Incluido en Experience",
+
+        "hotels.includedPro":
+            "Incluido en Pro",
+
+        "hotels.includedElite":
+            "Incluido en Elite",
+
+        "hotels.view":
+            "Ver alojamiento →",
+
+
+        /* NOSOTROS */
+
+        "about.title":
+            "Sobre nosotros",
+
+        "about.number":
+            "06 / Quiénes somos",
+
+        "about.text1":
+            "SporTour nació en 2014 cuando un grupo de corredores amateur se cansó de armar sus propios viajes deportivos por separado.",
+
+        "about.text2":
+            "Hoy somos un equipo que organiza experiencias deportivas completas, combinando viajes, alojamiento, entrenamiento y actividades alrededor del deporte.",
+
+        "about.year2014":
+            "<strong>Primer viaje grupal</strong> a Buenos Aires.",
+
+        "about.year2017":
+            "<strong>Primer programa deportivo internacional</strong> para grupos.",
+
+        "about.year2020":
+            "<strong>Desarrollo del área de alojamiento deportivo</strong> para delegaciones.",
+
+        "about.year2026":
+            "<strong>Nueva propuesta Sportour</strong> enfocada en experiencias de fútbol en Buenos Aires.",
+
+
+        /* CONTACTO */
+
+        "contact.title":
+            "Contacto",
+
+        "contact.number":
+            "07 / Armemos tu viaje",
+
+        "contact.name":
+            "Nombre y apellido",
+
+        "contact.namePlaceholder":
+            "Tu nombre",
+
+        "contact.interest":
+            "Me interesa",
+
+        "contact.optionPackage":
+            "Un paquete armado",
+
+        "contact.optionCustom":
+            "Un viaje a medida",
+
+        "contact.optionHotel":
+            "Alojamiento deportivo",
+
+        "contact.optionGroup":
+            "Viaje para un grupo o equipo",
+
+        "contact.plan":
+            "Contanos tu plan",
+
+        "contact.planPlaceholder":
+            "Destino, fecha estimada, cantidad de personas...",
+
+        "contact.send":
+            "Enviar consulta",
+
+        "contact.office":
+            "Oficina",
+
+        "contact.officeValue":
+            "Av. Córdoba 2150, CABA, Argentina<br>Lun a vie, 10 a 19 h",
+
+        "contact.follow":
+            "Seguinos",
+
+
+        /* FOOTER */
+
+        "footer.copy":
+            "© 2026 SporTour · Turismo deportivo y experiencias de fútbol en Buenos Aires."
+
+    },
+
+
+
+    /* =========================================================
+       ENGLISH
+    ========================================================== */
+
+    en: {
+
+        pageTitle:
+            "SporTour — Sports Tourism",
+
+        pageDescription:
+            "Sports tourism experiences focused on Argentine football for clubs, academies and young football players.",
+
+
+        /* NAV */
+
+        "nav.experience": "Experience",
+        "nav.services": "Services",
+        "nav.packages": "Packages",
+        "nav.benefits": "Benefits",
+        "nav.accommodation": "Accommodation",
+        "nav.about": "About us",
+        "nav.quote": "Request a quote",
+        "nav.menu": "Open menu",
+
+
+        /* HERO */
+
+        "hero.eyebrow":
+            "Sports tourism · Buenos Aires",
+
+        "hero.title": `
+            Travel to<br>
+            learn.<br>
+            Train to<br>
+            <em>grow.</em>
+        `,
+
+        "hero.description":
+            "Experience Argentine football from the inside. Training sessions, clubs and unique experiences in Buenos Aires designed to help players grow on and off the pitch.",
+
+        "hero.explore":
+            "Explore experiences",
+
+        "hero.advisor":
+            "Talk to an advisor",
+
+        "hero.destinationLabel":
+            "DESTINATION",
+
+        "hero.experienceLabel":
+            "EXPERIENCE",
+
+        "hero.experienceValue":
+            "Argentine football",
+
+        "hero.formatLabel":
+            "FORMAT",
+
+        "hero.formatValue":
+            "Group travel",
+
+        "hero.agesLabel":
+            "AGES",
+
+        "hero.agesValue":
+            "14 — 21 years",
+
+
+        /* EXPERIENCE */
+
+        "services.title":
+            "The complete experience",
+
+        "services.number":
+            "01 / What we do",
+
+        "services.lede":
+            "Everything you need to experience Argentine football from the inside. We organize every detail so your team can focus on training, learning and enjoying Buenos Aires.",
+
+        "services.trainingTitle":
+            "Football training",
+
+        "services.trainingText":
+            "Technical development sessions with Argentine football professionals, adapted to the level and objectives of each team.",
+
+        "services.clubsTitle":
+            "Club experiences",
+
+        "services.clubsText":
+            "Visits to clubs, stadiums and training centers, with the possibility of watching training sessions and Argentine football matches.",
+
+        "services.hotelTitle":
+            "Sports accommodation",
+
+        "services.hotelText":
+            "Selected accommodation options based on the needs, number of players and budget of each group.",
+
+        "services.transportTitle":
+            "Transportation",
+
+        "services.transportText":
+            "Airport transfers and transportation to all activities included in the program.",
+
+        "services.foodTitle":
+            "Meals",
+
+        "services.foodText":
+            "Meal service during the stay, organized according to the team's schedule and needs.",
+
+        "services.cityTitle":
+            "Buenos Aires experiences",
+
+        "services.cityText":
+            "Visits to the city's main cultural and tourist attractions to complement the sporting experience.",
+
+
+        /* SERVICES */
+
+        "destinations.title":
+            "Experience Buenos Aires",
+
+        "destinations.number":
+            "02 / Services",
+
+        "destinations.lede":
+            "A selection of experiences to discover Argentine football from the inside and explore Buenos Aires on and off the pitch.",
+
+        "destinations.argFootballTitle":
+            "Argentine football",
+
+        "destinations.argFootballText":
+            "Discover from the inside the passion, identity and unique way football is experienced in Argentina.",
+
+        "destinations.clubsTitle":
+            "Clubs and stadiums",
+
+        "destinations.clubsText":
+            "Visit institutions, stadiums and iconic locations from Argentine football.",
+
+        "destinations.trainingTitle":
+            "Training",
+
+        "destinations.trainingText":
+            "Take part in technical development sessions with local football professionals.",
+
+        "destinations.baText":
+            "Discover a city shaped by football, history and a unique culture.",
+
+        "destinations.cultureTitle":
+            "Culture",
+
+        "destinations.cultureText":
+            "Explore Buenos Aires' main tourist and cultural attractions.",
+
+        "destinations.matchesTitle":
+            "Matches",
+
+        "destinations.matchesText":
+            "Attend Argentine football matches and experience the atmosphere from the stands.",
+
+
+        /* TAGS */
+
+        "tag.passion": "Passion",
+        "tag.identity": "Identity",
+        "tag.tradition": "Tradition",
+        "tag.visits": "Visits",
+        "tag.history": "History",
+        "tag.infrastructure": "Facilities",
+        "tag.developmentTraining": "Technical development",
+        "tag.professionals": "Professionals",
+        "tag.development": "Development",
+        "tag.city": "City",
+        "tag.tourism": "Tourism",
+        "tag.experience": "Experience",
+        "tag.food": "Food",
+        "tag.tours": "Tours",
+        "tag.competition": "Competition",
+        "tag.stands": "Stands",
+        "tag.liveFootball": "Live football",
+
+
+        /* PACKAGES */
+
+        "packages.title":
+            "Travel packages",
+
+        "packages.number":
+            "03 / SporTour Programs",
+
+        "packages.lede":
+            "Group programs in Buenos Aires designed for clubs and academies looking to train, compete and experience Argentine football from the inside. Airfare is not included.",
+
+        "packages.trainingRoute":
+            "ARGENTINE FOOTBALL / BUENOS AIRES",
+
+        "packages.trainingText":
+            "Intensive training, a friendly match, a club visit, accommodation and sports transportation.",
+
+        "packages.experienceRoute":
+            "FOOTBALL + CITY / BUENOS AIRES",
+
+        "packages.experienceText":
+            "Training sessions, clubs, a professional match and a complete Buenos Aires experience.",
+
+        "packages.proRoute":
+            "PLAYER DEVELOPMENT / BUENOS AIRES",
+
+        "packages.proText":
+            "Advanced program with 9 training sessions, 2 friendly matches, sports evaluations and professional visits.",
+
+        "packages.eliteRoute":
+            "FULL IMMERSION / BUENOS AIRES",
+
+        "packages.eliteText":
+            "The most complete experience: 12 training sessions, 3 friendly matches and full immersion in Argentine football.",
+
+        "packages.duration": "Duration",
+        "packages.trainings": "Training",
+        "packages.friendlies": "Friendlies",
+        "packages.modality": "Format",
+        "packages.group": "Group",
+
+        "packages.trainingDays": "7 days",
+        "packages.experienceDays": "8 days",
+        "packages.proDays": "11 days",
+        "packages.eliteDays": "14 days",
+
+        "packages.trainingSessions": "5 sessions",
+        "packages.experienceSessions": "6 sessions",
+        "packages.proSessions": "9 sessions",
+        "packages.eliteSessions": "12 sessions",
+
+        "packages.twoMatches": "2 matches",
+        "packages.threeMatches": "3 matches",
+
+        "packages.perPlayer":
+            "per player",
+
+
+        /* BENEFITS */
+
+        "benefits.title":
+            "SporTour benefits",
+
+        "benefits.number":
+            "04 / Benefits for your team",
+
+        "benefits.lede":
+            "Benefits designed for delegations that organize their experience in advance, travel as a group or choose SporTour again.",
+
+        "benefits.earlyTag":
+            "Early booking",
+
+        "benefits.earlyTitle":
+            "15% OFF when booking 60 days ahead",
+
+        "benefits.earlyText":
+            "A benefit for delegations that confirm their program at least 60 days in advance.",
+
+        "benefits.groupTag":
+            "Group benefit",
+
+        "benefits.groupTitle":
+            "Every 6 players, 1 travels free",
+
+        "benefits.groupText":
+            "A special advantage for clubs, academies and delegations traveling together.",
+
+        "benefits.groupCode":
+            "ASK ABOUT GROUP RATES",
+
+        "benefits.referralTag":
+            "Referrals",
+
+        "benefits.referralTitle":
+            "USD 30 travel credit",
+
+        "benefits.referralText":
+            "Receive credit for every new player or delegation that reaches SporTour through your recommendation.",
+
+        "benefits.referralCode":
+            "REFERRAL BENEFIT",
+
+        "benefits.lowTag":
+            "Low season",
+
+        "benefits.lowTitle":
+            "2-for-1 accommodation",
+
+        "benefits.lowText":
+            "Special benefit on selected low-season dates, subject to availability.",
+
+        "benefits.lowCode":
+            "CHECK AVAILABLE DATES",
+
+
+        /* HOTELS */
+
+        "hotels.title":
+            "Where your team stays",
+
+        "hotels.number":
+            "05 / SporTour Accommodation",
+
+        "hotels.lede":
+            "Accommodation selected for sports delegations, with spaces, services and locations designed to support each SporTour program.",
+
+        "hotels.previous":
+            "Previous hotel",
+
+        "hotels.next":
+            "Next hotel",
+
+        "hotels.trainingType":
+            "Sports accommodation",
+
+        "hotels.trainingText":
+            "A practical and comfortable option for teams focused on training, rest and proximity to sports facilities.",
+
+        "hotels.experienceType":
+            "City hotel",
+
+        "hotels.experienceText":
+            "A strategic location for combining training sessions, club visits and experiences around Buenos Aires.",
+
+        "hotels.proType":
+            "Performance residence",
+
+        "hotels.proText":
+            "Designed for longer stays, with services focused on player rest, nutrition and recovery.",
+
+        "hotels.eliteType":
+            "Premium team residence",
+
+        "hotels.eliteText":
+            "Our highest-level option for delegations seeking privacy, comfort and premium services during an intensive stay.",
+
+        "hotels.includedTraining":
+            "Included in Training",
+
+        "hotels.includedExperience":
+            "Included in Experience",
+
+        "hotels.includedPro":
+            "Included in Pro",
+
+        "hotels.includedElite":
+            "Included in Elite",
+
+        "hotels.view":
+            "View accommodation →",
+
+
+        /* ABOUT */
+
+        "about.title":
+            "About us",
+
+        "about.number":
+            "06 / Who we are",
+
+        "about.text1":
+            "SporTour began in 2014 when a group of amateur athletes grew tired of organizing every part of their sports trips separately.",
+
+        "about.text2":
+            "Today we are a team that organizes complete sports experiences, combining travel, accommodation, training and activities around sport.",
+
+        "about.year2014":
+            "<strong>First group trip</strong> to Buenos Aires.",
+
+        "about.year2017":
+            "<strong>First international sports program</strong> for groups.",
+
+        "about.year2020":
+            "<strong>Development of our sports accommodation area</strong> for delegations.",
+
+        "about.year2026":
+            "<strong>New SporTour concept</strong> focused on football experiences in Buenos Aires.",
+
+
+        /* CONTACT */
+
+        "contact.title":
+            "Contact",
+
+        "contact.number":
+            "07 / Let's plan your trip",
+
+        "contact.name":
+            "Full name",
+
+        "contact.namePlaceholder":
+            "Your name",
+
+        "contact.interest":
+            "I'm interested in",
+
+        "contact.optionPackage":
+            "A SporTour package",
+
+        "contact.optionCustom":
+            "A custom trip",
+
+        "contact.optionHotel":
+            "Sports accommodation",
+
+        "contact.optionGroup":
+            "A trip for a group or team",
+
+        "contact.plan":
+            "Tell us about your plan",
+
+        "contact.planPlaceholder":
+            "Destination, estimated date, number of people...",
+
+        "contact.send":
+            "Send inquiry",
+
+        "contact.office":
+            "Office",
+
+        "contact.officeValue":
+            "Av. Córdoba 2150, Buenos Aires, Argentina<br>Mon to Fri, 10 AM to 7 PM",
+
+        "contact.follow":
+            "Follow us",
+
+
+        /* FOOTER */
+
+        "footer.copy":
+            "© 2026 SporTour · Sports tourism and football experiences in Buenos Aires."
+
+    }
+
+};
+
+
+
+/* =========================================================
+   FUNCIÓN DE TRADUCCIÓN
+========================================================== */
+
+function setLanguage(lang) {
+
+    const language = translations[lang];
+
+    if (!language) {
+        return;
+    }
+
+
+    /* IDIOMA DEL DOCUMENTO */
+
+    document.documentElement.lang = lang;
+
+
+    /* TITLE */
+
+    document.title = language.pageTitle;
+
+
+    /* META DESCRIPTION */
+
+    const description =
+        document.querySelector('meta[name="description"]');
+
+    if (description) {
+        description.setAttribute(
+            "content",
+            language.pageDescription
+        );
+    }
+
+
+    /* TEXTOS */
+
+    document
+        .querySelectorAll("[data-i18n]")
+        .forEach(element => {
+
+            const key =
+                element.dataset.i18n;
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    language,
+                    key
+                )
+            ) {
+
+                element.textContent =
+                    language[key];
+
+            }
+
+        });
+
+
+    /* HTML INTERNO */
+
+    document
+        .querySelectorAll("[data-i18n-html]")
+        .forEach(element => {
+
+            const key =
+                element.dataset.i18nHtml;
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    language,
+                    key
+                )
+            ) {
+
+                element.innerHTML =
+                    language[key];
+
+            }
+
+        });
+
+
+    /* PLACEHOLDERS */
+
+    document
+        .querySelectorAll("[data-i18n-placeholder]")
+        .forEach(element => {
+
+            const key =
+                element.dataset.i18nPlaceholder;
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    language,
+                    key
+                )
+            ) {
+
+                element.placeholder =
+                    language[key];
+
+            }
+
+        });
+
+
+    /* ARIA LABELS */
+
+    document
+        .querySelectorAll("[data-i18n-aria-label]")
+        .forEach(element => {
+
+            const key =
+                element.dataset.i18nAriaLabel;
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    language,
+                    key
+                )
+            ) {
+
+                element.setAttribute(
+                    "aria-label",
+                    language[key]
+                );
+
+            }
+
+        });
+
+
+    /* BOTÓN ACTIVO */
+
+    document
+        .querySelectorAll(".lang-btn")
+        .forEach(button => {
+
+            button.classList.toggle(
+                "active",
+                button.dataset.lang === lang
+            );
+
+        });
+
+
+    /* GUARDAR ELECCIÓN */
+
+    localStorage.setItem(
+        "sportour-language",
+        lang
+    );
+
+}
+
+
+
+/* =========================================================
+   BOTONES DE IDIOMA
+========================================================== */
+
+document
+    .querySelectorAll(".lang-btn")
+    .forEach(button => {
+
+        button.addEventListener(
+            "click",
+            function () {
+
+                setLanguage(
+                    this.dataset.lang
+                );
+
+            }
+        );
+
+    });
+
+
+
+/* =========================================================
+   IDIOMA INICIAL
+
+   Primera visita = español.
+   Si el usuario ya eligió otro idioma,
+   se recuerda su elección.
+========================================================== */
+
+const savedLanguage =
+    localStorage.getItem("sportour-language") || "es";
+
+setLanguage(savedLanguage);
+
+</script>
+
+
 </body>
+
 </html>

@@ -1,149 +1,1823 @@
 <!DOCTYPE html>
 <html lang="es" data-theme="dark">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
   <title>SPORTOUR TRAINING | SporTour</title>
-  <meta name="description" content="Paquete de entrada para clubes que buscan principalmente la experiencia de entrenamiento en Argentina.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/package-pages.css">
+
+  <meta
+    name="description"
+    content="Paquete de entrada para clubes que buscan principalmente la experiencia de entrenamiento en Argentina."
+  >
+
+
+  <!-- FUENTES -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="../css/main.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../css/pages.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../css/package-pages.css"
+  >
+
 </head>
+
+
 <body>
 
+
+<!-- =========================================================
+     NAV
+========================================================== -->
+
 <nav class="nav">
+
   <div class="nav-inner">
-    <a class="brand" href="../index.html#top">
+
+
+    <!-- LOGO -->
+
+    <a
+      class="brand"
+      href="../index.html#top"
+    >
+
       <span class="dot"></span>
-      <img src="../img/logo-blanco.png" alt="SporTour">
+
+      <img
+        src="../img/logo-blanco.png"
+        alt="SporTour"
+      >
+
     </a>
 
-     <ul class="navlinks" id="navlinks">
-       <li><a href="../index.html#servicios">Experiencia</a></li>
-      <li><a href="../index.html#destinos">Servicios</a></li>
-      <li><a href="../index.html#paquetes">Paquetes</a></li>
-      <li><a href="../index.html#promociones">Promos</a></li>
-      <li><a href="../index.html#alojamiento">Alojamiento</a></li>
-      <li><a href="../index.html#nosotros">Nosotros</a></li>
+
+
+    <!-- LINKS -->
+
+    <ul
+      class="navlinks"
+      id="navlinks"
+    >
+
+      <li>
+        <a
+          href="../index.html#servicios"
+          data-i18n="nav.experience"
+        >
+          Experiencia
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="../index.html#destinos"
+          data-i18n="nav.services"
+        >
+          Servicios
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="../index.html#paquetes"
+          data-i18n="nav.packages"
+        >
+          Paquetes
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="../index.html#promociones"
+          data-i18n="nav.promos"
+        >
+          Promos
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="../index.html#alojamiento"
+          data-i18n="nav.accommodation"
+        >
+          Alojamiento
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="../index.html#nosotros"
+          data-i18n="nav.about"
+        >
+          Nosotros
+        </a>
+      </li>
+
     </ul>
 
-    <a class="nav-cta" href="../index.html#contacto">Cotizar viaje</a>
-    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navlinks"><span></span></button>
+
+
+    <!-- SELECTOR DE IDIOMA -->
+
+    <div class="language-switcher">
+
+
+      <button
+        class="lang-btn"
+        data-lang="en"
+        type="button"
+      >
+
+        <span>
+          EN
+        </span>
+
+        <img
+          src="../img/bandera-eeuu.webp"
+          alt="English"
+          class="lang-flag"
+        >
+
+      </button>
+
+
+      <span class="lang-divider">
+        |
+      </span>
+
+
+      <button
+        class="lang-btn active"
+        data-lang="es"
+        type="button"
+      >
+
+        <span>
+          ES
+        </span>
+
+        <img
+          src="../img/bandera-españa.webp"
+          alt="Español"
+          class="lang-flag"
+        >
+
+      </button>
+
+
+    </div>
+
+
+
+    <!-- CTA -->
+
+    <a
+      class="nav-cta"
+      href="../index.html#contacto"
+      data-i18n="nav.quote"
+    >
+      Cotizar viaje
+    </a>
+
+
+
+    <!-- MOBILE -->
+
+    <button
+      class="burger"
+      id="burger"
+      aria-label="Abrir menú"
+      data-i18n-aria-label="nav.menu"
+      aria-expanded="false"
+      aria-controls="navlinks"
+    >
+
+      <span></span>
+
+    </button>
+
+
   </div>
+
 </nav>
 
+
+
 <main>
-  <header class="pkg-detail-hero">
-    <div class="pkg-detail-bg" style="background-image:url('../img/entrenamientos1.jpg')"></div>
-    <div class="wrap pkg-detail-hero-grid">
-      <div class="pkg-detail-copy">
-        <div class="pkg-detail-breadcrumb">
-          <a href="../index.html">Inicio</a><span>/</span>
-          <a href="../index.html#paquetes">Paquetes</a><span>/</span><span>Training</span>
-        </div>
-        <span class="pkg-detail-kicker">Programa esencial</span>
-        
-        <h1>SPORTOUR TRAINING</h1>
-        <p>Paquete de entrada para clubes que buscan principalmente la experiencia de entrenamiento en Argentina.</p>
-        <div class="pkg-detail-actions">
-          <a class="btn primary" href="../index.html#contacto">Solicitar propuesta</a>
-          <a class="pkg-detail-back" href="../index.html#paquetes">Comparar paquetes →</a>
-        </div>
+
+
+<!-- =========================================================
+     HERO
+========================================================== -->
+
+<header class="pkg-detail-hero">
+
+
+  <div
+    class="pkg-detail-bg"
+    style="background-image:url('../img/entrenamientos1.jpg')"
+  >
+  </div>
+
+
+
+  <div class="wrap pkg-detail-hero-grid">
+
+
+    <div class="pkg-detail-copy">
+
+
+      <!-- BREADCRUMB -->
+
+      <div class="pkg-detail-breadcrumb">
+
+
+        <a
+          href="../index.html"
+          data-i18n="breadcrumb.home"
+        >
+          Inicio
+        </a>
+
+
+        <span>
+          /
+        </span>
+
+
+        <a
+          href="../index.html#paquetes"
+          data-i18n="breadcrumb.packages"
+        >
+          Paquetes
+        </a>
+
+
+        <span>
+          /
+        </span>
+
+
+        <span>
+          Training
+        </span>
+
+
       </div>
 
-      <aside class="pkg-price-card">
-        <span>Precio por jugador</span>
-        <strong>USD 3.150</strong>
-        <small>Pasaje aéreo no incluido</small>
-        <div class="pkg-price-line"></div>
-        <div><span>Duración</span><b>7 días / 6 noches</b></div>
-        <div><span>Entrenamientos</span><b>5 entrenamientos</b></div>
-        <div><span>Amistosos</span><b>1 amistoso</b></div>
-      </aside>
-    </div>
-  </header>
 
-  <section class="pkg-detail-facts">
-    <div class="wrap pkg-detail-facts-grid">
-      <div><span>Destino</span><strong>Buenos Aires, Argentina</strong></div>
-      <div><span>Modalidad</span><strong>Viaje grupal</strong></div>
-      <div><span>Enfoque</span><strong>Alto rendimiento</strong></div>
-      <div><span>Vuelo</span><strong>No incluido</strong></div>
-    </div>
-  </section>
 
-  <section class="pkg-detail-section">
-    <div class="wrap">
-      <div class="pkg-detail-section-head">
-        <div><span class="pkg-detail-kicker">El programa</span><h2>Qué propone Training</h2></div>
-        <p>El programa combina entrenamiento y actividades alrededor del fútbol argentino. La operativa se organiza para que el grupo pueda concentrarse en la experiencia deportiva.</p>
+      <span
+        class="pkg-detail-kicker"
+        data-i18n="hero.kicker"
+      >
+        Programa esencial
+      </span>
+
+
+
+      <h1>
+        SPORTOUR TRAINING
+      </h1>
+
+
+
+      <p data-i18n="hero.text">
+        Paquete de entrada para clubes que buscan principalmente
+        la experiencia de entrenamiento en Argentina.
+      </p>
+
+
+
+      <div class="pkg-detail-actions">
+
+
+        <a
+          class="btn primary"
+          href="../index.html#contacto"
+          data-i18n="hero.proposal"
+        >
+          Solicitar propuesta
+        </a>
+
+
+        <a
+          class="pkg-detail-back"
+          href="../index.html#paquetes"
+          data-i18n="hero.compare"
+        >
+          Comparar paquetes →
+        </a>
+
+
       </div>
-      <div class="pkg-detail-pillars"><article class="pkg-detail-pillar"><span>01</span><h3>Entrenamiento</h3><p>El foco está puesto en las sesiones de alto rendimiento y la práctica deportiva.</p></article>
-<article class="pkg-detail-pillar"><span>02</span><h3>Competencia</h3><p>Un amistoso permite trasladar lo trabajado a una situación real de juego.</p></article>
-<article class="pkg-detail-pillar"><span>03</span><h3>Club argentino</h3><p>La visita acerca al grupo al funcionamiento y la identidad de una institución local.</p></article>
-<article class="pkg-detail-pillar"><span>04</span><h3>Operativa resuelta</h3><p>Alojamiento, traslados deportivos, coordinación y seguro incluidos.</p></article></div>
-    </div>
-  </section>
 
-  <section class="pkg-detail-section pkg-detail-alt">
-    <div class="wrap pkg-includes-layout">
-      <div class="pkg-includes-title">
-        <span class="pkg-detail-kicker">Servicios</span>
-        <h2>Qué incluye</h2>
-        <p>Servicios contemplados dentro del precio por jugador.</p>
-      </div>
-      <ul class="pkg-includes-list"><li><span>✓</span>5 entrenamientos de alto rendimiento</li>
-<li><span>✓</span>Entrenadores y profesionales del fútbol argentino</li>
-<li><span>✓</span>Alquiler de instalaciones deportivas</li>
-<li><span>✓</span>1 partido amistoso contra un equipo local</li>
-<li><span>✓</span>1 visita a un club de fútbol argentino</li>
-<li><span>✓</span>Alojamiento con desayuno</li>
-<li><span>✓</span>Traslados aeropuerto–hotel–aeropuerto</li>
-<li><span>✓</span>Traslados a entrenamientos y actividades deportivas</li>
-<li><span>✓</span>Coordinador Sportour durante la estadía</li>
-<li><span>✓</span>Seguro de asistencia al viajero</li></ul>
-    </div>
-  </section>
 
-  <section class="pkg-detail-section">
-    <div class="wrap pkg-not-layout">
-      <div><span class="pkg-detail-kicker">A tener en cuenta</span><h2>No incluye</h2></div>
-      <ul class="pkg-not-list"><li><span>—</span>Almuerzos y cenas</li>
-<li><span>—</span>Actividades turísticas</li>
-<li><span>—</span>Entrada a partido profesional</li>
-<li><span>—</span>Pasaje aéreo</li></ul>
     </div>
-  </section>
 
-  <section class="pkg-detail-process">
-    <div class="wrap">
-      <div class="pkg-detail-section-head">
-        <div><span class="pkg-detail-kicker">Cómo se arma</span><h2>Del club al viaje</h2></div>
-        <p>La propuesta final se ajusta a fechas, cantidad de jugadores, edad del grupo y disponibilidad de las actividades.</p>
-      </div>
-      <div class="pkg-process-grid">
-        <article><span>01</span><h3>Perfil del grupo</h3><p>Jugadores, staff, edades, nivel y objetivos deportivos.</p></article>
-        <article><span>02</span><h3>Fechas</h3><p>Calendario, disponibilidad y duración de la estadía.</p></article>
-        <article><span>03</span><h3>Programa final</h3><p>Entrenamientos, visitas, traslados y servicios.</p></article>
-        <article><span>04</span><h3>Buenos Aires</h3><p>Sportour coordina la operativa durante la experiencia.</p></article>
-      </div>
-    </div>
-  </section>
 
-  <section class="pkg-detail-cta">
-    <div class="wrap pkg-detail-cta-grid">
+
+    <!-- =====================================================
+         PRECIO
+    ====================================================== -->
+
+    <aside class="pkg-price-card">
+
+
+      <span data-i18n="price.label">
+        Precio por jugador
+      </span>
+
+
+      <strong>
+        USD 3.150
+      </strong>
+
+
+      <small data-i18n="price.airfare">
+        Pasaje aéreo no incluido
+      </small>
+
+
+      <div class="pkg-price-line"></div>
+
+
+
       <div>
-        <span class="pkg-detail-kicker">SPORTOUR TRAINING</span>
-        <h2>¿Este es el programa indicado para tu equipo?</h2>
-        <p>Contanos cuántos jugadores viajan, sus edades y las fechas estimadas.</p>
+
+        <span data-i18n="price.duration">
+          Duración
+        </span>
+
+        <b data-i18n="price.durationValue">
+          7 días / 6 noches
+        </b>
+
       </div>
-      <a class="btn primary" href="../index.html#contacto">Cotizar este paquete</a>
+
+
+
+      <div>
+
+        <span data-i18n="price.training">
+          Entrenamientos
+        </span>
+
+        <b data-i18n="price.trainingValue">
+          5 entrenamientos
+        </b>
+
+      </div>
+
+
+
+      <div>
+
+        <span data-i18n="price.friendlies">
+          Amistosos
+        </span>
+
+        <b data-i18n="price.friendliesValue">
+          1 amistoso
+        </b>
+
+      </div>
+
+
+    </aside>
+
+
+  </div>
+
+
+</header>
+
+
+
+<!-- =========================================================
+     DATOS RÁPIDOS
+========================================================== -->
+
+<section class="pkg-detail-facts">
+
+
+  <div class="wrap pkg-detail-facts-grid">
+
+
+    <div>
+
+      <span data-i18n="facts.destination">
+        Destino
+      </span>
+
+      <strong>
+        Buenos Aires, Argentina
+      </strong>
+
     </div>
-  </section>
+
+
+
+    <div>
+
+      <span data-i18n="facts.modality">
+        Modalidad
+      </span>
+
+      <strong data-i18n="facts.modalityValue">
+        Viaje grupal
+      </strong>
+
+    </div>
+
+
+
+    <div>
+
+      <span data-i18n="facts.focus">
+        Enfoque
+      </span>
+
+      <strong data-i18n="facts.focusValue">
+        Alto rendimiento
+      </strong>
+
+    </div>
+
+
+
+    <div>
+
+      <span data-i18n="facts.flight">
+        Vuelo
+      </span>
+
+      <strong data-i18n="facts.flightValue">
+        No incluido
+      </strong>
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     EL PROGRAMA
+========================================================== -->
+
+<section class="pkg-detail-section">
+
+
+  <div class="wrap">
+
+
+    <div class="pkg-detail-section-head">
+
+
+      <div>
+
+
+        <span
+          class="pkg-detail-kicker"
+          data-i18n="program.kicker"
+        >
+          El programa
+        </span>
+
+
+        <h2 data-i18n="program.title">
+          Qué propone Training
+        </h2>
+
+
+      </div>
+
+
+
+      <p data-i18n="program.text">
+
+        El programa combina entrenamiento y actividades alrededor
+        del fútbol argentino. La operativa se organiza para que
+        el grupo pueda concentrarse en la experiencia deportiva.
+
+      </p>
+
+
+    </div>
+
+
+
+    <div class="pkg-detail-pillars">
+
+
+
+      <!-- 01 -->
+
+      <article class="pkg-detail-pillar">
+
+
+        <span>
+          01
+        </span>
+
+
+        <h3 data-i18n="pillar1.title">
+          Entrenamiento
+        </h3>
+
+
+        <p data-i18n="pillar1.text">
+          El foco está puesto en las sesiones
+          de alto rendimiento y la práctica deportiva.
+        </p>
+
+
+      </article>
+
+
+
+      <!-- 02 -->
+
+      <article class="pkg-detail-pillar">
+
+
+        <span>
+          02
+        </span>
+
+
+        <h3 data-i18n="pillar2.title">
+          Competencia
+        </h3>
+
+
+        <p data-i18n="pillar2.text">
+          Un amistoso permite trasladar lo trabajado
+          a una situación real de juego.
+        </p>
+
+
+      </article>
+
+
+
+      <!-- 03 -->
+
+      <article class="pkg-detail-pillar">
+
+
+        <span>
+          03
+        </span>
+
+
+        <h3 data-i18n="pillar3.title">
+          Club argentino
+        </h3>
+
+
+        <p data-i18n="pillar3.text">
+          La visita acerca al grupo al funcionamiento
+          y la identidad de una institución local.
+        </p>
+
+
+      </article>
+
+
+
+      <!-- 04 -->
+
+      <article class="pkg-detail-pillar">
+
+
+        <span>
+          04
+        </span>
+
+
+        <h3 data-i18n="pillar4.title">
+          Operativa resuelta
+        </h3>
+
+
+        <p data-i18n="pillar4.text">
+          Alojamiento, traslados deportivos,
+          coordinación y seguro incluidos.
+        </p>
+
+
+      </article>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     QUÉ INCLUYE
+========================================================== -->
+
+<section class="pkg-detail-section pkg-detail-alt">
+
+
+  <div class="wrap pkg-includes-layout">
+
+
+    <div class="pkg-includes-title">
+
+
+      <span
+        class="pkg-detail-kicker"
+        data-i18n="includes.kicker"
+      >
+        Servicios
+      </span>
+
+
+      <h2 data-i18n="includes.title">
+        Qué incluye
+      </h2>
+
+
+      <p data-i18n="includes.text">
+        Servicios contemplados dentro del precio por jugador.
+      </p>
+
+
+    </div>
+
+
+
+    <ul class="pkg-includes-list">
+
+
+      <li>
+        <span>✓</span>
+        <span data-i18n="includes.item1">
+          5 entrenamientos de alto rendimiento
+        </span>
+      </li>
+
+
+      <li>
+        <span>✓</span>
+        <span data-i18n="includes.item2">
+          Entrenadores y profesionales del fútbol argentino
+        </span>
+      </li>
+
+
+      <li>
+        <span>✓</span>
+        <span data-i18n="includes.item3">
+          Alquiler de instalaciones deportivas
+        </span>
+      </li>
+
+
+      <li>
+        <span>✓</span>
+        <span data-i18n="includes.item4">
+          1 partido amistoso contra un equipo local
+        </span>
+      </li>
+
+
+      <li>
+        <span>✓</span>
+        <span data-i18n="includes.item5">
+          1 visita a un club de fútbol argentino
+        </span>
+      </li>
+
+
+      <li>
+        <span>✓</span>
+        <span data-i18n="includes.item6">
+          Alojamiento con desayuno
+        </span>
+      </li>
+
+
+      <li>
+        <span>✓</span>
+        <span data-i18n="includes.item7">
+          Traslados aeropuerto–hotel–aeropuerto
+        </span>
+      </li>
+
+
+      <li>
+        <span>✓</span>
+        <span data-i18n="includes.item8">
+          Traslados a entrenamientos y actividades deportivas
+        </span>
+      </li>
+
+
+      <li>
+        <span>✓</span>
+        <span data-i18n="includes.item9">
+          Coordinador Sportour durante la estadía
+        </span>
+      </li>
+
+
+      <li>
+        <span>✓</span>
+        <span data-i18n="includes.item10">
+          Seguro de asistencia al viajero
+        </span>
+      </li>
+
+
+    </ul>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     NO INCLUYE
+========================================================== -->
+
+<section class="pkg-detail-section">
+
+
+  <div class="wrap pkg-not-layout">
+
+
+    <div>
+
+
+      <span
+        class="pkg-detail-kicker"
+        data-i18n="notIncluded.kicker"
+      >
+        A tener en cuenta
+      </span>
+
+
+      <h2 data-i18n="notIncluded.title">
+        No incluye
+      </h2>
+
+
+    </div>
+
+
+
+    <ul class="pkg-not-list">
+
+
+      <li>
+
+        <span>
+          —
+        </span>
+
+        <span data-i18n="notIncluded.item1">
+          Almuerzos y cenas
+        </span>
+
+      </li>
+
+
+      <li>
+
+        <span>
+          —
+        </span>
+
+        <span data-i18n="notIncluded.item2">
+          Actividades turísticas
+        </span>
+
+      </li>
+
+
+      <li>
+
+        <span>
+          —
+        </span>
+
+        <span data-i18n="notIncluded.item3">
+          Entrada a partido profesional
+        </span>
+
+      </li>
+
+
+      <li>
+
+        <span>
+          —
+        </span>
+
+        <span data-i18n="notIncluded.item4">
+          Pasaje aéreo
+        </span>
+
+      </li>
+
+
+    </ul>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     PROCESO
+========================================================== -->
+
+<section class="pkg-detail-process">
+
+
+  <div class="wrap">
+
+
+    <div class="pkg-detail-section-head">
+
+
+      <div>
+
+
+        <span
+          class="pkg-detail-kicker"
+          data-i18n="process.kicker"
+        >
+          Cómo se arma
+        </span>
+
+
+        <h2 data-i18n="process.title">
+          Del club al viaje
+        </h2>
+
+
+      </div>
+
+
+
+      <p data-i18n="process.text">
+        La propuesta final se ajusta a fechas,
+        cantidad de jugadores, edad del grupo
+        y disponibilidad de las actividades.
+      </p>
+
+
+    </div>
+
+
+
+    <div class="pkg-process-grid">
+
+
+
+      <!-- 01 -->
+
+      <article>
+
+
+        <span>
+          01
+        </span>
+
+
+        <h3 data-i18n="process.step1Title">
+          Perfil del grupo
+        </h3>
+
+
+        <p data-i18n="process.step1Text">
+          Jugadores, staff, edades,
+          nivel y objetivos deportivos.
+        </p>
+
+
+      </article>
+
+
+
+      <!-- 02 -->
+
+      <article>
+
+
+        <span>
+          02
+        </span>
+
+
+        <h3 data-i18n="process.step2Title">
+          Fechas
+        </h3>
+
+
+        <p data-i18n="process.step2Text">
+          Calendario, disponibilidad
+          y duración de la estadía.
+        </p>
+
+
+      </article>
+
+
+
+      <!-- 03 -->
+
+      <article>
+
+
+        <span>
+          03
+        </span>
+
+
+        <h3 data-i18n="process.step3Title">
+          Programa final
+        </h3>
+
+
+        <p data-i18n="process.step3Text">
+          Entrenamientos, visitas,
+          traslados y servicios.
+        </p>
+
+
+      </article>
+
+
+
+      <!-- 04 -->
+
+      <article>
+
+
+        <span>
+          04
+        </span>
+
+
+        <h3>
+          Buenos Aires
+        </h3>
+
+
+        <p data-i18n="process.step4Text">
+          Sportour coordina la operativa durante la experiencia.
+        </p>
+
+
+      </article>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     CTA FINAL
+========================================================== -->
+
+<section class="pkg-detail-cta">
+
+
+  <div class="wrap pkg-detail-cta-grid">
+
+
+    <div>
+
+
+      <span class="pkg-detail-kicker">
+        SPORTOUR TRAINING
+      </span>
+
+
+      <h2 data-i18n="cta.title">
+        ¿Este es el programa indicado para tu equipo?
+      </h2>
+
+
+      <p data-i18n="cta.text">
+        Contanos cuántos jugadores viajan,
+        sus edades y las fechas estimadas.
+      </p>
+
+
+    </div>
+
+
+
+    <a
+      class="btn primary"
+      href="../index.html#contacto"
+      data-i18n="cta.button"
+    >
+      Cotizar este paquete
+    </a>
+
+
+  </div>
+
+
+</section>
+
+
 </main>
+
+
+
+<!-- =========================================================
+     MAIN JS
+========================================================== -->
+
 <script src="../js/main.js"></script>
+
+
+
+<!-- =========================================================
+     TRADUCCIONES
+========================================================== -->
+
+<script>
+
+const translations = {
+
+
+  /* =========================================================
+     ESPAÑOL
+  ========================================================== */
+
+  es: {
+
+
+    pageTitle:
+      "SPORTOUR TRAINING | SporTour",
+
+    pageDescription:
+      "Paquete de entrada para clubes que buscan principalmente la experiencia de entrenamiento en Argentina.",
+
+
+    /* NAV */
+
+    "nav.experience":
+      "Experiencia",
+
+    "nav.services":
+      "Servicios",
+
+    "nav.packages":
+      "Paquetes",
+
+    "nav.promos":
+      "Promos",
+
+    "nav.accommodation":
+      "Alojamiento",
+
+    "nav.about":
+      "Nosotros",
+
+    "nav.quote":
+      "Cotizar viaje",
+
+    "nav.menu":
+      "Abrir menú",
+
+
+    /* BREADCRUMB */
+
+    "breadcrumb.home":
+      "Inicio",
+
+    "breadcrumb.packages":
+      "Paquetes",
+
+
+    /* HERO */
+
+    "hero.kicker":
+      "Programa esencial",
+
+    "hero.text":
+      "Paquete de entrada para clubes que buscan principalmente la experiencia de entrenamiento en Argentina.",
+
+    "hero.proposal":
+      "Solicitar propuesta",
+
+    "hero.compare":
+      "Comparar paquetes →",
+
+
+    /* PRECIO */
+
+    "price.label":
+      "Precio por jugador",
+
+    "price.airfare":
+      "Pasaje aéreo no incluido",
+
+    "price.duration":
+      "Duración",
+
+    "price.durationValue":
+      "7 días / 6 noches",
+
+    "price.training":
+      "Entrenamientos",
+
+    "price.trainingValue":
+      "5 entrenamientos",
+
+    "price.friendlies":
+      "Amistosos",
+
+    "price.friendliesValue":
+      "1 amistoso",
+
+
+    /* DATOS */
+
+    "facts.destination":
+      "Destino",
+
+    "facts.modality":
+      "Modalidad",
+
+    "facts.modalityValue":
+      "Viaje grupal",
+
+    "facts.focus":
+      "Enfoque",
+
+    "facts.focusValue":
+      "Alto rendimiento",
+
+    "facts.flight":
+      "Vuelo",
+
+    "facts.flightValue":
+      "No incluido",
+
+
+    /* PROGRAMA */
+
+    "program.kicker":
+      "El programa",
+
+    "program.title":
+      "Qué propone Training",
+
+    "program.text":
+      "El programa combina entrenamiento y actividades alrededor del fútbol argentino. La operativa se organiza para que el grupo pueda concentrarse en la experiencia deportiva.",
+
+
+    /* PILARES */
+
+    "pillar1.title":
+      "Entrenamiento",
+
+    "pillar1.text":
+      "El foco está puesto en las sesiones de alto rendimiento y la práctica deportiva.",
+
+    "pillar2.title":
+      "Competencia",
+
+    "pillar2.text":
+      "Un amistoso permite trasladar lo trabajado a una situación real de juego.",
+
+    "pillar3.title":
+      "Club argentino",
+
+    "pillar3.text":
+      "La visita acerca al grupo al funcionamiento y la identidad de una institución local.",
+
+    "pillar4.title":
+      "Operativa resuelta",
+
+    "pillar4.text":
+      "Alojamiento, traslados deportivos, coordinación y seguro incluidos.",
+
+
+    /* INCLUYE */
+
+    "includes.kicker":
+      "Servicios",
+
+    "includes.title":
+      "Qué incluye",
+
+    "includes.text":
+      "Servicios contemplados dentro del precio por jugador.",
+
+    "includes.item1":
+      "5 entrenamientos de alto rendimiento",
+
+    "includes.item2":
+      "Entrenadores y profesionales del fútbol argentino",
+
+    "includes.item3":
+      "Alquiler de instalaciones deportivas",
+
+    "includes.item4":
+      "1 partido amistoso contra un equipo local",
+
+    "includes.item5":
+      "1 visita a un club de fútbol argentino",
+
+    "includes.item6":
+      "Alojamiento con desayuno",
+
+    "includes.item7":
+      "Traslados aeropuerto–hotel–aeropuerto",
+
+    "includes.item8":
+      "Traslados a entrenamientos y actividades deportivas",
+
+    "includes.item9":
+      "Coordinador Sportour durante la estadía",
+
+    "includes.item10":
+      "Seguro de asistencia al viajero",
+
+
+    /* NO INCLUYE */
+
+    "notIncluded.kicker":
+      "A tener en cuenta",
+
+    "notIncluded.title":
+      "No incluye",
+
+    "notIncluded.item1":
+      "Almuerzos y cenas",
+
+    "notIncluded.item2":
+      "Actividades turísticas",
+
+    "notIncluded.item3":
+      "Entrada a partido profesional",
+
+    "notIncluded.item4":
+      "Pasaje aéreo",
+
+
+    /* PROCESO */
+
+    "process.kicker":
+      "Cómo se arma",
+
+    "process.title":
+      "Del club al viaje",
+
+    "process.text":
+      "La propuesta final se ajusta a fechas, cantidad de jugadores, edad del grupo y disponibilidad de las actividades.",
+
+    "process.step1Title":
+      "Perfil del grupo",
+
+    "process.step1Text":
+      "Jugadores, staff, edades, nivel y objetivos deportivos.",
+
+    "process.step2Title":
+      "Fechas",
+
+    "process.step2Text":
+      "Calendario, disponibilidad y duración de la estadía.",
+
+    "process.step3Title":
+      "Programa final",
+
+    "process.step3Text":
+      "Entrenamientos, visitas, traslados y servicios.",
+
+    "process.step4Text":
+      "Sportour coordina la operativa durante la experiencia.",
+
+
+    /* CTA */
+
+    "cta.title":
+      "¿Este es el programa indicado para tu equipo?",
+
+    "cta.text":
+      "Contanos cuántos jugadores viajan, sus edades y las fechas estimadas.",
+
+    "cta.button":
+      "Cotizar este paquete"
+
+  },
+
+
+
+  /* =========================================================
+     ENGLISH
+  ========================================================== */
+
+  en: {
+
+
+    pageTitle:
+      "SPORTOUR TRAINING | SporTour",
+
+    pageDescription:
+      "Entry-level package for clubs primarily looking for a football training experience in Argentina.",
+
+
+    /* NAV */
+
+    "nav.experience":
+      "Experience",
+
+    "nav.services":
+      "Services",
+
+    "nav.packages":
+      "Packages",
+
+    "nav.promos":
+      "Benefits",
+
+    "nav.accommodation":
+      "Accommodation",
+
+    "nav.about":
+      "About us",
+
+    "nav.quote":
+      "Request a quote",
+
+    "nav.menu":
+      "Open menu",
+
+
+    /* BREADCRUMB */
+
+    "breadcrumb.home":
+      "Home",
+
+    "breadcrumb.packages":
+      "Packages",
+
+
+    /* HERO */
+
+    "hero.kicker":
+      "Essential program",
+
+    "hero.text":
+      "Entry-level package for clubs primarily looking for a football training experience in Argentina.",
+
+    "hero.proposal":
+      "Request a proposal",
+
+    "hero.compare":
+      "Compare packages →",
+
+
+    /* PRICE */
+
+    "price.label":
+      "Price per player",
+
+    "price.airfare":
+      "Airfare not included",
+
+    "price.duration":
+      "Duration",
+
+    "price.durationValue":
+      "7 days / 6 nights",
+
+    "price.training":
+      "Training",
+
+    "price.trainingValue":
+      "5 training sessions",
+
+    "price.friendlies":
+      "Friendlies",
+
+    "price.friendliesValue":
+      "1 friendly match",
+
+
+    /* FACTS */
+
+    "facts.destination":
+      "Destination",
+
+    "facts.modality":
+      "Format",
+
+    "facts.modalityValue":
+      "Group travel",
+
+    "facts.focus":
+      "Focus",
+
+    "facts.focusValue":
+      "High performance",
+
+    "facts.flight":
+      "Flight",
+
+    "facts.flightValue":
+      "Not included",
+
+
+    /* PROGRAM */
+
+    "program.kicker":
+      "The program",
+
+    "program.title":
+      "What Training offers",
+
+    "program.text":
+      "The program combines training and activities around Argentine football. Logistics are organized so the group can focus entirely on the sporting experience.",
+
+
+    /* PILLARS */
+
+    "pillar1.title":
+      "Training",
+
+    "pillar1.text":
+      "The main focus is on high-performance training sessions and football development.",
+
+    "pillar2.title":
+      "Competition",
+
+    "pillar2.text":
+      "A friendly match allows players to apply what they have worked on in a real game situation.",
+
+    "pillar3.title":
+      "Argentine club",
+
+    "pillar3.text":
+      "The club visit brings the group closer to the structure and identity of a local football institution.",
+
+    "pillar4.title":
+      "Organized logistics",
+
+    "pillar4.text":
+      "Accommodation, sports transportation, coordination and insurance are included.",
+
+
+    /* INCLUDES */
+
+    "includes.kicker":
+      "Services",
+
+    "includes.title":
+      "What's included",
+
+    "includes.text":
+      "Services included in the price per player.",
+
+    "includes.item1":
+      "5 high-performance training sessions",
+
+    "includes.item2":
+      "Argentine football coaches and professionals",
+
+    "includes.item3":
+      "Sports facility rental",
+
+    "includes.item4":
+      "1 friendly match against a local team",
+
+    "includes.item5":
+      "1 visit to an Argentine football club",
+
+    "includes.item6":
+      "Accommodation with breakfast",
+
+    "includes.item7":
+      "Airport–hotel–airport transportation",
+
+    "includes.item8":
+      "Transportation to training sessions and sporting activities",
+
+    "includes.item9":
+      "SporTour coordinator throughout the stay",
+
+    "includes.item10":
+      "Travel assistance insurance",
+
+
+    /* NOT INCLUDED */
+
+    "notIncluded.kicker":
+      "Important information",
+
+    "notIncluded.title":
+      "Not included",
+
+    "notIncluded.item1":
+      "Lunch and dinner",
+
+    "notIncluded.item2":
+      "Tourist activities",
+
+    "notIncluded.item3":
+      "Ticket to a professional match",
+
+    "notIncluded.item4":
+      "Airfare",
+
+
+    /* PROCESS */
+
+    "process.kicker":
+      "How it works",
+
+    "process.title":
+      "From your club to Buenos Aires",
+
+    "process.text":
+      "The final proposal is adapted according to travel dates, number of players, group age and activity availability.",
+
+    "process.step1Title":
+      "Group profile",
+
+    "process.step1Text":
+      "Players, staff, ages, level and sporting objectives.",
+
+    "process.step2Title":
+      "Dates",
+
+    "process.step2Text":
+      "Schedule, availability and length of stay.",
+
+    "process.step3Title":
+      "Final program",
+
+    "process.step3Text":
+      "Training sessions, visits, transportation and services.",
+
+    "process.step4Text":
+      "SporTour coordinates the logistics throughout the experience.",
+
+
+    /* CTA */
+
+    "cta.title":
+      "Is this the right program for your team?",
+
+    "cta.text":
+      "Tell us how many players are traveling, their ages and your estimated travel dates.",
+
+    "cta.button":
+      "Request a quote for this package"
+
+  }
+
+};
+
+
+
+/* =========================================================
+   CAMBIAR IDIOMA
+========================================================== */
+
+function setLanguage(lang) {
+
+
+  const language =
+    translations[lang];
+
+
+  if (!language) {
+    return;
+  }
+
+
+
+  /* IDIOMA HTML */
+
+  document.documentElement.lang =
+    lang;
+
+
+
+  /* TITLE */
+
+  document.title =
+    language.pageTitle;
+
+
+
+  /* META DESCRIPTION */
+
+  const description =
+    document.querySelector('meta[name="description"]');
+
+
+  if (description) {
+
+    description.setAttribute(
+      "content",
+      language.pageDescription
+    );
+
+  }
+
+
+
+  /* TEXTOS */
+
+  document
+    .querySelectorAll("[data-i18n]")
+    .forEach(element => {
+
+
+      const key =
+        element.dataset.i18n;
+
+
+      if (
+        Object.prototype.hasOwnProperty.call(
+          language,
+          key
+        )
+      ) {
+
+        element.textContent =
+          language[key];
+
+      }
+
+
+    });
+
+
+
+  /* ARIA LABEL */
+
+  document
+    .querySelectorAll("[data-i18n-aria-label]")
+    .forEach(element => {
+
+
+      const key =
+        element.dataset.i18nAriaLabel;
+
+
+      if (
+        Object.prototype.hasOwnProperty.call(
+          language,
+          key
+        )
+      ) {
+
+        element.setAttribute(
+          "aria-label",
+          language[key]
+        );
+
+      }
+
+
+    });
+
+
+
+  /* BOTÓN ACTIVO */
+
+  document
+    .querySelectorAll(".lang-btn")
+    .forEach(button => {
+
+
+      button.classList.toggle(
+        "active",
+        button.dataset.lang === lang
+      );
+
+
+    });
+
+
+
+  /* GUARDAR IDIOMA */
+
+  localStorage.setItem(
+    "sportour-language",
+    lang
+  );
+
+
+}
+
+
+
+/* =========================================================
+   BOTONES
+========================================================== */
+
+document
+  .querySelectorAll(".lang-btn")
+  .forEach(button => {
+
+
+    button.addEventListener(
+      "click",
+      function () {
+
+
+        setLanguage(
+          this.dataset.lang
+        );
+
+
+      }
+    );
+
+
+  });
+
+
+
+/* =========================================================
+   IDIOMA AL ENTRAR
+========================================================== */
+
+const savedLanguage =
+  localStorage.getItem("sportour-language") || "es";
+
+
+setLanguage(savedLanguage);
+
+
+</script>
+
+
 </body>
+
 </html>

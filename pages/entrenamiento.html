@@ -1,186 +1,1675 @@
 <!DOCTYPE html>
 <html lang="es" data-theme="dark">
+
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
 
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/pages.css">
-  <title>Entrenamiento | SporTour</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Entrenamiento | SporTour</title>
+
+    <meta
+        name="description"
+        content="Entrenamientos de fútbol y sesiones de tecnificación en Buenos Aires con profesionales del fútbol argentino."
+    >
+
+
+    <!-- FUENTES -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="../css/main.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/pages.css"
+    >
+
 </head>
+
+
 <body>
+
+
+<!-- =========================================================
+     NAV
+========================================================== -->
+
 <nav class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="../index.html#top">
-      <span class="dot"></span>
-      <img src="../img/logo-blanco.png" alt="SporTour">
-    </a>
 
-    <ul class="navlinks" id="navlinks">
-       <li><a href="../index.html#servicios">Experiencia</a></li>
-      <li><a href="../index.html#destinos">Servicios</a></li>
-      <li><a href="../index.html#paquetes">Paquetes</a></li>
-      <li><a href="../index.html#promociones">Promos</a></li>
-      <li><a href="../index.html#alojamiento">Alojamiento</a></li>
-      <li><a href="../index.html#nosotros">Nosotros</a></li>
-    </ul>
+    <div class="nav-inner">
 
-    <a class="nav-cta" href="../index.html#contacto">Cotizar viaje</a>
 
-    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navlinks">
-      <span></span>
-    </button>
-  </div>
+        <!-- LOGO -->
+
+        <a
+            class="brand"
+            href="../index.html#top"
+        >
+
+            <span class="dot"></span>
+
+            <img
+                src="../img/logo-blanco.png"
+                alt="SporTour"
+            >
+
+        </a>
+
+
+
+        <!-- LINKS -->
+
+        <ul
+            class="navlinks"
+            id="navlinks"
+        >
+
+            <li>
+                <a
+                    href="../index.html#servicios"
+                    data-i18n="nav.experience"
+                >
+                    Experiencia
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#destinos"
+                    data-i18n="nav.services"
+                >
+                    Servicios
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#paquetes"
+                    data-i18n="nav.packages"
+                >
+                    Paquetes
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#promociones"
+                    data-i18n="nav.promos"
+                >
+                    Promos
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#alojamiento"
+                    data-i18n="nav.accommodation"
+                >
+                    Alojamiento
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#nosotros"
+                    data-i18n="nav.about"
+                >
+                    Nosotros
+                </a>
+            </li>
+
+        </ul>
+
+
+
+        <!-- SELECTOR DE IDIOMA -->
+
+        <div class="language-switcher">
+
+
+            <button
+                class="lang-btn"
+                data-lang="en"
+                type="button"
+            >
+
+                <span>
+                    EN
+                </span>
+
+                <img
+                    src="../img/bandera-eeuu.webp"
+                    alt="English"
+                    class="lang-flag"
+                >
+
+            </button>
+
+
+            <span class="lang-divider">
+                |
+            </span>
+
+
+            <button
+                class="lang-btn active"
+                data-lang="es"
+                type="button"
+            >
+
+                <span>
+                    ES
+                </span>
+
+                <img
+                    src="../img/bandera-españa.webp"
+                    alt="Español"
+                    class="lang-flag"
+                >
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- CTA -->
+
+        <a
+            class="nav-cta"
+            href="../index.html#contacto"
+            data-i18n="nav.quote"
+        >
+            Cotizar viaje
+        </a>
+
+
+
+        <!-- MOBILE -->
+
+        <button
+            class="burger"
+            id="burger"
+            aria-label="Abrir menú"
+            data-i18n-aria-label="nav.menu"
+            aria-expanded="false"
+            aria-controls="navlinks"
+        >
+
+            <span></span>
+
+        </button>
+
+
+    </div>
+
 </nav>
 
+
+
 <main>
-  <header class="sp-training-hero">
-    <div class="sp-training-bg" style="background-image:url('../img/entrenamientos1.jpg')"></div>
+
+
+<!-- =========================================================
+     HERO
+========================================================== -->
+
+<header class="sp-training-hero">
+
+
+    <div
+        class="sp-training-bg"
+        style="background-image:url('../img/entrenamientos1.jpg')"
+    >
+    </div>
+
+
 
     <div class="wrap sp-training-hero-grid">
-      <div>
-        <div class="sp-breadcrumb">
-          <a href="../index.html">Inicio</a><span>/</span>
-          <a href="../index.html#destinos">Viví Buenos Aires</a><span>/</span>
-          <span>Entrenamiento</span>
-        </div>
 
-        <span class="sp-kicker">Experiencia 03</span>
-        <h1>Entrená con una mirada argentina</h1>
 
-        <p class="sp-hero-copy">
-          Sesiones de tecnificación, conceptos tácticos y situaciones de juego
-          adaptadas a la edad, nivel y objetivos del grupo.
-        </p>
-
-        <div class="sp-actions">
-          <a class="btn primary" href="#training-plan">Ver programa</a>
-          <a class="btn sp-btn-light" href="../index.html#contacto">Consultar</a>
-        </div>
-      </div>
-
-      <aside class="sp-training-panel">
-        <span>FORMATO</span><strong>Sesiones grupales</strong>
-        <hr>
-        <span>NIVEL</span><strong>Adaptable</strong>
-        <hr>
-        <span>IDEAL PARA</span><strong>Clubes y academias</strong>
-      </aside>
-    </div>
-  </header>
-
-  <section class="sp-section" id="training-plan">
-    <div class="wrap">
-      <div class="sp-section-head">
         <div>
-          <span class="sp-kicker">Programa deportivo</span>
-          <h2>Una semana para aprender haciendo</h2>
-        </div>
-        <p>
-          Este esquema es ilustrativo. El contenido se ajusta a la cantidad de jugadores,
-          edades, nivel y objetivos del equipo.
-        </p>
-      </div>
 
-      <div class="sp-training-tabs">
-        <button class="sp-training-tab active" data-training-tab="1"><span>Día 01</span><b>Adaptación</b></button>
-        <button class="sp-training-tab" data-training-tab="2"><span>Día 02</span><b>Técnica</b></button>
-        <button class="sp-training-tab" data-training-tab="3"><span>Día 03</span><b>Táctica</b></button>
-        <button class="sp-training-tab" data-training-tab="4"><span>Día 04</span><b>Competencia</b></button>
-      </div>
 
-      <article class="sp-training-panel-content active" data-training-content="1">
-        <div class="sp-training-image" style="background-image:url('../img/entrenamientos1.jpg')"></div>
-        <div class="sp-training-copy">
-          <span>01</span>
-          <h3>Adaptación y activación</h3>
-          <p>Primera toma de contacto con el entorno, el staff y la metodología de trabajo.</p>
-          <ul>
-            <li>Movilidad y coordinación</li>
-            <li>Trabajo técnico liviano</li>
-            <li>Evaluación inicial</li>
-          </ul>
-        </div>
-      </article>
+            <!-- BREADCRUMB -->
 
-      <article class="sp-training-panel-content" data-training-content="2">
-        <div class="sp-training-image" style="background-image:url('../img/equipofutbol1.jpg')"></div>
-        <div class="sp-training-copy">
-          <span>02</span>
-          <h3>Técnica y toma de decisiones</h3>
-          <p>Velocidad de ejecución, pase, control y resolución en espacios reducidos.</p>
-          <ul>
-            <li>Rondos y posesión</li>
-            <li>1v1 y 2v2</li>
-            <li>Finalización</li>
-          </ul>
-        </div>
-      </article>
+            <div class="sp-breadcrumb">
 
-      <article class="sp-training-panel-content" data-training-content="3">
-        <div class="sp-training-image" style="background-image:url('../img/estadio1.jpg')"></div>
-        <div class="sp-training-copy">
-          <span>03</span>
-          <h3>Conceptos tácticos colectivos</h3>
-          <p>Organización, ocupación de espacios, presión y transiciones según el perfil del equipo.</p>
-          <ul>
-            <li>Bloques y distancias</li>
-            <li>Salida y progresión</li>
-            <li>Transiciones</li>
-          </ul>
-        </div>
-      </article>
 
-      <article class="sp-training-panel-content" data-training-content="4">
-        <div class="sp-training-image" style="background-image:url('../img/partidos1.avif')"></div>
-        <div class="sp-training-copy">
-          <span>04</span>
-          <h3>Partido o desafío competitivo</h3>
-          <p>Una instancia final para aplicar conceptos dentro de una situación real de juego.</p>
-          <ul>
-            <li>Activación precompetitiva</li>
-            <li>Partido o fútbol reducido</li>
-            <li>Feedback final</li>
-          </ul>
+                <a
+                    href="../index.html"
+                    data-i18n="breadcrumb.home"
+                >
+                    Inicio
+                </a>
+
+
+                <span>
+                    /
+                </span>
+
+
+                <a
+                    href="../index.html#destinos"
+                    data-i18n="breadcrumb.ba"
+                >
+                    Viví Buenos Aires
+                </a>
+
+
+                <span>
+                    /
+                </span>
+
+
+                <span data-i18n="breadcrumb.current">
+                    Entrenamiento
+                </span>
+
+
+            </div>
+
+
+
+            <span
+                class="sp-kicker"
+                data-i18n="hero.kicker"
+            >
+                Experiencia 03
+            </span>
+
+
+
+            <h1 data-i18n="hero.title">
+                Entrená con una mirada argentina
+            </h1>
+
+
+
+            <p
+                class="sp-hero-copy"
+                data-i18n="hero.text"
+            >
+                Sesiones de tecnificación, conceptos tácticos y situaciones
+                de juego adaptadas a la edad, nivel y objetivos del grupo.
+            </p>
+
+
+
+            <div class="sp-actions">
+
+
+                <a
+                    class="btn primary"
+                    href="#training-plan"
+                    data-i18n="hero.program"
+                >
+                    Ver programa
+                </a>
+
+
+                <a
+                    class="btn sp-btn-light"
+                    href="../index.html#contacto"
+                    data-i18n="hero.contact"
+                >
+                    Consultar
+                </a>
+
+
+            </div>
+
+
         </div>
-      </article>
+
+
+
+        <!-- PANEL -->
+
+        <aside class="sp-training-panel">
+
+
+            <span data-i18n="facts.format">
+                FORMATO
+            </span>
+
+            <strong data-i18n="facts.formatValue">
+                Sesiones grupales
+            </strong>
+
+
+            <hr>
+
+
+            <span data-i18n="facts.level">
+                NIVEL
+            </span>
+
+            <strong data-i18n="facts.levelValue">
+                Adaptable
+            </strong>
+
+
+            <hr>
+
+
+            <span data-i18n="facts.ideal">
+                IDEAL PARA
+            </span>
+
+            <strong data-i18n="facts.idealValue">
+                Clubes y academias
+            </strong>
+
+
+        </aside>
+
+
     </div>
-  </section>
 
-  <section class="sp-section sp-section-alt">
+
+</header>
+
+
+
+<!-- =========================================================
+     PROGRAMA DE ENTRENAMIENTO
+========================================================== -->
+
+<section
+    class="sp-section"
+    id="training-plan"
+>
+
+
     <div class="wrap">
-      <div class="sp-section-head">
-        <div>
-          <span class="sp-kicker">Metodología</span>
-          <h2>Qué se trabaja</h2>
+
+
+        <div class="sp-section-head">
+
+
+            <div>
+
+
+                <span
+                    class="sp-kicker"
+                    data-i18n="program.kicker"
+                >
+                    Programa deportivo
+                </span>
+
+
+                <h2 data-i18n="program.title">
+                    Una semana para aprender haciendo
+                </h2>
+
+
+            </div>
+
+
+
+            <p data-i18n="program.text">
+
+                Este esquema es ilustrativo. El contenido se ajusta
+                a la cantidad de jugadores, edades, nivel
+                y objetivos del equipo.
+
+            </p>
+
+
         </div>
-      </div>
 
-      <div class="sp-method-grid">
-        <article><span>01</span><h3>Técnica</h3><p>Fundamentos aplicados a situaciones reales de juego.</p></article>
-        <article><span>02</span><h3>Táctica</h3><p>Comprensión colectiva y lectura de espacios.</p></article>
-        <article><span>03</span><h3>Intensidad</h3><p>Ritmo adaptado a la edad y carga del grupo.</p></article>
-        <article><span>04</span><h3>Feedback</h3><p>Devoluciones claras para jugadores y staff.</p></article>
-      </div>
+
+
+        <!-- =================================================
+             TABS
+        ================================================== -->
+
+        <div class="sp-training-tabs">
+
+
+            <button
+                class="sp-training-tab active"
+                data-training-tab="1"
+            >
+
+                <span data-i18n="tab.day1">
+                    Día 01
+                </span>
+
+                <b data-i18n="tab.adaptation">
+                    Adaptación
+                </b>
+
+            </button>
+
+
+
+            <button
+                class="sp-training-tab"
+                data-training-tab="2"
+            >
+
+                <span data-i18n="tab.day2">
+                    Día 02
+                </span>
+
+                <b data-i18n="tab.technique">
+                    Técnica
+                </b>
+
+            </button>
+
+
+
+            <button
+                class="sp-training-tab"
+                data-training-tab="3"
+            >
+
+                <span data-i18n="tab.day3">
+                    Día 03
+                </span>
+
+                <b data-i18n="tab.tactics">
+                    Táctica
+                </b>
+
+            </button>
+
+
+
+            <button
+                class="sp-training-tab"
+                data-training-tab="4"
+            >
+
+                <span data-i18n="tab.day4">
+                    Día 04
+                </span>
+
+                <b data-i18n="tab.competition">
+                    Competencia
+                </b>
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             DÍA 01
+        ================================================== -->
+
+        <article
+            class="sp-training-panel-content active"
+            data-training-content="1"
+        >
+
+
+            <div
+                class="sp-training-image"
+                style="background-image:url('../img/entrenamientos1.jpg')"
+            >
+            </div>
+
+
+
+            <div class="sp-training-copy">
+
+
+                <span>
+                    01
+                </span>
+
+
+                <h3 data-i18n="day1.title">
+                    Adaptación y activación
+                </h3>
+
+
+                <p data-i18n="day1.text">
+                    Primera toma de contacto con el entorno,
+                    el staff y la metodología de trabajo.
+                </p>
+
+
+                <ul>
+
+                    <li data-i18n="day1.item1">
+                        Movilidad y coordinación
+                    </li>
+
+                    <li data-i18n="day1.item2">
+                        Trabajo técnico liviano
+                    </li>
+
+                    <li data-i18n="day1.item3">
+                        Evaluación inicial
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             DÍA 02
+        ================================================== -->
+
+        <article
+            class="sp-training-panel-content"
+            data-training-content="2"
+        >
+
+
+            <div
+                class="sp-training-image"
+                style="background-image:url('../img/equipofutbol1.jpg')"
+            >
+            </div>
+
+
+
+            <div class="sp-training-copy">
+
+
+                <span>
+                    02
+                </span>
+
+
+                <h3 data-i18n="day2.title">
+                    Técnica y toma de decisiones
+                </h3>
+
+
+                <p data-i18n="day2.text">
+                    Velocidad de ejecución, pase, control
+                    y resolución en espacios reducidos.
+                </p>
+
+
+                <ul>
+
+                    <li data-i18n="day2.item1">
+                        Rondos y posesión
+                    </li>
+
+                    <li data-i18n="day2.item2">
+                        1v1 y 2v2
+                    </li>
+
+                    <li data-i18n="day2.item3">
+                        Finalización
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             DÍA 03
+        ================================================== -->
+
+        <article
+            class="sp-training-panel-content"
+            data-training-content="3"
+        >
+
+
+            <div
+                class="sp-training-image"
+                style="background-image:url('../img/estadio1.jpg')"
+            >
+            </div>
+
+
+
+            <div class="sp-training-copy">
+
+
+                <span>
+                    03
+                </span>
+
+
+                <h3 data-i18n="day3.title">
+                    Conceptos tácticos colectivos
+                </h3>
+
+
+                <p data-i18n="day3.text">
+                    Organización, ocupación de espacios, presión
+                    y transiciones según el perfil del equipo.
+                </p>
+
+
+                <ul>
+
+                    <li data-i18n="day3.item1">
+                        Bloques y distancias
+                    </li>
+
+                    <li data-i18n="day3.item2">
+                        Salida y progresión
+                    </li>
+
+                    <li data-i18n="day3.item3">
+                        Transiciones
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             DÍA 04
+        ================================================== -->
+
+        <article
+            class="sp-training-panel-content"
+            data-training-content="4"
+        >
+
+
+            <div
+                class="sp-training-image"
+                style="background-image:url('../img/partidos1.avif')"
+            >
+            </div>
+
+
+
+            <div class="sp-training-copy">
+
+
+                <span>
+                    04
+                </span>
+
+
+                <h3 data-i18n="day4.title">
+                    Partido o desafío competitivo
+                </h3>
+
+
+                <p data-i18n="day4.text">
+                    Una instancia final para aplicar conceptos
+                    dentro de una situación real de juego.
+                </p>
+
+
+                <ul>
+
+                    <li data-i18n="day4.item1">
+                        Activación precompetitiva
+                    </li>
+
+                    <li data-i18n="day4.item2">
+                        Partido o fútbol reducido
+                    </li>
+
+                    <li data-i18n="day4.item3">
+                        Feedback final
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+
+        </article>
+
+
     </div>
-  </section>
 
-  <section class="sp-page-cta">
+
+</section>
+
+
+
+<!-- =========================================================
+     METODOLOGÍA
+========================================================== -->
+
+<section class="sp-section sp-section-alt">
+
+
+    <div class="wrap">
+
+
+        <div class="sp-section-head">
+
+
+            <div>
+
+
+                <span
+                    class="sp-kicker"
+                    data-i18n="method.kicker"
+                >
+                    Metodología
+                </span>
+
+
+                <h2 data-i18n="method.title">
+                    Qué se trabaja
+                </h2>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="sp-method-grid">
+
+
+
+            <!-- 01 -->
+
+            <article>
+
+
+                <span>
+                    01
+                </span>
+
+
+                <h3 data-i18n="method.techniqueTitle">
+                    Técnica
+                </h3>
+
+
+                <p data-i18n="method.techniqueText">
+                    Fundamentos aplicados a situaciones reales de juego.
+                </p>
+
+
+            </article>
+
+
+
+            <!-- 02 -->
+
+            <article>
+
+
+                <span>
+                    02
+                </span>
+
+
+                <h3 data-i18n="method.tacticsTitle">
+                    Táctica
+                </h3>
+
+
+                <p data-i18n="method.tacticsText">
+                    Comprensión colectiva y lectura de espacios.
+                </p>
+
+
+            </article>
+
+
+
+            <!-- 03 -->
+
+            <article>
+
+
+                <span>
+                    03
+                </span>
+
+
+                <h3 data-i18n="method.intensityTitle">
+                    Intensidad
+                </h3>
+
+
+                <p data-i18n="method.intensityText">
+                    Ritmo adaptado a la edad y carga del grupo.
+                </p>
+
+
+            </article>
+
+
+
+            <!-- 04 -->
+
+            <article>
+
+
+                <span>
+                    04
+                </span>
+
+
+                <h3 data-i18n="method.feedbackTitle">
+                    Feedback
+                </h3>
+
+
+                <p data-i18n="method.feedbackText">
+                    Devoluciones claras para jugadores y staff.
+                </p>
+
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     CTA FINAL
+========================================================== -->
+
+<section class="sp-page-cta">
+
+
     <div class="wrap sp-page-cta-grid">
-      <div>
-        <span class="sp-kicker">Sportour</span>
-        <h2>Convertí el viaje en una semana de desarrollo</h2>
-        <p>Contanos edad, cantidad de jugadores y objetivos del equipo.</p>
-      </div>
-      <a class="btn primary" href="../index.html#contacto">Solicitar propuesta</a>
+
+
+        <div>
+
+
+            <span class="sp-kicker">
+                Sportour
+            </span>
+
+
+            <h2 data-i18n="cta.title">
+                Convertí el viaje en una semana de desarrollo
+            </h2>
+
+
+            <p data-i18n="cta.text">
+                Contanos edad, cantidad de jugadores
+                y objetivos del equipo.
+            </p>
+
+
+        </div>
+
+
+
+        <a
+            class="btn primary"
+            href="../index.html#contacto"
+            data-i18n="cta.button"
+        >
+            Solicitar propuesta
+        </a>
+
+
     </div>
-  </section>
+
+
+</section>
+
+
 </main>
 
+
+
+<!-- =========================================================
+     JS PRINCIPAL
+========================================================== -->
+
 <script src="../js/main.js"></script>
+
+
+
+<!-- =========================================================
+     TRADUCCIONES
+========================================================== -->
+
+<script>
+
+
+const translations = {
+
+
+    /* =========================================================
+       ESPAÑOL
+    ========================================================== */
+
+    es: {
+
+
+        pageTitle:
+            "Entrenamiento | SporTour",
+
+        pageDescription:
+            "Entrenamientos de fútbol y sesiones de tecnificación en Buenos Aires con profesionales del fútbol argentino.",
+
+
+        /* NAV */
+
+        "nav.experience":
+            "Experiencia",
+
+        "nav.services":
+            "Servicios",
+
+        "nav.packages":
+            "Paquetes",
+
+        "nav.promos":
+            "Promos",
+
+        "nav.accommodation":
+            "Alojamiento",
+
+        "nav.about":
+            "Nosotros",
+
+        "nav.quote":
+            "Cotizar viaje",
+
+        "nav.menu":
+            "Abrir menú",
+
+
+        /* BREADCRUMB */
+
+        "breadcrumb.home":
+            "Inicio",
+
+        "breadcrumb.ba":
+            "Viví Buenos Aires",
+
+        "breadcrumb.current":
+            "Entrenamiento",
+
+
+        /* HERO */
+
+        "hero.kicker":
+            "Experiencia 03",
+
+        "hero.title":
+            "Entrená con una mirada argentina",
+
+        "hero.text":
+            "Sesiones de tecnificación, conceptos tácticos y situaciones de juego adaptadas a la edad, nivel y objetivos del grupo.",
+
+        "hero.program":
+            "Ver programa",
+
+        "hero.contact":
+            "Consultar",
+
+
+        /* FACTS */
+
+        "facts.format":
+            "FORMATO",
+
+        "facts.formatValue":
+            "Sesiones grupales",
+
+        "facts.level":
+            "NIVEL",
+
+        "facts.levelValue":
+            "Adaptable",
+
+        "facts.ideal":
+            "IDEAL PARA",
+
+        "facts.idealValue":
+            "Clubes y academias",
+
+
+        /* PROGRAMA */
+
+        "program.kicker":
+            "Programa deportivo",
+
+        "program.title":
+            "Una semana para aprender haciendo",
+
+        "program.text":
+            "Este esquema es ilustrativo. El contenido se ajusta a la cantidad de jugadores, edades, nivel y objetivos del equipo.",
+
+
+        /* TABS */
+
+        "tab.day1":
+            "Día 01",
+
+        "tab.day2":
+            "Día 02",
+
+        "tab.day3":
+            "Día 03",
+
+        "tab.day4":
+            "Día 04",
+
+        "tab.adaptation":
+            "Adaptación",
+
+        "tab.technique":
+            "Técnica",
+
+        "tab.tactics":
+            "Táctica",
+
+        "tab.competition":
+            "Competencia",
+
+
+        /* DÍA 01 */
+
+        "day1.title":
+            "Adaptación y activación",
+
+        "day1.text":
+            "Primera toma de contacto con el entorno, el staff y la metodología de trabajo.",
+
+        "day1.item1":
+            "Movilidad y coordinación",
+
+        "day1.item2":
+            "Trabajo técnico liviano",
+
+        "day1.item3":
+            "Evaluación inicial",
+
+
+        /* DÍA 02 */
+
+        "day2.title":
+            "Técnica y toma de decisiones",
+
+        "day2.text":
+            "Velocidad de ejecución, pase, control y resolución en espacios reducidos.",
+
+        "day2.item1":
+            "Rondos y posesión",
+
+        "day2.item2":
+            "1v1 y 2v2",
+
+        "day2.item3":
+            "Finalización",
+
+
+        /* DÍA 03 */
+
+        "day3.title":
+            "Conceptos tácticos colectivos",
+
+        "day3.text":
+            "Organización, ocupación de espacios, presión y transiciones según el perfil del equipo.",
+
+        "day3.item1":
+            "Bloques y distancias",
+
+        "day3.item2":
+            "Salida y progresión",
+
+        "day3.item3":
+            "Transiciones",
+
+
+        /* DÍA 04 */
+
+        "day4.title":
+            "Partido o desafío competitivo",
+
+        "day4.text":
+            "Una instancia final para aplicar conceptos dentro de una situación real de juego.",
+
+        "day4.item1":
+            "Activación precompetitiva",
+
+        "day4.item2":
+            "Partido o fútbol reducido",
+
+        "day4.item3":
+            "Feedback final",
+
+
+        /* METODOLOGÍA */
+
+        "method.kicker":
+            "Metodología",
+
+        "method.title":
+            "Qué se trabaja",
+
+        "method.techniqueTitle":
+            "Técnica",
+
+        "method.techniqueText":
+            "Fundamentos aplicados a situaciones reales de juego.",
+
+        "method.tacticsTitle":
+            "Táctica",
+
+        "method.tacticsText":
+            "Comprensión colectiva y lectura de espacios.",
+
+        "method.intensityTitle":
+            "Intensidad",
+
+        "method.intensityText":
+            "Ritmo adaptado a la edad y carga del grupo.",
+
+        "method.feedbackTitle":
+            "Feedback",
+
+        "method.feedbackText":
+            "Devoluciones claras para jugadores y staff.",
+
+
+        /* CTA */
+
+        "cta.title":
+            "Convertí el viaje en una semana de desarrollo",
+
+        "cta.text":
+            "Contanos edad, cantidad de jugadores y objetivos del equipo.",
+
+        "cta.button":
+            "Solicitar propuesta"
+
+    },
+
+
+
+    /* =========================================================
+       ENGLISH
+    ========================================================== */
+
+    en: {
+
+
+        pageTitle:
+            "Training | SporTour",
+
+        pageDescription:
+            "Football training and player development sessions in Buenos Aires with Argentine football professionals.",
+
+
+        /* NAV */
+
+        "nav.experience":
+            "Experience",
+
+        "nav.services":
+            "Services",
+
+        "nav.packages":
+            "Packages",
+
+        "nav.promos":
+            "Benefits",
+
+        "nav.accommodation":
+            "Accommodation",
+
+        "nav.about":
+            "About us",
+
+        "nav.quote":
+            "Request a quote",
+
+        "nav.menu":
+            "Open menu",
+
+
+        /* BREADCRUMB */
+
+        "breadcrumb.home":
+            "Home",
+
+        "breadcrumb.ba":
+            "Experience Buenos Aires",
+
+        "breadcrumb.current":
+            "Training",
+
+
+        /* HERO */
+
+        "hero.kicker":
+            "Experience 03",
+
+        "hero.title":
+            "Train with an Argentine perspective",
+
+        "hero.text":
+            "Player development sessions, tactical concepts and game situations adapted to the age, level and objectives of each group.",
+
+        "hero.program":
+            "View program",
+
+        "hero.contact":
+            "Contact us",
+
+
+        /* FACTS */
+
+        "facts.format":
+            "FORMAT",
+
+        "facts.formatValue":
+            "Group sessions",
+
+        "facts.level":
+            "LEVEL",
+
+        "facts.levelValue":
+            "Adaptable",
+
+        "facts.ideal":
+            "IDEAL FOR",
+
+        "facts.idealValue":
+            "Clubs and academies",
+
+
+        /* PROGRAM */
+
+        "program.kicker":
+            "Training program",
+
+        "program.title":
+            "A week of learning through practice",
+
+        "program.text":
+            "This schedule is illustrative. The content is adapted according to the number of players, their ages, level and the team's objectives.",
+
+
+        /* TABS */
+
+        "tab.day1":
+            "Day 01",
+
+        "tab.day2":
+            "Day 02",
+
+        "tab.day3":
+            "Day 03",
+
+        "tab.day4":
+            "Day 04",
+
+        "tab.adaptation":
+            "Adaptation",
+
+        "tab.technique":
+            "Technique",
+
+        "tab.tactics":
+            "Tactics",
+
+        "tab.competition":
+            "Competition",
+
+
+        /* DAY 01 */
+
+        "day1.title":
+            "Adaptation and activation",
+
+        "day1.text":
+            "The first introduction to the environment, coaching staff and training methodology.",
+
+        "day1.item1":
+            "Mobility and coordination",
+
+        "day1.item2":
+            "Light technical work",
+
+        "day1.item3":
+            "Initial assessment",
+
+
+        /* DAY 02 */
+
+        "day2.title":
+            "Technique and decision-making",
+
+        "day2.text":
+            "Speed of execution, passing, first touch and decision-making in reduced spaces.",
+
+        "day2.item1":
+            "Rondos and possession",
+
+        "day2.item2":
+            "1v1 and 2v2",
+
+        "day2.item3":
+            "Finishing",
+
+
+        /* DAY 03 */
+
+        "day3.title":
+            "Collective tactical concepts",
+
+        "day3.text":
+            "Organization, use of space, pressing and transitions according to the team's profile.",
+
+        "day3.item1":
+            "Team shape and distances",
+
+        "day3.item2":
+            "Build-up and progression",
+
+        "day3.item3":
+            "Transitions",
+
+
+        /* DAY 04 */
+
+        "day4.title":
+            "Match or competitive challenge",
+
+        "day4.text":
+            "A final opportunity to apply the concepts learned in a real game situation.",
+
+        "day4.item1":
+            "Pre-match activation",
+
+        "day4.item2":
+            "Match or small-sided game",
+
+        "day4.item3":
+            "Final feedback",
+
+
+        /* METHODOLOGY */
+
+        "method.kicker":
+            "Methodology",
+
+        "method.title":
+            "What we work on",
+
+        "method.techniqueTitle":
+            "Technique",
+
+        "method.techniqueText":
+            "Fundamentals applied to real game situations.",
+
+        "method.tacticsTitle":
+            "Tactics",
+
+        "method.tacticsText":
+            "Collective understanding and awareness of space.",
+
+        "method.intensityTitle":
+            "Intensity",
+
+        "method.intensityText":
+            "Training pace adapted to the age and workload of the group.",
+
+        "method.feedbackTitle":
+            "Feedback",
+
+        "method.feedbackText":
+            "Clear feedback for both players and coaching staff.",
+
+
+        /* CTA */
+
+        "cta.title":
+            "Turn the trip into a week of player development",
+
+        "cta.text":
+            "Tell us the players' ages, group size and team objectives.",
+
+        "cta.button":
+            "Request a proposal"
+
+    }
+
+};
+
+
+
+/* =========================================================
+   CAMBIAR IDIOMA
+========================================================== */
+
+function setLanguage(lang) {
+
+
+    const language =
+        translations[lang];
+
+
+    if (!language) {
+        return;
+    }
+
+
+
+    /* IDIOMA HTML */
+
+    document.documentElement.lang =
+        lang;
+
+
+
+    /* TITLE */
+
+    document.title =
+        language.pageTitle;
+
+
+
+    /* META DESCRIPTION */
+
+    const description =
+        document.querySelector('meta[name="description"]');
+
+
+    if (description) {
+
+        description.setAttribute(
+            "content",
+            language.pageDescription
+        );
+
+    }
+
+
+
+    /* TEXTOS */
+
+    document
+        .querySelectorAll("[data-i18n]")
+        .forEach(element => {
+
+
+            const key =
+                element.dataset.i18n;
+
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    language,
+                    key
+                )
+            ) {
+
+                element.textContent =
+                    language[key];
+
+            }
+
+
+        });
+
+
+
+    /* ARIA LABELS */
+
+    document
+        .querySelectorAll("[data-i18n-aria-label]")
+        .forEach(element => {
+
+
+            const key =
+                element.dataset.i18nAriaLabel;
+
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    language,
+                    key
+                )
+            ) {
+
+                element.setAttribute(
+                    "aria-label",
+                    language[key]
+                );
+
+            }
+
+
+        });
+
+
+
+    /* BOTÓN ACTIVO */
+
+    document
+        .querySelectorAll(".lang-btn")
+        .forEach(button => {
+
+
+            button.classList.toggle(
+                "active",
+                button.dataset.lang === lang
+            );
+
+
+        });
+
+
+
+    /* GUARDAR */
+
+    localStorage.setItem(
+        "sportour-language",
+        lang
+    );
+
+
+}
+
+
+
+/* =========================================================
+   BOTONES DE IDIOMA
+========================================================== */
+
+document
+    .querySelectorAll(".lang-btn")
+    .forEach(button => {
+
+
+        button.addEventListener(
+            "click",
+            function () {
+
+
+                setLanguage(
+                    this.dataset.lang
+                );
+
+
+            }
+        );
+
+
+    });
+
+
+
+/* =========================================================
+   IDIOMA AL ENTRAR
+========================================================== */
+
+const savedLanguage =
+    localStorage.getItem("sportour-language") || "es";
+
+
+setLanguage(savedLanguage);
+
+
+</script>
+
+
 </body>
+
 </html>

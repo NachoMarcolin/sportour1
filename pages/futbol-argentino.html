@@ -1,89 +1,1611 @@
 <!DOCTYPE html>
 <html lang="es" data-theme="dark">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fútbol argentino | SporTour</title>
-  <meta name="description" content="Una inmersión en la identidad futbolera de Buenos Aires: clubes, barrios, historias, metodología y formas de vivir el deporte que atraviesa la ciudad.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/pages.css">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Fútbol argentino | SporTour</title>
+
+    <meta
+        name="description"
+        content="Una inmersión en la identidad futbolera de Buenos Aires: clubes, barrios, historias, metodología y formas de vivir el deporte que atraviesa la ciudad."
+    >
+
+
+    <!-- FUENTES -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="../css/main.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/pages.css"
+    >
+
 </head>
+
+
 <body>
-  <nav class="nav">
+
+
+<!-- =========================================================
+     NAV
+========================================================== -->
+
+<nav class="nav">
+
     <div class="nav-inner">
-      <a class="brand" href="../index.html#top"><span class="dot"></span>
-      <img src="../img/logo-blanco.png" alt="SporTour"></a>
 
-     <ul class="navlinks" id="navlinks">
-       <li><a href="../index.html#servicios">Experiencia</a></li>
-      <li><a href="../index.html#destinos">Servicios</a></li>
-      <li><a href="../index.html#paquetes">Paquetes</a></li>
-      <li><a href="../index.html#promociones">Promos</a></li>
-      <li><a href="../index.html#alojamiento">Alojamiento</a></li>
-      <li><a href="../index.html#nosotros">Nosotros</a></li>
-    </ul>
 
-      <a class="nav-cta" href="../index.html#contacto">Consultar</a>
-      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navlinks"><span></span></button>
+        <!-- LOGO -->
+
+        <a
+            class="brand"
+            href="../index.html#top"
+        >
+
+            <span class="dot"></span>
+
+            <img
+                src="../img/logo-blanco.png"
+                alt="SporTour"
+            >
+
+        </a>
+
+
+
+        <!-- LINKS -->
+
+        <ul
+            class="navlinks"
+            id="navlinks"
+        >
+
+            <li>
+                <a
+                    href="../index.html#servicios"
+                    data-i18n="nav.experience"
+                >
+                    Experiencia
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#destinos"
+                    data-i18n="nav.services"
+                >
+                    Servicios
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#paquetes"
+                    data-i18n="nav.packages"
+                >
+                    Paquetes
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#promociones"
+                    data-i18n="nav.promos"
+                >
+                    Promos
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#alojamiento"
+                    data-i18n="nav.accommodation"
+                >
+                    Alojamiento
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#nosotros"
+                    data-i18n="nav.about"
+                >
+                    Nosotros
+                </a>
+            </li>
+
+        </ul>
+
+
+
+        <!-- SELECTOR DE IDIOMA -->
+
+        <div class="language-switcher">
+
+
+            <button
+                class="lang-btn"
+                data-lang="en"
+                type="button"
+            >
+
+                <span>
+                    EN
+                </span>
+
+                <img
+                    src="../img/bandera-eeuu.webp"
+                    alt="English"
+                    class="lang-flag"
+                >
+
+            </button>
+
+
+            <span class="lang-divider">
+                |
+            </span>
+
+
+            <button
+                class="lang-btn active"
+                data-lang="es"
+                type="button"
+            >
+
+                <span>
+                    ES
+                </span>
+
+                <img
+                    src="../img/bandera-españa.webp"
+                    alt="Español"
+                    class="lang-flag"
+                >
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- CTA -->
+
+        <a
+            class="nav-cta"
+            href="../index.html#contacto"
+            data-i18n="nav.contact"
+        >
+            Consultar
+        </a>
+
+
+
+        <!-- MOBILE -->
+
+        <button
+            class="burger"
+            id="burger"
+            aria-label="Abrir menú"
+            data-i18n-aria-label="nav.menu"
+            aria-expanded="false"
+            aria-controls="navlinks"
+        >
+
+            <span></span>
+
+        </button>
+
+
     </div>
-  </nav>
 
-  <main class="subpage-main">
-    <header class="experience-hero">
-      <div class="experience-hero-photo" style="background-image:url('../img/equipofutbol1.jpg')"></div>
-      <div class="wrap experience-hero-content">
-        <div class="experience-breadcrumb"><a href="../index.html">Inicio</a><span>/</span><a href="../index.html#destinos">Viví Buenos Aires</a><span>/</span><span>Fútbol argentino</span></div>
-        <div class="experience-kicker">Viví Buenos Aires · 01</div>
-        <h1>Fútbol argentino desde adentro</h1>
-        <p class="experience-hero-copy">Una inmersión en la identidad futbolera de Buenos Aires: clubes, barrios, historias, metodología y formas de vivir el deporte que atraviesa la ciudad.</p>
+</nav>
+
+
+
+<!-- =========================================================
+     MAIN
+========================================================== -->
+
+<main class="subpage-main">
+
+
+<!-- =========================================================
+     HERO
+========================================================== -->
+
+<header class="experience-hero">
+
+
+    <div
+        class="experience-hero-photo"
+        style="background-image:url('../img/equipofutbol1.jpg')"
+    >
+    </div>
+
+
+
+    <div class="wrap experience-hero-content">
+
+
+        <!-- BREADCRUMB -->
+
+        <div class="experience-breadcrumb">
+
+
+            <a
+                href="../index.html"
+                data-i18n="breadcrumb.home"
+            >
+                Inicio
+            </a>
+
+
+            <span>
+                /
+            </span>
+
+
+            <a
+                href="../index.html#destinos"
+                data-i18n="breadcrumb.ba"
+            >
+                Viví Buenos Aires
+            </a>
+
+
+            <span>
+                /
+            </span>
+
+
+            <span data-i18n="breadcrumb.current">
+                Fútbol argentino
+            </span>
+
+
+        </div>
+
+
+
+        <div
+            class="experience-kicker"
+            data-i18n="hero.kicker"
+        >
+            Viví Buenos Aires · 01
+        </div>
+
+
+
+        <h1 data-i18n="hero.title">
+            Fútbol argentino desde adentro
+        </h1>
+
+
+
+        <p
+            class="experience-hero-copy"
+            data-i18n="hero.text"
+        >
+            Una inmersión en la identidad futbolera de Buenos Aires:
+            clubes, barrios, historias, metodología y formas de vivir
+            el deporte que atraviesa la ciudad.
+        </p>
+
+
+
         <div class="experience-hero-actions">
-          <a class="btn primary" href="../index.html#contacto">Solicitar propuesta</a>
-          <a class="btn secondary-light" href="#experiencia">Ver experiencia</a>
+
+
+            <a
+                class="btn primary"
+                href="../index.html#contacto"
+                data-i18n="hero.proposal"
+            >
+                Solicitar propuesta
+            </a>
+
+
+            <a
+                class="btn secondary-light"
+                href="#experiencia"
+                data-i18n="hero.experience"
+            >
+                Ver experiencia
+            </a>
+
+
         </div>
-      </div>
-    </header>
 
-    <section class="experience-facts">
-      <div class="wrap experience-facts-grid"><div class="experience-fact"><span>Enfoque</span><strong>Inmersión futbolera</strong></div><div class="experience-fact"><span>Formato</span><strong>Grupal y a medida</strong></div><div class="experience-fact"><span>Destino</span><strong>Buenos Aires</strong></div><div class="experience-fact"><span>Ideal para</span><strong>Clubes y academias</strong></div></div>
-    </section>
 
-    <section class="experience-section" id="experiencia">
-      <div class="wrap">
-        <div class="experience-heading"><h2>Mucho más que mirar fútbol</h2><p>La propuesta combina aprendizaje, recorridos y contacto con el ecosistema futbolístico local para que el grupo entienda por qué el fútbol argentino tiene una identidad tan reconocible.</p></div>
-        <div class="feature-grid"><article class="feature-card"><span class="feature-number">01</span><h3>Identidad futbolera</h3><p>Conocer la historia, los códigos y la cultura que rodean al fútbol argentino dentro y fuera de la cancha.</p></article><article class="feature-card"><span class="feature-number">02</span><h3>Metodología local</h3><p>Acercamiento a conceptos de formación, entrenamiento y competencia utilizados en el entorno futbolístico de Buenos Aires.</p></article><article class="feature-card"><span class="feature-number">03</span><h3>Clubes y barrios</h3><p>Recorridos que conectan instituciones, estadios y barrios donde el fútbol forma parte de la vida cotidiana.</p></article><article class="feature-card"><span class="feature-number">04</span><h3>Experiencia grupal</h3><p>Actividades pensadas para compartir como equipo, fortalecer vínculos y vivir el destino desde una mirada deportiva.</p></article></div>
-      </div>
-    </section>
+    </div>
 
-    <section class="experience-section alt">
-      <div class="wrap includes-layout">
+
+</header>
+
+
+
+<!-- =========================================================
+     DATOS RÁPIDOS
+========================================================== -->
+
+<section class="experience-facts">
+
+
+    <div class="wrap experience-facts-grid">
+
+
+        <div class="experience-fact">
+
+            <span data-i18n="facts.focus">
+                Enfoque
+            </span>
+
+            <strong data-i18n="facts.focusValue">
+                Inmersión futbolera
+            </strong>
+
+        </div>
+
+
+
+        <div class="experience-fact">
+
+            <span data-i18n="facts.format">
+                Formato
+            </span>
+
+            <strong data-i18n="facts.formatValue">
+                Grupal y a medida
+            </strong>
+
+        </div>
+
+
+
+        <div class="experience-fact">
+
+            <span data-i18n="facts.destination">
+                Destino
+            </span>
+
+            <strong>
+                Buenos Aires
+            </strong>
+
+        </div>
+
+
+
+        <div class="experience-fact">
+
+            <span data-i18n="facts.ideal">
+                Ideal para
+            </span>
+
+            <strong data-i18n="facts.idealValue">
+                Clubes y academias
+            </strong>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     EXPERIENCIA
+========================================================== -->
+
+<section
+    class="experience-section"
+    id="experiencia"
+>
+
+
+    <div class="wrap">
+
+
+        <div class="experience-heading">
+
+
+            <h2 data-i18n="experience.title">
+                Mucho más que mirar fútbol
+            </h2>
+
+
+            <p data-i18n="experience.text">
+                La propuesta combina aprendizaje, recorridos y contacto
+                con el ecosistema futbolístico local para que el grupo
+                entienda por qué el fútbol argentino tiene una identidad
+                tan reconocible.
+            </p>
+
+
+        </div>
+
+
+
+        <div class="feature-grid">
+
+
+
+            <!-- 01 -->
+
+            <article class="feature-card">
+
+
+                <span class="feature-number">
+                    01
+                </span>
+
+
+                <h3 data-i18n="feature.identityTitle">
+                    Identidad futbolera
+                </h3>
+
+
+                <p data-i18n="feature.identityText">
+                    Conocer la historia, los códigos y la cultura
+                    que rodean al fútbol argentino dentro y fuera de la cancha.
+                </p>
+
+
+            </article>
+
+
+
+            <!-- 02 -->
+
+            <article class="feature-card">
+
+
+                <span class="feature-number">
+                    02
+                </span>
+
+
+                <h3 data-i18n="feature.methodTitle">
+                    Metodología local
+                </h3>
+
+
+                <p data-i18n="feature.methodText">
+                    Acercamiento a conceptos de formación, entrenamiento
+                    y competencia utilizados en el entorno futbolístico
+                    de Buenos Aires.
+                </p>
+
+
+            </article>
+
+
+
+            <!-- 03 -->
+
+            <article class="feature-card">
+
+
+                <span class="feature-number">
+                    03
+                </span>
+
+
+                <h3 data-i18n="feature.clubsTitle">
+                    Clubes y barrios
+                </h3>
+
+
+                <p data-i18n="feature.clubsText">
+                    Recorridos que conectan instituciones,
+                    estadios y barrios donde el fútbol
+                    forma parte de la vida cotidiana.
+                </p>
+
+
+            </article>
+
+
+
+            <!-- 04 -->
+
+            <article class="feature-card">
+
+
+                <span class="feature-number">
+                    04
+                </span>
+
+
+                <h3 data-i18n="feature.groupTitle">
+                    Experiencia grupal
+                </h3>
+
+
+                <p data-i18n="feature.groupText">
+                    Actividades pensadas para compartir como equipo,
+                    fortalecer vínculos y vivir el destino
+                    desde una mirada deportiva.
+                </p>
+
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     QUÉ PUEDE INCLUIR
+========================================================== -->
+
+<section class="experience-section alt">
+
+
+    <div class="wrap includes-layout">
+
+
         <div class="includes-copy">
-          <div class="experience-kicker">Programa flexible</div>
-          <h2>Qué puede incluir</h2>
-          <p>Cada propuesta se adapta al perfil del grupo, las fechas del viaje, los objetivos y la disponibilidad de cada actividad.</p>
+
+
+            <div
+                class="experience-kicker"
+                data-i18n="includes.kicker"
+            >
+                Programa flexible
+            </div>
+
+
+            <h2 data-i18n="includes.title">
+                Qué puede incluir
+            </h2>
+
+
+            <p data-i18n="includes.text">
+                Cada propuesta se adapta al perfil del grupo,
+                las fechas del viaje, los objetivos
+                y la disponibilidad de cada actividad.
+            </p>
+
+
         </div>
-        <div class="includes-list"><div class="includes-item"><span>Visitas programadas a clubes</span></div><div class="includes-item"><span>Recorridos por estadios y barrios</span></div><div class="includes-item"><span>Actividades culturales vinculadas al fútbol</span></div><div class="includes-item"><span>Traslados internos del grupo</span></div><div class="includes-item"><span>Coordinación local</span></div><div class="includes-item"><span>Guía y acompañamiento</span></div><div class="includes-item"><span>Opciones de entrenamiento</span></div><div class="includes-item"><span>Entradas a partidos según disponibilidad</span></div></div>
-      </div>
-    </section>
 
-    <section class="experience-section">
-      <div class="wrap">
-        <div class="experience-heading"><h2>Cómo lo organizamos</h2><p>Un proceso simple para convertir los objetivos del grupo en un itinerario deportivo y turístico coherente, organizado y a medida.</p></div>
-        <div class="process-grid"><article class="process-step"><span class="step">01</span><h3>Entendemos al grupo</h3><p>Edad, nivel, objetivos deportivos y expectativas del viaje.</p></article><article class="process-step"><span class="step">02</span><h3>Diseñamos la propuesta</h3><p>Combinamos actividades, tiempos y servicios según el perfil del grupo.</p></article><article class="process-step"><span class="step">03</span><h3>Coordinamos la operativa</h3><p>Reservas, traslados, horarios y proveedores en un único programa.</p></article><article class="process-step"><span class="step">04</span><h3>Vivimos la experiencia</h3><p>Acompañamiento en destino y soporte durante toda la actividad.</p></article></div>
-        <div class="audience-strip"><span>Clubes</span><span>Academias</span><span>Instituciones</span><span>Equipos juveniles</span><span>Grupos internacionales</span></div>
-        <a class="subpage-back" href="../index.html#destinos">← Volver a Viví Buenos Aires</a>
-      </div>
-    </section>
 
-    <section class="experience-cta">
-      <div class="wrap experience-cta-grid">
-        <div><h2>Convertí Buenos Aires en una experiencia de fútbol</h2><p>Contanos quiénes viajan, las fechas estimadas y qué quieren vivir. Diseñamos una propuesta adaptada al grupo.</p></div>
-        <a class="btn primary" href="../index.html#contacto">Hablar con Sportour</a>
-      </div>
-    </section>
-  </main>
-  <script src="../js/main.js"></script>
+
+        <div class="includes-list">
+
+
+            <div class="includes-item">
+
+                <span data-i18n="includes.item1">
+                    Visitas programadas a clubes
+                </span>
+
+            </div>
+
+
+            <div class="includes-item">
+
+                <span data-i18n="includes.item2">
+                    Recorridos por estadios y barrios
+                </span>
+
+            </div>
+
+
+            <div class="includes-item">
+
+                <span data-i18n="includes.item3">
+                    Actividades culturales vinculadas al fútbol
+                </span>
+
+            </div>
+
+
+            <div class="includes-item">
+
+                <span data-i18n="includes.item4">
+                    Traslados internos del grupo
+                </span>
+
+            </div>
+
+
+            <div class="includes-item">
+
+                <span data-i18n="includes.item5">
+                    Coordinación local
+                </span>
+
+            </div>
+
+
+            <div class="includes-item">
+
+                <span data-i18n="includes.item6">
+                    Guía y acompañamiento
+                </span>
+
+            </div>
+
+
+            <div class="includes-item">
+
+                <span data-i18n="includes.item7">
+                    Opciones de entrenamiento
+                </span>
+
+            </div>
+
+
+            <div class="includes-item">
+
+                <span data-i18n="includes.item8">
+                    Entradas a partidos según disponibilidad
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     PROCESO
+========================================================== -->
+
+<section class="experience-section">
+
+
+    <div class="wrap">
+
+
+        <div class="experience-heading">
+
+
+            <h2 data-i18n="process.title">
+                Cómo lo organizamos
+            </h2>
+
+
+            <p data-i18n="process.text">
+                Un proceso simple para convertir los objetivos del grupo
+                en un itinerario deportivo y turístico coherente,
+                organizado y a medida.
+            </p>
+
+
+        </div>
+
+
+
+        <div class="process-grid">
+
+
+
+            <!-- 01 -->
+
+            <article class="process-step">
+
+
+                <span class="step">
+                    01
+                </span>
+
+
+                <h3 data-i18n="process.step1Title">
+                    Entendemos al grupo
+                </h3>
+
+
+                <p data-i18n="process.step1Text">
+                    Edad, nivel, objetivos deportivos
+                    y expectativas del viaje.
+                </p>
+
+
+            </article>
+
+
+
+            <!-- 02 -->
+
+            <article class="process-step">
+
+
+                <span class="step">
+                    02
+                </span>
+
+
+                <h3 data-i18n="process.step2Title">
+                    Diseñamos la propuesta
+                </h3>
+
+
+                <p data-i18n="process.step2Text">
+                    Combinamos actividades, tiempos
+                    y servicios según el perfil del grupo.
+                </p>
+
+
+            </article>
+
+
+
+            <!-- 03 -->
+
+            <article class="process-step">
+
+
+                <span class="step">
+                    03
+                </span>
+
+
+                <h3 data-i18n="process.step3Title">
+                    Coordinamos la operativa
+                </h3>
+
+
+                <p data-i18n="process.step3Text">
+                    Reservas, traslados, horarios
+                    y proveedores en un único programa.
+                </p>
+
+
+            </article>
+
+
+
+            <!-- 04 -->
+
+            <article class="process-step">
+
+
+                <span class="step">
+                    04
+                </span>
+
+
+                <h3 data-i18n="process.step4Title">
+                    Vivimos la experiencia
+                </h3>
+
+
+                <p data-i18n="process.step4Text">
+                    Acompañamiento en destino
+                    y soporte durante toda la actividad.
+                </p>
+
+
+            </article>
+
+
+        </div>
+
+
+
+        <!-- PÚBLICO -->
+
+        <div class="audience-strip">
+
+
+            <span data-i18n="audience.clubs">
+                Clubes
+            </span>
+
+
+            <span data-i18n="audience.academies">
+                Academias
+            </span>
+
+
+            <span data-i18n="audience.institutions">
+                Instituciones
+            </span>
+
+
+            <span data-i18n="audience.youth">
+                Equipos juveniles
+            </span>
+
+
+            <span data-i18n="audience.international">
+                Grupos internacionales
+            </span>
+
+
+        </div>
+
+
+
+        <a
+            class="subpage-back"
+            href="../index.html#destinos"
+            data-i18n="back"
+        >
+            ← Volver a Viví Buenos Aires
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     CTA
+========================================================== -->
+
+<section class="experience-cta">
+
+
+    <div class="wrap experience-cta-grid">
+
+
+        <div>
+
+
+            <h2 data-i18n="cta.title">
+                Convertí Buenos Aires en una experiencia de fútbol
+            </h2>
+
+
+            <p data-i18n="cta.text">
+                Contanos quiénes viajan, las fechas estimadas
+                y qué quieren vivir. Diseñamos una propuesta
+                adaptada al grupo.
+            </p>
+
+
+        </div>
+
+
+
+        <a
+            class="btn primary"
+            href="../index.html#contacto"
+            data-i18n="cta.button"
+        >
+            Hablar con Sportour
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     JS PRINCIPAL
+========================================================== -->
+
+<script src="../js/main.js"></script>
+
+
+
+<!-- =========================================================
+     TRADUCCIONES
+========================================================== -->
+
+<script>
+
+
+const translations = {
+
+
+    /* =========================================================
+       ESPAÑOL
+    ========================================================== */
+
+    es: {
+
+
+        pageTitle:
+            "Fútbol argentino | SporTour",
+
+        pageDescription:
+            "Una inmersión en la identidad futbolera de Buenos Aires: clubes, barrios, historias, metodología y formas de vivir el deporte que atraviesa la ciudad.",
+
+
+        /* NAV */
+
+        "nav.experience":
+            "Experiencia",
+
+        "nav.services":
+            "Servicios",
+
+        "nav.packages":
+            "Paquetes",
+
+        "nav.promos":
+            "Promos",
+
+        "nav.accommodation":
+            "Alojamiento",
+
+        "nav.about":
+            "Nosotros",
+
+        "nav.contact":
+            "Consultar",
+
+        "nav.menu":
+            "Abrir menú",
+
+
+        /* BREADCRUMB */
+
+        "breadcrumb.home":
+            "Inicio",
+
+        "breadcrumb.ba":
+            "Viví Buenos Aires",
+
+        "breadcrumb.current":
+            "Fútbol argentino",
+
+
+        /* HERO */
+
+        "hero.kicker":
+            "Viví Buenos Aires · 01",
+
+        "hero.title":
+            "Fútbol argentino desde adentro",
+
+        "hero.text":
+            "Una inmersión en la identidad futbolera de Buenos Aires: clubes, barrios, historias, metodología y formas de vivir el deporte que atraviesa la ciudad.",
+
+        "hero.proposal":
+            "Solicitar propuesta",
+
+        "hero.experience":
+            "Ver experiencia",
+
+
+        /* FACTS */
+
+        "facts.focus":
+            "Enfoque",
+
+        "facts.focusValue":
+            "Inmersión futbolera",
+
+        "facts.format":
+            "Formato",
+
+        "facts.formatValue":
+            "Grupal y a medida",
+
+        "facts.destination":
+            "Destino",
+
+        "facts.ideal":
+            "Ideal para",
+
+        "facts.idealValue":
+            "Clubes y academias",
+
+
+        /* EXPERIENCIA */
+
+        "experience.title":
+            "Mucho más que mirar fútbol",
+
+        "experience.text":
+            "La propuesta combina aprendizaje, recorridos y contacto con el ecosistema futbolístico local para que el grupo entienda por qué el fútbol argentino tiene una identidad tan reconocible.",
+
+
+        /* FEATURES */
+
+        "feature.identityTitle":
+            "Identidad futbolera",
+
+        "feature.identityText":
+            "Conocer la historia, los códigos y la cultura que rodean al fútbol argentino dentro y fuera de la cancha.",
+
+        "feature.methodTitle":
+            "Metodología local",
+
+        "feature.methodText":
+            "Acercamiento a conceptos de formación, entrenamiento y competencia utilizados en el entorno futbolístico de Buenos Aires.",
+
+        "feature.clubsTitle":
+            "Clubes y barrios",
+
+        "feature.clubsText":
+            "Recorridos que conectan instituciones, estadios y barrios donde el fútbol forma parte de la vida cotidiana.",
+
+        "feature.groupTitle":
+            "Experiencia grupal",
+
+        "feature.groupText":
+            "Actividades pensadas para compartir como equipo, fortalecer vínculos y vivir el destino desde una mirada deportiva.",
+
+
+        /* INCLUYE */
+
+        "includes.kicker":
+            "Programa flexible",
+
+        "includes.title":
+            "Qué puede incluir",
+
+        "includes.text":
+            "Cada propuesta se adapta al perfil del grupo, las fechas del viaje, los objetivos y la disponibilidad de cada actividad.",
+
+        "includes.item1":
+            "Visitas programadas a clubes",
+
+        "includes.item2":
+            "Recorridos por estadios y barrios",
+
+        "includes.item3":
+            "Actividades culturales vinculadas al fútbol",
+
+        "includes.item4":
+            "Traslados internos del grupo",
+
+        "includes.item5":
+            "Coordinación local",
+
+        "includes.item6":
+            "Guía y acompañamiento",
+
+        "includes.item7":
+            "Opciones de entrenamiento",
+
+        "includes.item8":
+            "Entradas a partidos según disponibilidad",
+
+
+        /* PROCESO */
+
+        "process.title":
+            "Cómo lo organizamos",
+
+        "process.text":
+            "Un proceso simple para convertir los objetivos del grupo en un itinerario deportivo y turístico coherente, organizado y a medida.",
+
+        "process.step1Title":
+            "Entendemos al grupo",
+
+        "process.step1Text":
+            "Edad, nivel, objetivos deportivos y expectativas del viaje.",
+
+        "process.step2Title":
+            "Diseñamos la propuesta",
+
+        "process.step2Text":
+            "Combinamos actividades, tiempos y servicios según el perfil del grupo.",
+
+        "process.step3Title":
+            "Coordinamos la operativa",
+
+        "process.step3Text":
+            "Reservas, traslados, horarios y proveedores en un único programa.",
+
+        "process.step4Title":
+            "Vivimos la experiencia",
+
+        "process.step4Text":
+            "Acompañamiento en destino y soporte durante toda la actividad.",
+
+
+        /* AUDIENCIA */
+
+        "audience.clubs":
+            "Clubes",
+
+        "audience.academies":
+            "Academias",
+
+        "audience.institutions":
+            "Instituciones",
+
+        "audience.youth":
+            "Equipos juveniles",
+
+        "audience.international":
+            "Grupos internacionales",
+
+
+        /* VOLVER */
+
+        "back":
+            "← Volver a Viví Buenos Aires",
+
+
+        /* CTA */
+
+        "cta.title":
+            "Convertí Buenos Aires en una experiencia de fútbol",
+
+        "cta.text":
+            "Contanos quiénes viajan, las fechas estimadas y qué quieren vivir. Diseñamos una propuesta adaptada al grupo.",
+
+        "cta.button":
+            "Hablar con Sportour"
+
+    },
+
+
+
+    /* =========================================================
+       ENGLISH
+    ========================================================== */
+
+    en: {
+
+
+        pageTitle:
+            "Argentine football | SporTour",
+
+        pageDescription:
+            "An immersion into the football identity of Buenos Aires: clubs, neighborhoods, stories, methodology and the unique way the city experiences the game.",
+
+
+        /* NAV */
+
+        "nav.experience":
+            "Experience",
+
+        "nav.services":
+            "Services",
+
+        "nav.packages":
+            "Packages",
+
+        "nav.promos":
+            "Benefits",
+
+        "nav.accommodation":
+            "Accommodation",
+
+        "nav.about":
+            "About us",
+
+        "nav.contact":
+            "Contact us",
+
+        "nav.menu":
+            "Open menu",
+
+
+        /* BREADCRUMB */
+
+        "breadcrumb.home":
+            "Home",
+
+        "breadcrumb.ba":
+            "Experience Buenos Aires",
+
+        "breadcrumb.current":
+            "Argentine football",
+
+
+        /* HERO */
+
+        "hero.kicker":
+            "Experience Buenos Aires · 01",
+
+        "hero.title":
+            "Argentine football from the inside",
+
+        "hero.text":
+            "An immersion into the football identity of Buenos Aires: clubs, neighborhoods, stories, methodology and the unique way the city experiences the game.",
+
+        "hero.proposal":
+            "Request a proposal",
+
+        "hero.experience":
+            "View experience",
+
+
+        /* FACTS */
+
+        "facts.focus":
+            "Focus",
+
+        "facts.focusValue":
+            "Football immersion",
+
+        "facts.format":
+            "Format",
+
+        "facts.formatValue":
+            "Group and custom",
+
+        "facts.destination":
+            "Destination",
+
+        "facts.ideal":
+            "Ideal for",
+
+        "facts.idealValue":
+            "Clubs and academies",
+
+
+        /* EXPERIENCE */
+
+        "experience.title":
+            "Much more than watching football",
+
+        "experience.text":
+            "The experience combines learning, tours and direct contact with the local football ecosystem so the group can understand why Argentine football has such a distinctive identity.",
+
+
+        /* FEATURES */
+
+        "feature.identityTitle":
+            "Football identity",
+
+        "feature.identityText":
+            "Discover the history, traditions and culture surrounding Argentine football both on and off the pitch.",
+
+        "feature.methodTitle":
+            "Local methodology",
+
+        "feature.methodText":
+            "An introduction to player development, training and competition concepts used within the Buenos Aires football environment.",
+
+        "feature.clubsTitle":
+            "Clubs and neighborhoods",
+
+        "feature.clubsText":
+            "Tours connecting institutions, stadiums and neighborhoods where football is part of everyday life.",
+
+        "feature.groupTitle":
+            "Group experience",
+
+        "feature.groupText":
+            "Activities designed to be shared as a team, strengthen relationships and experience the destination from a sporting perspective.",
+
+
+        /* INCLUDES */
+
+        "includes.kicker":
+            "Flexible program",
+
+        "includes.title":
+            "What it can include",
+
+        "includes.text":
+            "Each proposal is adapted to the group's profile, travel dates, objectives and the availability of each activity.",
+
+        "includes.item1":
+            "Scheduled club visits",
+
+        "includes.item2":
+            "Stadium and neighborhood tours",
+
+        "includes.item3":
+            "Football-related cultural activities",
+
+        "includes.item4":
+            "Local group transportation",
+
+        "includes.item5":
+            "Local coordination",
+
+        "includes.item6":
+            "Guidance and assistance",
+
+        "includes.item7":
+            "Training options",
+
+        "includes.item8":
+            "Match tickets subject to availability",
+
+
+        /* PROCESS */
+
+        "process.title":
+            "How we organize it",
+
+        "process.text":
+            "A simple process that turns the group's objectives into a coherent, organized and customized sports and tourism itinerary.",
+
+        "process.step1Title":
+            "We understand the group",
+
+        "process.step1Text":
+            "Age, level, sporting objectives and expectations for the trip.",
+
+        "process.step2Title":
+            "We design the proposal",
+
+        "process.step2Text":
+            "We combine activities, timing and services according to the group's profile.",
+
+        "process.step3Title":
+            "We coordinate the logistics",
+
+        "process.step3Text":
+            "Bookings, transportation, schedules and providers within one organized program.",
+
+        "process.step4Title":
+            "We experience the journey",
+
+        "process.step4Text":
+            "On-site coordination and support throughout the entire experience.",
+
+
+        /* AUDIENCE */
+
+        "audience.clubs":
+            "Clubs",
+
+        "audience.academies":
+            "Academies",
+
+        "audience.institutions":
+            "Institutions",
+
+        "audience.youth":
+            "Youth teams",
+
+        "audience.international":
+            "International groups",
+
+
+        /* BACK */
+
+        "back":
+            "← Back to Experience Buenos Aires",
+
+
+        /* CTA */
+
+        "cta.title":
+            "Turn Buenos Aires into a football experience",
+
+        "cta.text":
+            "Tell us who is traveling, your estimated dates and what you want to experience. We design a proposal tailored to your group.",
+
+        "cta.button":
+            "Talk to SporTour"
+
+    }
+
+};
+
+
+
+/* =========================================================
+   CAMBIAR IDIOMA
+========================================================== */
+
+function setLanguage(lang) {
+
+
+    const language =
+        translations[lang];
+
+
+    if (!language) {
+        return;
+    }
+
+
+
+    /* IDIOMA HTML */
+
+    document.documentElement.lang =
+        lang;
+
+
+
+    /* TITLE */
+
+    document.title =
+        language.pageTitle;
+
+
+
+    /* META DESCRIPTION */
+
+    const description =
+        document.querySelector('meta[name="description"]');
+
+
+    if (description) {
+
+        description.setAttribute(
+            "content",
+            language.pageDescription
+        );
+
+    }
+
+
+
+    /* TEXTOS */
+
+    document
+        .querySelectorAll("[data-i18n]")
+        .forEach(element => {
+
+
+            const key =
+                element.dataset.i18n;
+
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    language,
+                    key
+                )
+            ) {
+
+                element.textContent =
+                    language[key];
+
+            }
+
+
+        });
+
+
+
+    /* ARIA LABELS */
+
+    document
+        .querySelectorAll("[data-i18n-aria-label]")
+        .forEach(element => {
+
+
+            const key =
+                element.dataset.i18nAriaLabel;
+
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    language,
+                    key
+                )
+            ) {
+
+                element.setAttribute(
+                    "aria-label",
+                    language[key]
+                );
+
+            }
+
+
+        });
+
+
+
+    /* BOTÓN ACTIVO */
+
+    document
+        .querySelectorAll(".lang-btn")
+        .forEach(button => {
+
+
+            button.classList.toggle(
+                "active",
+                button.dataset.lang === lang
+            );
+
+
+        });
+
+
+
+    /* GUARDAR IDIOMA */
+
+    localStorage.setItem(
+        "sportour-language",
+        lang
+    );
+
+
+}
+
+
+
+/* =========================================================
+   BOTONES
+========================================================== */
+
+document
+    .querySelectorAll(".lang-btn")
+    .forEach(button => {
+
+
+        button.addEventListener(
+            "click",
+            function () {
+
+
+                setLanguage(
+                    this.dataset.lang
+                );
+
+
+            }
+        );
+
+
+    });
+
+
+
+/* =========================================================
+   IDIOMA AL ENTRAR
+========================================================== */
+
+const savedLanguage =
+    localStorage.getItem("sportour-language") || "es";
+
+
+setLanguage(savedLanguage);
+
+
+</script>
+
+
 </body>
+
 </html>

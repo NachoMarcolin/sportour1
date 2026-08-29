@@ -1,166 +1,1516 @@
 <!DOCTYPE html>
 <html lang="es" data-theme="dark">
+
 <head>
+
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/pages.css">
   <title>Partidos | SporTour</title>
+
+  <meta
+    name="description"
+    content="Viví partidos de fútbol argentino en Buenos Aires con traslados, planificación y acompañamiento para todo el grupo."
+  >
+
+
+  <!-- FUENTES -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="../css/main.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../css/pages.css"
+  >
+
 </head>
+
+
 <body>
+
+
+<!-- =========================================================
+     NAV
+========================================================== -->
+
 <nav class="nav">
+
   <div class="nav-inner">
-    <a class="brand" href="../index.html#top">
+
+
+    <!-- LOGO -->
+
+    <a
+      class="brand"
+      href="../index.html#top"
+    >
+
       <span class="dot"></span>
-      <img src="../img/logo-blanco.png" alt="SporTour">
+
+      <img
+        src="../img/logo-blanco.png"
+        alt="SporTour"
+      >
+
     </a>
 
-    <ul class="navlinks" id="navlinks">
-       <li><a href="../index.html#servicios">Experiencia</a></li>
-      <li><a href="../index.html#destinos">Servicios</a></li>
-      <li><a href="../index.html#paquetes">Paquetes</a></li>
-      <li><a href="../index.html#promociones">Clubes</a></li>
-      <li><a href="../index.html#alojamiento">Alojamiento</a></li>
-      <li><a href="../index.html#nosotros">Nosotros</a></li>
+
+
+    <!-- LINKS -->
+
+    <ul
+      class="navlinks"
+      id="navlinks"
+    >
+
+      <li>
+        <a
+          href="../index.html#servicios"
+          data-i18n="nav.experience"
+        >
+          Experiencia
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="../index.html#destinos"
+          data-i18n="nav.services"
+        >
+          Servicios
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="../index.html#paquetes"
+          data-i18n="nav.packages"
+        >
+          Paquetes
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="../index.html#promociones"
+          data-i18n="nav.clubs"
+        >
+          Clubes
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="../index.html#alojamiento"
+          data-i18n="nav.accommodation"
+        >
+          Alojamiento
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="../index.html#nosotros"
+          data-i18n="nav.about"
+        >
+          Nosotros
+        </a>
+      </li>
+
     </ul>
 
-    <a class="nav-cta" href="../index.html#contacto">Cotizar viaje</a>
 
-    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navlinks">
+
+    <!-- SELECTOR DE IDIOMA -->
+
+    <div class="language-switcher">
+
+
+      <button
+        class="lang-btn"
+        data-lang="en"
+        type="button"
+      >
+
+        <span>
+          EN
+        </span>
+
+        <img
+          src="../img/bandera-eeuu.webp"
+          alt="English"
+          class="lang-flag"
+        >
+
+      </button>
+
+
+      <span class="lang-divider">
+        |
+      </span>
+
+
+      <button
+        class="lang-btn active"
+        data-lang="es"
+        type="button"
+      >
+
+        <span>
+          ES
+        </span>
+
+        <img
+          src="../img/bandera-españa.webp"
+          alt="Español"
+          class="lang-flag"
+        >
+
+      </button>
+
+
+    </div>
+
+
+
+    <!-- CTA -->
+
+    <a
+      class="nav-cta"
+      href="../index.html#contacto"
+      data-i18n="nav.quote"
+    >
+      Cotizar viaje
+    </a>
+
+
+
+    <!-- MOBILE -->
+
+    <button
+      class="burger"
+      id="burger"
+      aria-label="Abrir menú"
+      data-i18n-aria-label="nav.menu"
+      aria-expanded="false"
+      aria-controls="navlinks"
+    >
+
       <span></span>
+
     </button>
+
+
   </div>
+
 </nav>
 
+
+
 <main>
-  <header class="sp-match-hero">
-    <div class="sp-match-bg" style="background-image:url('../img/partidos1.avif')"></div>
 
-    <div class="sp-match-score">
-      <span>EXPERIENCIA 06</span>
-      <strong>90'</strong>
-      <small>Fútbol en vivo</small>
+
+<!-- =========================================================
+     HERO
+========================================================== -->
+
+<header class="sp-match-hero">
+
+
+  <div
+    class="sp-match-bg"
+    style="background-image:url('../img/partidos1.avif')"
+  >
+  </div>
+
+
+
+  <!-- MARCADOR -->
+
+  <div class="sp-match-score">
+
+
+    <span data-i18n="score.experience">
+      EXPERIENCIA 06
+    </span>
+
+
+    <strong>
+      90'
+    </strong>
+
+
+    <small data-i18n="score.live">
+      Fútbol en vivo
+    </small>
+
+
+  </div>
+
+
+
+  <div class="wrap sp-match-hero-content">
+
+
+    <!-- BREADCRUMB -->
+
+    <div class="sp-breadcrumb">
+
+
+      <a
+        href="../index.html"
+        data-i18n="breadcrumb.home"
+      >
+        Inicio
+      </a>
+
+
+      <span>
+        /
+      </span>
+
+
+      <a
+        href="../index.html#destinos"
+        data-i18n="breadcrumb.ba"
+      >
+        Viví Buenos Aires
+      </a>
+
+
+      <span>
+        /
+      </span>
+
+
+      <span data-i18n="breadcrumb.current">
+        Partidos
+      </span>
+
+
     </div>
 
-    <div class="wrap sp-match-hero-content">
-      <div class="sp-breadcrumb">
-        <a href="../index.html">Inicio</a><span>/</span>
-        <a href="../index.html#destinos">Viví Buenos Aires</a><span>/</span>
-        <span>Partidos</span>
+
+
+    <span
+      class="sp-kicker"
+      data-i18n="hero.kicker"
+    >
+      Día de partido
+    </span>
+
+
+
+    <h1 data-i18n="hero.title">
+      La tribuna también forma parte del viaje
+    </h1>
+
+
+
+    <p
+      class="sp-hero-copy"
+      data-i18n="hero.text"
+    >
+      Selección del encuentro, traslados, tiempos
+      y acompañamiento dentro de una jornada organizada.
+    </p>
+
+
+
+    <a
+      class="btn primary"
+      href="#matchday"
+      data-i18n="hero.button"
+    >
+      Ver matchday
+    </a>
+
+
+  </div>
+
+
+</header>
+
+
+
+<!-- =========================================================
+     MATCHDAY
+========================================================== -->
+
+<section
+  class="sp-section"
+  id="matchday"
+>
+
+
+  <div class="wrap">
+
+
+    <div class="sp-section-head">
+
+
+      <div>
+
+
+        <span
+          class="sp-kicker"
+          data-i18n="matchday.kicker"
+        >
+          Matchday
+        </span>
+
+
+        <h2 data-i18n="matchday.title">
+          Una jornada de principio a fin
+        </h2>
+
+
       </div>
 
-      <span class="sp-kicker">Día de partido</span>
-      <h1>La tribuna también forma parte del viaje</h1>
-      <p class="sp-hero-copy">
-        Selección del encuentro, traslados, tiempos y acompañamiento dentro de una jornada organizada.
+
+
+      <p data-i18n="matchday.text">
+        El grupo vive el ambiente del fútbol argentino
+        con una planificación clara.
       </p>
 
-      <a class="btn primary" href="#matchday">Ver matchday</a>
+
     </div>
-  </header>
 
-  <section class="sp-section" id="matchday">
-    <div class="wrap">
-      <div class="sp-section-head">
-        <div>
-          <span class="sp-kicker">Matchday</span>
-          <h2>Una jornada de principio a fin</h2>
-        </div>
-        <p>El grupo vive el ambiente del fútbol argentino con una planificación clara.</p>
-      </div>
 
-      <div class="sp-match-timeline">
-        <article><time>15:30</time><span>01</span><h3>Punto de encuentro</h3><p>Reunión del grupo y salida coordinada.</p></article>
-        <article><time>17:00</time><span>02</span><h3>Previa</h3><p>Contexto del partido y recorrido por la zona.</p></article>
-        <article><time>19:00</time><span>03</span><h3>Ingreso</h3><p>Acceso organizado de acuerdo con los tiempos del evento.</p></article>
-        <article><time>21:00</time><span>04</span><h3>Regreso</h3><p>Salida y traslado de vuelta al alojamiento.</p></article>
-      </div>
+
+    <div class="sp-match-timeline">
+
+
+
+      <!-- 01 -->
+
+      <article>
+
+
+        <time>
+          15:30
+        </time>
+
+
+        <span>
+          01
+        </span>
+
+
+        <h3 data-i18n="timeline.step1Title">
+          Punto de encuentro
+        </h3>
+
+
+        <p data-i18n="timeline.step1Text">
+          Reunión del grupo y salida coordinada.
+        </p>
+
+
+      </article>
+
+
+
+      <!-- 02 -->
+
+      <article>
+
+
+        <time>
+          17:00
+        </time>
+
+
+        <span>
+          02
+        </span>
+
+
+        <h3 data-i18n="timeline.step2Title">
+          Previa
+        </h3>
+
+
+        <p data-i18n="timeline.step2Text">
+          Contexto del partido y recorrido por la zona.
+        </p>
+
+
+      </article>
+
+
+
+      <!-- 03 -->
+
+      <article>
+
+
+        <time>
+          19:00
+        </time>
+
+
+        <span>
+          03
+        </span>
+
+
+        <h3 data-i18n="timeline.step3Title">
+          Ingreso
+        </h3>
+
+
+        <p data-i18n="timeline.step3Text">
+          Acceso organizado de acuerdo
+          con los tiempos del evento.
+        </p>
+
+
+      </article>
+
+
+
+      <!-- 04 -->
+
+      <article>
+
+
+        <time>
+          21:00
+        </time>
+
+
+        <span>
+          04
+        </span>
+
+
+        <h3 data-i18n="timeline.step4Title">
+          Regreso
+        </h3>
+
+
+        <p data-i18n="timeline.step4Text">
+          Salida y traslado de vuelta al alojamiento.
+        </p>
+
+
+      </article>
+
+
     </div>
-  </section>
 
-  <section class="sp-section sp-match-dark">
-    <div class="wrap">
-      <div class="sp-section-head">
-        <div>
-          <span class="sp-kicker">Opciones</span>
-          <h2>El partido se elige según el viaje</h2>
-        </div>
 
-        <div class="carousel-controls">
-          <button class="carousel-arrow carousel-arrow-light" data-carousel-prev="sp-match-carousel">←</button>
-          <button class="carousel-arrow carousel-arrow-light" data-carousel-next="sp-match-carousel">→</button>
-        </div>
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     OPCIONES
+========================================================== -->
+
+<section class="sp-section sp-match-dark">
+
+
+  <div class="wrap">
+
+
+    <div class="sp-section-head">
+
+
+      <div>
+
+
+        <span
+          class="sp-kicker"
+          data-i18n="options.kicker"
+        >
+          Opciones
+        </span>
+
+
+        <h2 data-i18n="options.title">
+          El partido se elige según el viaje
+        </h2>
+
+
       </div>
 
-      <div class="sp-match-carousel" id="sp-match-carousel">
-        <article>
-          <div style="background-image:url('../img/estadio1.jpg')"></div>
-          <span>Buenos Aires</span>
-          <h3>Grandes escenarios</h3>
-          <p>Partidos en estadios emblemáticos sujetos a calendario y disponibilidad.</p>
-        </article>
 
-        <article>
-          <div style="background-image:url('../img/partidos1.avif')"></div>
-          <span>Ambiente</span>
-          <h3>Partidos de alta demanda</h3>
-          <p>Opciones especiales cuando el calendario y la operativa del grupo lo permiten.</p>
-        </article>
 
-        <article>
-          <div style="background-image:url('../img/equipofutbol1.jpg')"></div>
-          <span>Alternativas</span>
-          <h3>Fútbol de ascenso</h3>
-          <p>Una experiencia más barrial para conocer otra capa del fútbol argentino.</p>
-        </article>
+      <!-- CONTROLES CARRUSEL -->
 
-        <article>
-          <div style="background-image:url('../img/buenosaires1.jpg')"></div>
-          <span>Combinación</span>
-          <h3>Ciudad + partido</h3>
-          <p>Recorrido breve por la zona y cierre con fútbol en vivo.</p>
-        </article>
+      <div class="carousel-controls">
+
+
+        <button
+          class="carousel-arrow carousel-arrow-light"
+          data-carousel-prev="sp-match-carousel"
+          aria-label="Anterior"
+          data-i18n-aria-label="carousel.previous"
+        >
+          ←
+        </button>
+
+
+        <button
+          class="carousel-arrow carousel-arrow-light"
+          data-carousel-next="sp-match-carousel"
+          aria-label="Siguiente"
+          data-i18n-aria-label="carousel.next"
+        >
+          →
+        </button>
+
+
       </div>
 
-      <p class="sp-match-note">
-        * La disponibilidad depende del calendario, las entradas y las condiciones de cada evento.
+
+    </div>
+
+
+
+    <!-- =====================================================
+         CARRUSEL
+    ====================================================== -->
+
+    <div
+      class="sp-match-carousel"
+      id="sp-match-carousel"
+    >
+
+
+
+      <!-- 01 -->
+
+      <article>
+
+
+        <div
+          style="background-image:url('../img/estadio1.jpg')"
+        >
+        </div>
+
+
+        <span>
+          Buenos Aires
+        </span>
+
+
+        <h3 data-i18n="option1.title">
+          Grandes escenarios
+        </h3>
+
+
+        <p data-i18n="option1.text">
+          Partidos en estadios emblemáticos
+          sujetos a calendario y disponibilidad.
+        </p>
+
+
+      </article>
+
+
+
+      <!-- 02 -->
+
+      <article>
+
+
+        <div
+          style="background-image:url('../img/partidos1.avif')"
+        >
+        </div>
+
+
+        <span data-i18n="option2.label">
+          Ambiente
+        </span>
+
+
+        <h3 data-i18n="option2.title">
+          Partidos de alta demanda
+        </h3>
+
+
+        <p data-i18n="option2.text">
+          Opciones especiales cuando el calendario
+          y la operativa del grupo lo permiten.
+        </p>
+
+
+      </article>
+
+
+
+      <!-- 03 -->
+
+      <article>
+
+
+        <div
+          style="background-image:url('../img/equipofutbol1.jpg')"
+        >
+        </div>
+
+
+        <span data-i18n="option3.label">
+          Alternativas
+        </span>
+
+
+        <h3 data-i18n="option3.title">
+          Fútbol de ascenso
+        </h3>
+
+
+        <p data-i18n="option3.text">
+          Una experiencia más barrial para conocer
+          otra capa del fútbol argentino.
+        </p>
+
+
+      </article>
+
+
+
+      <!-- 04 -->
+
+      <article>
+
+
+        <div
+          style="background-image:url('../img/buenosaires1.jpg')"
+        >
+        </div>
+
+
+        <span data-i18n="option4.label">
+          Combinación
+        </span>
+
+
+        <h3 data-i18n="option4.title">
+          Ciudad + partido
+        </h3>
+
+
+        <p data-i18n="option4.text">
+          Recorrido breve por la zona
+          y cierre con fútbol en vivo.
+        </p>
+
+
+      </article>
+
+
+    </div>
+
+
+
+    <p
+      class="sp-match-note"
+      data-i18n="options.note"
+    >
+      * La disponibilidad depende del calendario,
+      las entradas y las condiciones de cada evento.
+    </p>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     LOGÍSTICA
+========================================================== -->
+
+<section class="sp-section">
+
+
+  <div class="wrap sp-match-logistics">
+
+
+    <div>
+
+
+      <span
+        class="sp-kicker"
+        data-i18n="logistics.kicker"
+      >
+        Logística
+      </span>
+
+
+      <h2 data-i18n="logistics.title">
+        Todo el grupo se mueve con un mismo plan
+      </h2>
+
+
+    </div>
+
+
+
+    <div>
+
+
+      <p>
+
+        <b>
+          01
+        </b>
+
+        <span data-i18n="logistics.item1">
+          Horarios coordinados
+        </span>
+
       </p>
-    </div>
-  </section>
 
-  <section class="sp-section">
-    <div class="wrap sp-match-logistics">
-      <div>
-        <span class="sp-kicker">Logística</span>
-        <h2>Todo el grupo se mueve con un mismo plan</h2>
-      </div>
 
-      <div>
-        <p><b>01</b><span>Horarios coordinados</span></p>
-        <p><b>02</b><span>Traslados definidos</span></p>
-        <p><b>03</b><span>Puntos de encuentro</span></p>
-        <p><b>04</b><span>Acompañamiento local</span></p>
-      </div>
-    </div>
-  </section>
 
-  <section class="sp-page-cta">
-    <div class="wrap sp-page-cta-grid">
-      <div>
-        <span class="sp-kicker">Sportour</span>
-        <h2>Viví una noche de fútbol en Buenos Aires</h2>
-        <p>Buscamos la opción más compatible con las fechas y el perfil del grupo.</p>
-      </div>
-      <a class="btn primary" href="../index.html#contacto">Consultar partidos</a>
+      <p>
+
+        <b>
+          02
+        </b>
+
+        <span data-i18n="logistics.item2">
+          Traslados definidos
+        </span>
+
+      </p>
+
+
+
+      <p>
+
+        <b>
+          03
+        </b>
+
+        <span data-i18n="logistics.item3">
+          Puntos de encuentro
+        </span>
+
+      </p>
+
+
+
+      <p>
+
+        <b>
+          04
+        </b>
+
+        <span data-i18n="logistics.item4">
+          Acompañamiento local
+        </span>
+
+      </p>
+
+
     </div>
-  </section>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     CTA
+========================================================== -->
+
+<section class="sp-page-cta">
+
+
+  <div class="wrap sp-page-cta-grid">
+
+
+    <div>
+
+
+      <span class="sp-kicker">
+        Sportour
+      </span>
+
+
+      <h2 data-i18n="cta.title">
+        Viví una noche de fútbol en Buenos Aires
+      </h2>
+
+
+      <p data-i18n="cta.text">
+        Buscamos la opción más compatible
+        con las fechas y el perfil del grupo.
+      </p>
+
+
+    </div>
+
+
+
+    <a
+      class="btn primary"
+      href="../index.html#contacto"
+      data-i18n="cta.button"
+    >
+      Consultar partidos
+    </a>
+
+
+  </div>
+
+
+</section>
+
+
 </main>
 
+
+
+<!-- =========================================================
+     MAIN JS
+========================================================== -->
+
 <script src="../js/main.js"></script>
+
+
+
+<!-- =========================================================
+     TRADUCCIONES
+========================================================== -->
+
+<script>
+
+const translations = {
+
+
+  /* =========================================================
+     ESPAÑOL
+  ========================================================== */
+
+  es: {
+
+
+    pageTitle:
+      "Partidos | SporTour",
+
+    pageDescription:
+      "Viví partidos de fútbol argentino en Buenos Aires con traslados, planificación y acompañamiento para todo el grupo.",
+
+
+    /* NAV */
+
+    "nav.experience":
+      "Experiencia",
+
+    "nav.services":
+      "Servicios",
+
+    "nav.packages":
+      "Paquetes",
+
+    "nav.clubs":
+      "Clubes",
+
+    "nav.accommodation":
+      "Alojamiento",
+
+    "nav.about":
+      "Nosotros",
+
+    "nav.quote":
+      "Cotizar viaje",
+
+    "nav.menu":
+      "Abrir menú",
+
+
+    /* BREADCRUMB */
+
+    "breadcrumb.home":
+      "Inicio",
+
+    "breadcrumb.ba":
+      "Viví Buenos Aires",
+
+    "breadcrumb.current":
+      "Partidos",
+
+
+    /* MARCADOR */
+
+    "score.experience":
+      "EXPERIENCIA 06",
+
+    "score.live":
+      "Fútbol en vivo",
+
+
+    /* HERO */
+
+    "hero.kicker":
+      "Día de partido",
+
+    "hero.title":
+      "La tribuna también forma parte del viaje",
+
+    "hero.text":
+      "Selección del encuentro, traslados, tiempos y acompañamiento dentro de una jornada organizada.",
+
+    "hero.button":
+      "Ver matchday",
+
+
+    /* MATCHDAY */
+
+    "matchday.kicker":
+      "Matchday",
+
+    "matchday.title":
+      "Una jornada de principio a fin",
+
+    "matchday.text":
+      "El grupo vive el ambiente del fútbol argentino con una planificación clara.",
+
+
+    /* TIMELINE */
+
+    "timeline.step1Title":
+      "Punto de encuentro",
+
+    "timeline.step1Text":
+      "Reunión del grupo y salida coordinada.",
+
+    "timeline.step2Title":
+      "Previa",
+
+    "timeline.step2Text":
+      "Contexto del partido y recorrido por la zona.",
+
+    "timeline.step3Title":
+      "Ingreso",
+
+    "timeline.step3Text":
+      "Acceso organizado de acuerdo con los tiempos del evento.",
+
+    "timeline.step4Title":
+      "Regreso",
+
+    "timeline.step4Text":
+      "Salida y traslado de vuelta al alojamiento.",
+
+
+    /* OPCIONES */
+
+    "options.kicker":
+      "Opciones",
+
+    "options.title":
+      "El partido se elige según el viaje",
+
+    "option1.title":
+      "Grandes escenarios",
+
+    "option1.text":
+      "Partidos en estadios emblemáticos sujetos a calendario y disponibilidad.",
+
+    "option2.label":
+      "Ambiente",
+
+    "option2.title":
+      "Partidos de alta demanda",
+
+    "option2.text":
+      "Opciones especiales cuando el calendario y la operativa del grupo lo permiten.",
+
+    "option3.label":
+      "Alternativas",
+
+    "option3.title":
+      "Fútbol de ascenso",
+
+    "option3.text":
+      "Una experiencia más barrial para conocer otra capa del fútbol argentino.",
+
+    "option4.label":
+      "Combinación",
+
+    "option4.title":
+      "Ciudad + partido",
+
+    "option4.text":
+      "Recorrido breve por la zona y cierre con fútbol en vivo.",
+
+    "options.note":
+      "* La disponibilidad depende del calendario, las entradas y las condiciones de cada evento.",
+
+
+    /* CARRUSEL */
+
+    "carousel.previous":
+      "Anterior",
+
+    "carousel.next":
+      "Siguiente",
+
+
+    /* LOGÍSTICA */
+
+    "logistics.kicker":
+      "Logística",
+
+    "logistics.title":
+      "Todo el grupo se mueve con un mismo plan",
+
+    "logistics.item1":
+      "Horarios coordinados",
+
+    "logistics.item2":
+      "Traslados definidos",
+
+    "logistics.item3":
+      "Puntos de encuentro",
+
+    "logistics.item4":
+      "Acompañamiento local",
+
+
+    /* CTA */
+
+    "cta.title":
+      "Viví una noche de fútbol en Buenos Aires",
+
+    "cta.text":
+      "Buscamos la opción más compatible con las fechas y el perfil del grupo.",
+
+    "cta.button":
+      "Consultar partidos"
+
+  },
+
+
+
+  /* =========================================================
+     ENGLISH
+  ========================================================== */
+
+  en: {
+
+
+    pageTitle:
+      "Matches | SporTour",
+
+    pageDescription:
+      "Experience Argentine football matches in Buenos Aires with transportation, planning and support for the entire group.",
+
+
+    /* NAV */
+
+    "nav.experience":
+      "Experience",
+
+    "nav.services":
+      "Services",
+
+    "nav.packages":
+      "Packages",
+
+    "nav.clubs":
+      "Clubs",
+
+    "nav.accommodation":
+      "Accommodation",
+
+    "nav.about":
+      "About us",
+
+    "nav.quote":
+      "Request a quote",
+
+    "nav.menu":
+      "Open menu",
+
+
+    /* BREADCRUMB */
+
+    "breadcrumb.home":
+      "Home",
+
+    "breadcrumb.ba":
+      "Experience Buenos Aires",
+
+    "breadcrumb.current":
+      "Matches",
+
+
+    /* SCORE */
+
+    "score.experience":
+      "EXPERIENCE 06",
+
+    "score.live":
+      "Live football",
+
+
+    /* HERO */
+
+    "hero.kicker":
+      "Matchday",
+
+    "hero.title":
+      "The stands are part of the journey too",
+
+    "hero.text":
+      "Match selection, transportation, timing and on-site support within a fully organized matchday experience.",
+
+    "hero.button":
+      "View matchday",
+
+
+    /* MATCHDAY */
+
+    "matchday.kicker":
+      "Matchday",
+
+    "matchday.title":
+      "A complete matchday from start to finish",
+
+    "matchday.text":
+      "The group experiences the atmosphere of Argentine football with a clear and organized plan.",
+
+
+    /* TIMELINE */
+
+    "timeline.step1Title":
+      "Meeting point",
+
+    "timeline.step1Text":
+      "The group meets and departs together according to the planned schedule.",
+
+    "timeline.step2Title":
+      "Pre-match",
+
+    "timeline.step2Text":
+      "Match context and a short tour around the area.",
+
+    "timeline.step3Title":
+      "Stadium entry",
+
+    "timeline.step3Text":
+      "Organized entry according to the timing and requirements of the event.",
+
+    "timeline.step4Title":
+      "Return",
+
+    "timeline.step4Text":
+      "Departure from the stadium and transportation back to the accommodation.",
+
+
+    /* OPTIONS */
+
+    "options.kicker":
+      "Options",
+
+    "options.title":
+      "The match is selected according to the trip",
+
+    "option1.title":
+      "Iconic stadiums",
+
+    "option1.text":
+      "Matches at emblematic stadiums, subject to schedule and availability.",
+
+    "option2.label":
+      "Atmosphere",
+
+    "option2.title":
+      "High-demand matches",
+
+    "option2.text":
+      "Special options when the football schedule and the group's logistics make them possible.",
+
+    "option3.label":
+      "Alternatives",
+
+    "option3.title":
+      "Lower-division football",
+
+    "option3.text":
+      "A more neighborhood-based experience that reveals another side of Argentine football.",
+
+    "option4.label":
+      "Combination",
+
+    "option4.title":
+      "City + match",
+
+    "option4.text":
+      "A short tour around the area followed by the experience of live Argentine football.",
+
+    "options.note":
+      "* Availability depends on the football schedule, ticket availability and the conditions of each event.",
+
+
+    /* CAROUSEL */
+
+    "carousel.previous":
+      "Previous",
+
+    "carousel.next":
+      "Next",
+
+
+    /* LOGISTICS */
+
+    "logistics.kicker":
+      "Logistics",
+
+    "logistics.title":
+      "The entire group follows one coordinated plan",
+
+    "logistics.item1":
+      "Coordinated schedules",
+
+    "logistics.item2":
+      "Organized transportation",
+
+    "logistics.item3":
+      "Defined meeting points",
+
+    "logistics.item4":
+      "Local support",
+
+
+    /* CTA */
+
+    "cta.title":
+      "Experience a night of football in Buenos Aires",
+
+    "cta.text":
+      "We look for the option that best matches the group's travel dates and profile.",
+
+    "cta.button":
+      "Ask about matches"
+
+  }
+
+};
+
+
+
+/* =========================================================
+   CAMBIAR IDIOMA
+========================================================== */
+
+function setLanguage(lang) {
+
+
+  const language =
+    translations[lang];
+
+
+  if (!language) {
+    return;
+  }
+
+
+
+  /* IDIOMA HTML */
+
+  document.documentElement.lang =
+    lang;
+
+
+
+  /* TITLE */
+
+  document.title =
+    language.pageTitle;
+
+
+
+  /* META DESCRIPTION */
+
+  const description =
+    document.querySelector('meta[name="description"]');
+
+
+  if (description) {
+
+    description.setAttribute(
+      "content",
+      language.pageDescription
+    );
+
+  }
+
+
+
+  /* TEXTOS */
+
+  document
+    .querySelectorAll("[data-i18n]")
+    .forEach(element => {
+
+
+      const key =
+        element.dataset.i18n;
+
+
+      if (
+        Object.prototype.hasOwnProperty.call(
+          language,
+          key
+        )
+      ) {
+
+        element.textContent =
+          language[key];
+
+      }
+
+
+    });
+
+
+
+  /* ARIA LABELS */
+
+  document
+    .querySelectorAll("[data-i18n-aria-label]")
+    .forEach(element => {
+
+
+      const key =
+        element.dataset.i18nAriaLabel;
+
+
+      if (
+        Object.prototype.hasOwnProperty.call(
+          language,
+          key
+        )
+      ) {
+
+        element.setAttribute(
+          "aria-label",
+          language[key]
+        );
+
+      }
+
+
+    });
+
+
+
+  /* BOTÓN ACTIVO */
+
+  document
+    .querySelectorAll(".lang-btn")
+    .forEach(button => {
+
+
+      button.classList.toggle(
+        "active",
+        button.dataset.lang === lang
+      );
+
+
+    });
+
+
+
+  /* GUARDAR IDIOMA */
+
+  localStorage.setItem(
+    "sportour-language",
+    lang
+  );
+
+
+}
+
+
+
+/* =========================================================
+   BOTONES DE IDIOMA
+========================================================== */
+
+document
+  .querySelectorAll(".lang-btn")
+  .forEach(button => {
+
+
+    button.addEventListener(
+      "click",
+      function () {
+
+
+        setLanguage(
+          this.dataset.lang
+        );
+
+
+      }
+    );
+
+
+  });
+
+
+
+/* =========================================================
+   IDIOMA AL ENTRAR
+========================================================== */
+
+const savedLanguage =
+  localStorage.getItem("sportour-language") || "es";
+
+
+setLanguage(savedLanguage);
+
+
+</script>
+
+
 </body>
+
 </html>

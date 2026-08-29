@@ -55,772 +55,1652 @@
 <body>
 
 
-    <!-- =========================================================
-         NAV
-    ========================================================== -->
+<!-- =========================================================
+     NAV
+========================================================== -->
 
-    <nav class="nav">
+<nav class="nav">
 
-        <div class="nav-inner">
+    <div class="nav-inner">
 
 
-            <a
-                class="brand"
-                href="../index.html#top"
+        <!-- LOGO -->
+
+        <a
+            class="brand"
+            href="../index.html#top"
+        >
+
+            <span class="dot"></span>
+
+            <img
+                src="../img/logo-blanco.png"
+                alt="SporTour"
             >
 
-                <span class="dot"></span>
-
-          <img src="../img/logo-blanco.png" alt="SporTour">
-
-            </a>
+        </a>
 
 
-            <ul
-                class="navlinks"
-                id="navlinks"
+
+        <!-- LINKS -->
+
+        <ul
+            class="navlinks"
+            id="navlinks"
+        >
+
+            <li>
+                <a
+                    href="../index.html#servicios"
+                    data-i18n="nav.experience"
+                >
+                    Experiencia
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#destinos"
+                    data-i18n="nav.services"
+                >
+                    Servicios
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#paquetes"
+                    data-i18n="nav.packages"
+                >
+                    Paquetes
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#promociones"
+                    data-i18n="nav.promos"
+                >
+                    Promos
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#alojamiento"
+                    data-i18n="nav.accommodation"
+                >
+                    Alojamiento
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#nosotros"
+                    data-i18n="nav.about"
+                >
+                    Nosotros
+                </a>
+            </li>
+
+        </ul>
+
+
+
+        <!-- SELECTOR DE IDIOMA -->
+
+        <div class="language-switcher">
+
+            <button
+                class="lang-btn"
+                data-lang="en"
+                type="button"
             >
 
-                <li>
-                    <a href="../index.html#servicios">
-                        Experiencia
-                    </a>
-                </li>
+                <span>
+                    EN
+                </span>
 
-                <li>
-                    <a href="../index.html#destinos">
-                        Servicios
-                    </a>
-                </li>
+                <img
+                    src="../img/bandera-eeuu.webp"
+                    alt="English"
+                    class="lang-flag"
+                >
 
-                <li>
-                    <a href="../index.html#paquetes">
-                        Paquetes
-                    </a>
-                </li>
-
-                <li>
-                    <a href="../index.html#promociones">
-                        Promos
-                    </a>
-                </li>
-
-                <li>
-                    <a href="../index.html#alojamiento">
-                        Alojamiento
-                    </a>
-                </li>
-
-                <li>
-                    <a href="../index.html#nosotros">
-                        Nosotros
-                    </a>
-                </li>
-
-            </ul>
+            </button>
 
 
-            <a
-                class="nav-cta"
-                href="../index.html#contacto"
-            >
-                Cotizar viaje
-            </a>
+            <span class="lang-divider">
+                |
+            </span>
 
 
             <button
-                class="burger"
-                id="burger"
-                aria-label="Abrir menú"
-                aria-expanded="false"
-                aria-controls="navlinks"
+                class="lang-btn active"
+                data-lang="es"
+                type="button"
             >
 
-                <span></span>
+                <span>
+                    ES
+                </span>
+
+                <img
+                    src="../img/bandera-españa.webp"
+                    alt="Español"
+                    class="lang-flag"
+                >
 
             </button>
 
         </div>
 
-    </nav>
+
+
+        <!-- CTA -->
+
+        <a
+            class="nav-cta"
+            href="../index.html#contacto"
+            data-i18n="nav.quote"
+        >
+            Cotizar viaje
+        </a>
 
 
 
-    <main>
+        <!-- MOBILE -->
+
+        <button
+            class="burger"
+            id="burger"
+            aria-label="Abrir menú"
+            data-i18n-aria-label="nav.menu"
+            aria-expanded="false"
+            aria-controls="navlinks"
+        >
+
+            <span></span>
+
+        </button>
 
 
-        <!-- =====================================================
-             HERO
-        ====================================================== -->
+    </div>
 
-        <header class="hotel-detail-hero">
+</nav>
 
 
-            <div
-                class="hotel-detail-bg"
-                style="background-image:url('../img/experience-habitacion.jpg')"
+
+<main>
+
+
+<!-- =========================================================
+     HERO
+========================================================== -->
+
+<header class="hotel-detail-hero">
+
+
+    <div
+        class="hotel-detail-bg"
+        style="background-image:url('../img/experience-habitacion.jpg')"
+    >
+    </div>
+
+
+
+    <div class="wrap hotel-detail-hero-content">
+
+
+        <!-- BREADCRUMB -->
+
+        <div class="hotel-breadcrumb">
+
+
+            <a
+                href="../index.html"
+                data-i18n="breadcrumb.home"
             >
-            </div>
+                Inicio
+            </a>
 
 
-            <div class="wrap hotel-detail-hero-content">
+            <span>
+                /
+            </span>
 
 
-                <div class="hotel-breadcrumb">
-
-                    <a href="../index.html">
-                        Inicio
-                    </a>
-
-                    <span>/</span>
-
-                    <a href="../index.html#alojamiento">
-                        Alojamiento
-                    </a>
-
-                    <span>/</span>
-
-                    <span>
-                        Experience Hotel
-                    </span>
-
-                </div>
+            <a
+                href="../index.html#alojamiento"
+                data-i18n="breadcrumb.accommodation"
+            >
+                Alojamiento
+            </a>
 
 
-                <span class="hotel-kicker">
-                    Hotel urbano
+            <span>
+                /
+            </span>
+
+
+            <span>
+                Experience Hotel
+            </span>
+
+
+        </div>
+
+
+
+        <span
+            class="hotel-kicker"
+            data-i18n="hero.kicker"
+        >
+            Hotel urbano
+        </span>
+
+
+
+        <h1>
+            Experience Hotel
+        </h1>
+
+
+
+        <p
+            class="hotel-hero-copy"
+            data-i18n="hero.text"
+        >
+            Una ubicación estratégica para combinar entrenamientos,
+            visitas a clubes, partidos y recorridos por Buenos Aires
+            dentro de una experiencia completa.
+        </p>
+
+
+
+        <a
+            class="btn primary"
+            href="../pages/paquete-experience.html"
+            data-i18n="hero.button"
+        >
+            Ver Sportour Experience
+        </a>
+
+
+    </div>
+
+
+</header>
+
+
+
+<!-- =========================================================
+     DATOS RÁPIDOS
+========================================================== -->
+
+<section class="hotel-facts">
+
+
+    <div class="wrap hotel-facts-grid">
+
+
+        <div>
+
+            <span data-i18n="facts.destination">
+                Destino
+            </span>
+
+            <strong>
+                Buenos Aires
+            </strong>
+
+        </div>
+
+
+
+        <div>
+
+            <span data-i18n="facts.type">
+                Tipo
+            </span>
+
+            <strong data-i18n="facts.typeValue">
+                Hotel urbano
+            </strong>
+
+        </div>
+
+
+
+        <div>
+
+            <span data-i18n="facts.mealPlan">
+                Régimen
+            </span>
+
+            <strong data-i18n="facts.mealPlanValue">
+                Comidas incluidas
+            </strong>
+
+        </div>
+
+
+
+        <div>
+
+            <span data-i18n="facts.program">
+                Programa
+            </span>
+
+            <strong>
+                Sportour Experience
+            </strong>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     PRESENTACIÓN
+========================================================== -->
+
+<section class="hotel-detail-section">
+
+
+    <div class="wrap hotel-detail-intro">
+
+
+        <div>
+
+
+            <span
+                class="hotel-kicker"
+                data-i18n="intro.kicker"
+            >
+                El alojamiento
+            </span>
+
+
+            <h2 data-i18n="intro.title">
+                Fútbol y ciudad en un mismo punto
+            </h2>
+
+
+        </div>
+
+
+
+        <p data-i18n="intro.text">
+
+            Experience Hotel acompaña el programa que combina
+            entrenamientos de alto rendimiento, fútbol argentino
+            y actividades por Buenos Aires.
+
+            La propuesta busca ofrecer comodidad y una ubicación
+            conveniente para organizar entrenamientos, visitas a clubes,
+            partidos y recorridos culturales durante toda la estadía.
+
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     GALERÍA
+========================================================== -->
+
+<section class="hotel-gallery-section">
+
+
+    <div class="wrap">
+
+
+        <div class="hotel-gallery-head">
+
+
+            <div>
+
+
+                <span
+                    class="hotel-kicker"
+                    data-i18n="gallery.kicker"
+                >
+                    Galería
                 </span>
 
 
-                <h1>
+                <h2 data-i18n="gallery.title">
+                    Conocé el alojamiento
+                </h2>
+
+
+            </div>
+
+
+
+            <span
+                class="hotel-gallery-count mono"
+                data-i18n="gallery.count"
+            >
+                05 / Fotos
+            </span>
+
+
+        </div>
+
+
+
+        <div class="hotel-gallery">
+
+
+            <!-- FOTO PRINCIPAL -->
+
+            <div class="hotel-gallery-main">
+
+                <img
+                    src="../img/experience-exterior.png"
+                    alt="Vista principal del Experience Hotel"
+                    data-i18n-alt="gallery.alt1"
+                >
+
+            </div>
+
+
+
+            <!-- FOTO 02 -->
+
+            <div class="hotel-gallery-small">
+
+                <img
+                    src="../img/experience-hall.jpg"
+                    alt="Habitación del Experience Hotel"
+                    data-i18n-alt="gallery.alt2"
+                >
+
+            </div>
+
+
+
+            <!-- FOTO 03 -->
+
+            <div class="hotel-gallery-small">
+
+                <img
+                    src="../img/experience-habitacion.jpg"
+                    alt="Espacio común del Experience Hotel"
+                    data-i18n-alt="gallery.alt3"
+                >
+
+            </div>
+
+
+
+            <!-- FOTO 04 -->
+
+            <div class="hotel-gallery-small">
+
+                <img
+                    src="../img/experience-balcon.jpg"
+                    alt="Instalaciones del Experience Hotel"
+                    data-i18n-alt="gallery.alt4"
+                >
+
+            </div>
+
+
+
+            <!-- FOTO 05 -->
+
+            <div class="hotel-gallery-small">
+
+                <img
+                    src="../img/experience-recepcion.jpg"
+                    alt="Área de descanso del Experience Hotel"
+                    data-i18n-alt="gallery.alt5"
+                >
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     UBICACIÓN
+========================================================== -->
+
+<section class="hotel-location-section">
+
+
+    <div class="wrap">
+
+
+        <div class="hotel-detail-intro hotel-location-heading">
+
+
+            <div>
+
+
+                <span
+                    class="hotel-kicker"
+                    data-i18n="location.kicker"
+                >
+                    Ubicación
+                </span>
+
+
+                <h2>
+                    Buenos Aires
+                </h2>
+
+
+            </div>
+
+
+
+            <p data-i18n="location.text">
+
+                Una ubicación pensada para facilitar los traslados
+                entre el alojamiento, los entrenamientos, las visitas
+                a clubes, los partidos y los principales puntos
+                de interés de Buenos Aires.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="hotel-location-grid">
+
+
+            <!-- MAPA INTERACTIVO -->
+
+            <div class="hotel-map">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.13105670193!2d-58.375956124524755!3d-34.600847357346105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb0e99b16525%3A0xb4d0069671fe46bf!2sHTL%20Urbano%20Buenos%20Aires%20Hotel!5e0!3m2!1ses!2sar!4v1787854961392!5m2!1ses!2sar"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    title="Ubicación del Experience Hotel"
+                    data-i18n-title="location.mapTitle"
+                >
+                </iframe>
+
+            </div>
+
+
+
+            <!-- INFORMACIÓN -->
+
+            <aside class="hotel-location-info">
+
+
+                <span class="hotel-kicker">
                     Experience Hotel
-                </h1>
+                </span>
 
 
-                <p class="hotel-hero-copy">
-
-                    Una ubicación estratégica para combinar entrenamientos,
-                    visitas a clubes, partidos y recorridos por Buenos Aires
-                    dentro de una experiencia completa.
-
-                </p>
+                <h3 data-i18n="location.infoTitle">
+                    Una base estratégica en Buenos Aires
+                </h3>
 
 
-                <a
-                    class="btn primary"
-                    href="../pages/paquete-experience.html"
-                >
-                    Ver Sportour Experience
-                </a>
+                <p data-i18n="location.infoText">
 
-
-            </div>
-
-        </header>
-
-
-
-        <!-- =====================================================
-             DATOS RÁPIDOS
-        ====================================================== -->
-
-        <section class="hotel-facts">
-
-            <div class="wrap hotel-facts-grid">
-
-
-                <div>
-
-                    <span>
-                        Destino
-                    </span>
-
-                    <strong>
-                        Buenos Aires
-                    </strong>
-
-                </div>
-
-
-                <div>
-
-                    <span>
-                        Tipo
-                    </span>
-
-                    <strong>
-                        Hotel urbano
-                    </strong>
-
-                </div>
-
-
-                <div>
-
-                    <span>
-                        Régimen
-                    </span>
-
-                    <strong>
-                        Comidas incluidas
-                    </strong>
-
-                </div>
-
-
-                <div>
-
-                    <span>
-                        Programa
-                    </span>
-
-                    <strong>
-                        Sportour Experience
-                    </strong>
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =====================================================
-             PRESENTACIÓN
-        ====================================================== -->
-
-        <section class="hotel-detail-section">
-
-            <div class="wrap hotel-detail-intro">
-
-
-                <div>
-
-                    <span class="hotel-kicker">
-                        El alojamiento
-                    </span>
-
-                    <h2>
-                        Fútbol y ciudad en un mismo punto
-                    </h2>
-
-                </div>
-
-
-                <p>
-
-                    Experience Hotel acompaña el programa que combina
-                    entrenamientos de alto rendimiento, fútbol argentino
-                    y actividades por Buenos Aires.
-
-                    La propuesta busca ofrecer comodidad y una ubicación
-                    conveniente para organizar entrenamientos, visitas a clubes,
-                    partidos y recorridos culturales durante toda la estadía.
+                    El alojamiento funciona como punto de partida
+                    para las actividades deportivas y culturales
+                    incluidas dentro del programa Sportour Experience.
 
                 </p>
 
 
-            </div>
 
-        </section>
-
-
-
-        <!-- =====================================================
-             GALERÍA
-        ====================================================== -->
-
-        <section class="hotel-gallery-section">
-
-            <div class="wrap">
-
-
-                <div class="hotel-gallery-head">
-
-                    <div>
-
-                        <span class="hotel-kicker">
-                            Galería
-                        </span>
-
-                        <h2>
-                            Conocé el alojamiento
-                        </h2>
-
-                    </div>
-
-
-                    <span class="hotel-gallery-count mono">
-                        05 / Fotos
-                    </span>
-
-                </div>
-
-
-
-                <div class="hotel-gallery">
-
-
-                    <!-- FOTO PRINCIPAL -->
-
-                    <div class="hotel-gallery-main">
-
-                        <img
-                            src="../img/experience-exterior.png"
-                            alt="Vista principal del Experience Hotel"
-                        >
-
-                    </div>
-
-
-                    <!-- FOTO 02 -->
-
-                    <div class="hotel-gallery-small">
-
-                        <img
-                            src="../img/experience-hall.jpg"
-                            alt="Habitación del Experience Hotel"
-                        >
-
-                    </div>
-
-
-                    <!-- FOTO 03 -->
-
-                    <div class="hotel-gallery-small">
-
-                        <img
-                            src="../img/experience-habitacion.jpg"
-                            alt="Espacio común del Experience Hotel"
-                        >
-
-                    </div>
-
-
-                    <!-- FOTO 04 -->
-
-                    <div class="hotel-gallery-small">
-
-                        <img
-                            src="../img/experience-balcon.jpg"
-                            alt="Instalaciones del Experience Hotel"
-                        >
-
-                    </div>
-
-
-                    <!-- FOTO 05 -->
-
-                    <div class="hotel-gallery-small">
-
-                        <img
-                            src="../img/experience-recepcion.jpg"
-                            alt="Área de descanso del Experience Hotel"
-                        >
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =====================================================
-             UBICACIÓN / GOOGLE MAPS
-        ====================================================== -->
-
-        <section class="hotel-location-section">
-
-            <div class="wrap">
-
-
-                <div class="hotel-detail-intro hotel-location-heading">
+                <div class="hotel-location-data">
 
 
                     <div>
 
-                        <span class="hotel-kicker">
-                            Ubicación
+                        <span data-i18n="location.city">
+                            Ciudad
                         </span>
 
-                        <h2>
+                        <strong>
                             Buenos Aires
-                        </h2>
+                        </strong>
 
                     </div>
 
 
-                    <p>
-
-                        Una ubicación pensada para facilitar los traslados
-                        entre el alojamiento, los entrenamientos, las visitas
-                        a clubes, los partidos y los principales puntos
-                        de interés de Buenos Aires.
-
-                    </p>
-
-
-                </div>
-
-
-
-                <div class="hotel-location-grid">
-
-
-                    <!-- =================================================
-                         MAPA INTERACTIVO
-
-                         IMPORTANTE:
-                         reemplazá el src de abajo por el que te da:
-
-                         Google Maps
-                         → Compartir
-                         → Insertar un mapa
-                         → Copiar HTML
-
-                         Y copiá solamente el contenido de src="..."
-                    ================================================== -->
-
-                    <div class="hotel-map">
-
-                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.13105670193!2d-58.375956124524755!3d-34.600847357346105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb0e99b16525%3A0xb4d0069671fe46bf!2sHTL%20Urbano%20Buenos%20Aires%20Hotel!5e0!3m2!1ses!2sar!4v1787854961392!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
-                       </iframe>
-
-                    </div>
-
-
-
-                    <!-- INFORMACIÓN -->
-
-                    <aside class="hotel-location-info">
-
-
-                        <span class="hotel-kicker">
-                            Experience Hotel
-                        </span>
-
-
-                        <h3>
-                            Una base estratégica en Buenos Aires
-                        </h3>
-
-
-                        <p>
-
-                            El alojamiento funciona como punto de partida
-                            para las actividades deportivas y culturales
-                            incluidas dentro del programa Sportour Experience.
-
-                        </p>
-
-
-                        <div class="hotel-location-data">
-
-
-                            <div>
-
-                                <span>
-                                    Ciudad
-                                </span>
-
-                                <strong>
-                                    Buenos Aires
-                                </strong>
-
-                            </div>
-
-
-                            <div>
-
-                                <span>
-                                    País
-                                </span>
-
-                                <strong>
-                                    Argentina
-                                </strong>
-
-                            </div>
-
-
-                            <div>
-
-                                <span>
-                                    Programa
-                                </span>
-
-                                <strong>
-                                    Sportour Experience
-                                </strong>
-
-                            </div>
-
-
-                        </div>
-
-
-                        <!--
-                            ACÁ SÍ PODÉS USAR EL LINK CORTO
-                            maps.app.goo.gl DEL HOTEL REAL
-                        -->
-
-                        <a
-                            class="hotel-maps-link"
-                            href="PEGAR_ACA_EL_LINK_DE_GOOGLE_MAPS"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Abrir en Google Maps ↗
-                        </a>
-
-
-                    </aside>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =====================================================
-             SERVICIOS
-        ====================================================== -->
-
-        <section class="hotel-detail-section hotel-detail-alt">
-
-            <div class="wrap">
-
-
-                <div class="hotel-heading">
 
                     <div>
 
-                        <span class="hotel-kicker">
-                            Servicios
+                        <span data-i18n="location.country">
+                            País
                         </span>
 
-                        <h2>
-                            Durante la estadía
-                        </h2>
+                        <strong>
+                            Argentina
+                        </strong>
 
                     </div>
 
-                </div>
 
 
+                    <div>
 
-                <div class="hotel-services-grid">
-
-
-                    <!-- 01 -->
-
-                    <article>
-
-                        <span>
-                            01
+                        <span data-i18n="location.program">
+                            Programa
                         </span>
 
-                        <h3>
-                            Habitaciones
-                        </h3>
+                        <strong>
+                            Sportour Experience
+                        </strong>
 
-                        <p>
-
-                            Habitaciones preparadas para recibir jugadores
-                            y staff durante una semana completa
-                            de actividades en Buenos Aires.
-
-                        </p>
-
-                    </article>
-
-
-
-                    <!-- 02 -->
-
-                    <article>
-
-                        <span>
-                            02
-                        </span>
-
-                        <h3>
-                            Alimentación
-                        </h3>
-
-                        <p>
-
-                            Servicio de comidas integrado con el programa
-                            Sportour Experience durante la estadía
-                            de la delegación.
-
-                        </p>
-
-                    </article>
-
-
-
-                    <!-- 03 -->
-
-                    <article>
-
-                        <span>
-                            03
-                        </span>
-
-                        <h3>
-                            Ubicación
-                        </h3>
-
-                        <p>
-
-                            Punto estratégico para combinar entrenamientos,
-                            visitas a clubes, partidos y recorridos
-                            turísticos por la ciudad.
-
-                        </p>
-
-                    </article>
-
-
-
-                    <!-- 04 -->
-
-                    <article>
-
-                        <span>
-                            04
-                        </span>
-
-                        <h3>
-                            Traslados
-                        </h3>
-
-                        <p>
-
-                            Integrado con el transporte organizado
-                            durante toda la estadía para las actividades
-                            incluidas en el programa.
-
-                        </p>
-
-                    </article>
+                    </div>
 
 
                 </div>
 
-            </div>
-
-        </section>
-
-
-
-        <!-- =====================================================
-             PAQUETE
-        ====================================================== -->
-
-        <section class="hotel-package-section">
-
-            <div class="wrap hotel-package-grid">
-
-
-                <div>
-
-                    <span class="hotel-kicker">
-                        Incluido en
-                    </span>
-
-
-                    <h2>
-                        Sportour Experience
-                    </h2>
-
-
-                    <p>
-
-                        8 días / 7 noches · 6 entrenamientos de alto rendimiento ·
-                        1 partido amistoso · 2 visitas a clubes o estadios ·
-                        entrada a un partido del fútbol argentino ·
-                        alojamiento · comidas · transporte durante toda la estadía ·
-                        city tour y experiencias culturales en Buenos Aires.
-
-                    </p>
-
-                </div>
 
 
                 <a
-                    href="../pages/paquete-experience.html"
-                    class="btn primary"
+                    class="hotel-maps-link"
+                    href="PEGAR_ACA_EL_LINK_DE_GOOGLE_MAPS"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-i18n="location.maps"
                 >
-                    Ver paquete
+                    Abrir en Google Maps ↗
                 </a>
+
+
+            </aside>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     SERVICIOS
+========================================================== -->
+
+<section class="hotel-detail-section hotel-detail-alt">
+
+
+    <div class="wrap">
+
+
+        <div class="hotel-heading">
+
+
+            <div>
+
+
+                <span
+                    class="hotel-kicker"
+                    data-i18n="services.kicker"
+                >
+                    Servicios
+                </span>
+
+
+                <h2 data-i18n="services.title">
+                    Durante la estadía
+                </h2>
 
 
             </div>
 
-        </section>
+
+        </div>
 
 
 
-        <!-- =====================================================
-             CTA
-        ====================================================== -->
-
-        <section class="hotel-detail-cta">
-
-            <div class="wrap hotel-detail-cta-grid">
+        <div class="hotel-services-grid">
 
 
-                <div>
 
-                    <span class="hotel-kicker">
-                        Sportour Experience
-                    </span>
+            <!-- 01 -->
 
-
-                    <h2>
-                        ¿Querés conocer más sobre este alojamiento?
-                    </h2>
+            <article>
 
 
-                    <p>
-
-                        Consultanos por disponibilidad, características
-                        y configuración del alojamiento según las fechas
-                        y cantidad de jugadores de tu delegación.
-
-                    </p>
-
-                </div>
+                <span>
+                    01
+                </span>
 
 
-                <a
-                    href="../index.html#contacto"
-                    class="btn primary"
-                >
-                    Consultar alojamiento
-                </a>
+                <h3 data-i18n="services.roomsTitle">
+                    Habitaciones
+                </h3>
 
 
-            </div>
+                <p data-i18n="services.roomsText">
 
-        </section>
+                    Habitaciones preparadas para recibir jugadores
+                    y staff durante una semana completa
+                    de actividades en Buenos Aires.
+
+                </p>
 
 
-    </main>
+            </article>
 
 
-    <script src="../js/main.js"></script>
+
+            <!-- 02 -->
+
+            <article>
+
+
+                <span>
+                    02
+                </span>
+
+
+                <h3 data-i18n="services.foodTitle">
+                    Alimentación
+                </h3>
+
+
+                <p data-i18n="services.foodText">
+
+                    Servicio de comidas integrado con el programa
+                    Sportour Experience durante la estadía
+                    de la delegación.
+
+                </p>
+
+
+            </article>
+
+
+
+            <!-- 03 -->
+
+            <article>
+
+
+                <span>
+                    03
+                </span>
+
+
+                <h3 data-i18n="services.locationTitle">
+                    Ubicación
+                </h3>
+
+
+                <p data-i18n="services.locationText">
+
+                    Punto estratégico para combinar entrenamientos,
+                    visitas a clubes, partidos y recorridos
+                    turísticos por la ciudad.
+
+                </p>
+
+
+            </article>
+
+
+
+            <!-- 04 -->
+
+            <article>
+
+
+                <span>
+                    04
+                </span>
+
+
+                <h3 data-i18n="services.transportTitle">
+                    Traslados
+                </h3>
+
+
+                <p data-i18n="services.transportText">
+
+                    Integrado con el transporte organizado
+                    durante toda la estadía para las actividades
+                    incluidas en el programa.
+
+                </p>
+
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     PAQUETE
+========================================================== -->
+
+<section class="hotel-package-section">
+
+
+    <div class="wrap hotel-package-grid">
+
+
+        <div>
+
+
+            <span
+                class="hotel-kicker"
+                data-i18n="package.kicker"
+            >
+                Incluido en
+            </span>
+
+
+            <h2>
+                Sportour Experience
+            </h2>
+
+
+            <p data-i18n="package.text">
+
+                8 días / 7 noches · 6 entrenamientos de alto rendimiento ·
+                1 partido amistoso · 2 visitas a clubes o estadios ·
+                entrada a un partido del fútbol argentino ·
+                alojamiento · comidas · transporte durante toda la estadía ·
+                city tour y experiencias culturales en Buenos Aires.
+
+            </p>
+
+
+        </div>
+
+
+
+        <a
+            href="../pages/paquete-experience.html"
+            class="btn primary"
+            data-i18n="package.button"
+        >
+            Ver paquete
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     CTA
+========================================================== -->
+
+<section class="hotel-detail-cta">
+
+
+    <div class="wrap hotel-detail-cta-grid">
+
+
+        <div>
+
+
+            <span class="hotel-kicker">
+                Sportour Experience
+            </span>
+
+
+            <h2 data-i18n="cta.title">
+                ¿Querés conocer más sobre este alojamiento?
+            </h2>
+
+
+            <p data-i18n="cta.text">
+
+                Consultanos por disponibilidad, características
+                y configuración del alojamiento según las fechas
+                y cantidad de jugadores de tu delegación.
+
+            </p>
+
+
+        </div>
+
+
+
+        <a
+            href="../index.html#contacto"
+            class="btn primary"
+            data-i18n="cta.button"
+        >
+            Consultar alojamiento
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     MAIN JS
+========================================================== -->
+
+<script src="../js/main.js"></script>
+
+
+
+<!-- =========================================================
+     TRADUCCIONES
+========================================================== -->
+
+<script>
+
+const translations = {
+
+
+    /* =========================================================
+       ESPAÑOL
+    ========================================================== */
+
+    es: {
+
+
+        pageTitle:
+            "Experience Hotel | SporTour",
+
+        pageDescription:
+            "Conocé el alojamiento incluido en Sportour Experience, el programa que combina fútbol argentino y Buenos Aires.",
+
+
+        /* NAV */
+
+        "nav.experience":
+            "Experiencia",
+
+        "nav.services":
+            "Servicios",
+
+        "nav.packages":
+            "Paquetes",
+
+        "nav.promos":
+            "Promos",
+
+        "nav.accommodation":
+            "Alojamiento",
+
+        "nav.about":
+            "Nosotros",
+
+        "nav.quote":
+            "Cotizar viaje",
+
+        "nav.menu":
+            "Abrir menú",
+
+
+        /* BREADCRUMB */
+
+        "breadcrumb.home":
+            "Inicio",
+
+        "breadcrumb.accommodation":
+            "Alojamiento",
+
+
+        /* HERO */
+
+        "hero.kicker":
+            "Hotel urbano",
+
+        "hero.text":
+            "Una ubicación estratégica para combinar entrenamientos, visitas a clubes, partidos y recorridos por Buenos Aires dentro de una experiencia completa.",
+
+        "hero.button":
+            "Ver Sportour Experience",
+
+
+        /* FACTS */
+
+        "facts.destination":
+            "Destino",
+
+        "facts.type":
+            "Tipo",
+
+        "facts.typeValue":
+            "Hotel urbano",
+
+        "facts.mealPlan":
+            "Régimen",
+
+        "facts.mealPlanValue":
+            "Comidas incluidas",
+
+        "facts.program":
+            "Programa",
+
+
+        /* INTRO */
+
+        "intro.kicker":
+            "El alojamiento",
+
+        "intro.title":
+            "Fútbol y ciudad en un mismo punto",
+
+        "intro.text":
+            "Experience Hotel acompaña el programa que combina entrenamientos de alto rendimiento, fútbol argentino y actividades por Buenos Aires. La propuesta busca ofrecer comodidad y una ubicación conveniente para organizar entrenamientos, visitas a clubes, partidos y recorridos culturales durante toda la estadía.",
+
+
+        /* GALERÍA */
+
+        "gallery.kicker":
+            "Galería",
+
+        "gallery.title":
+            "Conocé el alojamiento",
+
+        "gallery.count":
+            "05 / Fotos",
+
+        "gallery.alt1":
+            "Vista principal del Experience Hotel",
+
+        "gallery.alt2":
+            "Habitación del Experience Hotel",
+
+        "gallery.alt3":
+            "Espacio común del Experience Hotel",
+
+        "gallery.alt4":
+            "Instalaciones del Experience Hotel",
+
+        "gallery.alt5":
+            "Área de descanso del Experience Hotel",
+
+
+        /* UBICACIÓN */
+
+        "location.kicker":
+            "Ubicación",
+
+        "location.text":
+            "Una ubicación pensada para facilitar los traslados entre el alojamiento, los entrenamientos, las visitas a clubes, los partidos y los principales puntos de interés de Buenos Aires.",
+
+        "location.infoTitle":
+            "Una base estratégica en Buenos Aires",
+
+        "location.infoText":
+            "El alojamiento funciona como punto de partida para las actividades deportivas y culturales incluidas dentro del programa Sportour Experience.",
+
+        "location.city":
+            "Ciudad",
+
+        "location.country":
+            "País",
+
+        "location.program":
+            "Programa",
+
+        "location.maps":
+            "Abrir en Google Maps ↗",
+
+        "location.mapTitle":
+            "Ubicación del Experience Hotel",
+
+
+        /* SERVICIOS */
+
+        "services.kicker":
+            "Servicios",
+
+        "services.title":
+            "Durante la estadía",
+
+        "services.roomsTitle":
+            "Habitaciones",
+
+        "services.roomsText":
+            "Habitaciones preparadas para recibir jugadores y staff durante una semana completa de actividades en Buenos Aires.",
+
+        "services.foodTitle":
+            "Alimentación",
+
+        "services.foodText":
+            "Servicio de comidas integrado con el programa Sportour Experience durante la estadía de la delegación.",
+
+        "services.locationTitle":
+            "Ubicación",
+
+        "services.locationText":
+            "Punto estratégico para combinar entrenamientos, visitas a clubes, partidos y recorridos turísticos por la ciudad.",
+
+        "services.transportTitle":
+            "Traslados",
+
+        "services.transportText":
+            "Integrado con el transporte organizado durante toda la estadía para las actividades incluidas en el programa.",
+
+
+        /* PAQUETE */
+
+        "package.kicker":
+            "Incluido en",
+
+        "package.text":
+            "8 días / 7 noches · 6 entrenamientos de alto rendimiento · 1 partido amistoso · 2 visitas a clubes o estadios · entrada a un partido del fútbol argentino · alojamiento · comidas · transporte durante toda la estadía · city tour y experiencias culturales en Buenos Aires.",
+
+        "package.button":
+            "Ver paquete",
+
+
+        /* CTA */
+
+        "cta.title":
+            "¿Querés conocer más sobre este alojamiento?",
+
+        "cta.text":
+            "Consultanos por disponibilidad, características y configuración del alojamiento según las fechas y cantidad de jugadores de tu delegación.",
+
+        "cta.button":
+            "Consultar alojamiento"
+
+    },
+
+
+
+    /* =========================================================
+       ENGLISH
+    ========================================================== */
+
+    en: {
+
+
+        pageTitle:
+            "Experience Hotel | SporTour",
+
+        pageDescription:
+            "Discover the accommodation included in SporTour Experience, the program that combines Argentine football and Buenos Aires.",
+
+
+        /* NAV */
+
+        "nav.experience":
+            "Experience",
+
+        "nav.services":
+            "Services",
+
+        "nav.packages":
+            "Packages",
+
+        "nav.promos":
+            "Benefits",
+
+        "nav.accommodation":
+            "Accommodation",
+
+        "nav.about":
+            "About us",
+
+        "nav.quote":
+            "Request a quote",
+
+        "nav.menu":
+            "Open menu",
+
+
+        /* BREADCRUMB */
+
+        "breadcrumb.home":
+            "Home",
+
+        "breadcrumb.accommodation":
+            "Accommodation",
+
+
+        /* HERO */
+
+        "hero.kicker":
+            "Urban hotel",
+
+        "hero.text":
+            "A strategic location to combine training sessions, club visits, matches and tours around Buenos Aires as part of a complete experience.",
+
+        "hero.button":
+            "View SporTour Experience",
+
+
+        /* FACTS */
+
+        "facts.destination":
+            "Destination",
+
+        "facts.type":
+            "Type",
+
+        "facts.typeValue":
+            "Urban hotel",
+
+        "facts.mealPlan":
+            "Meal plan",
+
+        "facts.mealPlanValue":
+            "Meals included",
+
+        "facts.program":
+            "Program",
+
+
+        /* INTRO */
+
+        "intro.kicker":
+            "The accommodation",
+
+        "intro.title":
+            "Football and the city in one place",
+
+        "intro.text":
+            "Experience Hotel supports the program that combines high-performance training, Argentine football and activities around Buenos Aires. The accommodation is designed to provide comfort and a convenient location for training sessions, club visits, matches and cultural tours throughout the stay.",
+
+
+        /* GALLERY */
+
+        "gallery.kicker":
+            "Gallery",
+
+        "gallery.title":
+            "Discover the accommodation",
+
+        "gallery.count":
+            "05 / Photos",
+
+        "gallery.alt1":
+            "Main view of Experience Hotel",
+
+        "gallery.alt2":
+            "Experience Hotel room",
+
+        "gallery.alt3":
+            "Experience Hotel common area",
+
+        "gallery.alt4":
+            "Experience Hotel facilities",
+
+        "gallery.alt5":
+            "Experience Hotel relaxation area",
+
+
+        /* LOCATION */
+
+        "location.kicker":
+            "Location",
+
+        "location.text":
+            "A location designed to make transportation easier between the accommodation, training sessions, club visits, matches and the main points of interest in Buenos Aires.",
+
+        "location.infoTitle":
+            "A strategic base in Buenos Aires",
+
+        "location.infoText":
+            "The hotel serves as the starting point for the sporting and cultural activities included in the SporTour Experience program.",
+
+        "location.city":
+            "City",
+
+        "location.country":
+            "Country",
+
+        "location.program":
+            "Program",
+
+        "location.maps":
+            "Open in Google Maps ↗",
+
+        "location.mapTitle":
+            "Experience Hotel location",
+
+
+        /* SERVICES */
+
+        "services.kicker":
+            "Services",
+
+        "services.title":
+            "During your stay",
+
+        "services.roomsTitle":
+            "Rooms",
+
+        "services.roomsText":
+            "Rooms prepared to accommodate players and staff throughout a full week of activities in Buenos Aires.",
+
+        "services.foodTitle":
+            "Meals",
+
+        "services.foodText":
+            "Meal service integrated into the SporTour Experience program throughout the delegation's stay.",
+
+        "services.locationTitle":
+            "Location",
+
+        "services.locationText":
+            "A strategic base for combining training sessions, club visits, matches and sightseeing around the city.",
+
+        "services.transportTitle":
+            "Transportation",
+
+        "services.transportText":
+            "Integrated with the transportation organized throughout the stay for all activities included in the program.",
+
+
+        /* PACKAGE */
+
+        "package.kicker":
+            "Included in",
+
+        "package.text":
+            "8 days / 7 nights · 6 high-performance training sessions · 1 friendly match · 2 club or stadium visits · ticket to an Argentine football match · accommodation · meals · transportation throughout the stay · Buenos Aires city tour and cultural experiences.",
+
+        "package.button":
+            "View package",
+
+
+        /* CTA */
+
+        "cta.title":
+            "Want to learn more about this accommodation?",
+
+        "cta.text":
+            "Contact us for availability, accommodation details and room configuration according to your travel dates and delegation size.",
+
+        "cta.button":
+            "Ask about accommodation"
+
+    }
+
+};
+
+
+
+/* =========================================================
+   CAMBIAR IDIOMA
+========================================================== */
+
+function setLanguage(lang) {
+
+
+    const language =
+        translations[lang];
+
+
+    if (!language) {
+        return;
+    }
+
+
+
+    /* IDIOMA HTML */
+
+    document.documentElement.lang =
+        lang;
+
+
+
+    /* TITLE */
+
+    document.title =
+        language.pageTitle;
+
+
+
+    /* META DESCRIPTION */
+
+    const description =
+        document.querySelector('meta[name="description"]');
+
+
+    if (description) {
+
+        description.setAttribute(
+            "content",
+            language.pageDescription
+        );
+
+    }
+
+
+
+    /* TEXTOS */
+
+    document
+        .querySelectorAll("[data-i18n]")
+        .forEach(element => {
+
+
+            const key =
+                element.dataset.i18n;
+
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    language,
+                    key
+                )
+            ) {
+
+                element.textContent =
+                    language[key];
+
+            }
+
+
+        });
+
+
+
+    /* ARIA LABELS */
+
+    document
+        .querySelectorAll("[data-i18n-aria-label]")
+        .forEach(element => {
+
+
+            const key =
+                element.dataset.i18nAriaLabel;
+
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    language,
+                    key
+                )
+            ) {
+
+                element.setAttribute(
+                    "aria-label",
+                    language[key]
+                );
+
+            }
+
+
+        });
+
+
+
+    /* ALT DE IMÁGENES */
+
+    document
+        .querySelectorAll("[data-i18n-alt]")
+        .forEach(element => {
+
+
+            const key =
+                element.dataset.i18nAlt;
+
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    language,
+                    key
+                )
+            ) {
+
+                element.setAttribute(
+                    "alt",
+                    language[key]
+                );
+
+            }
+
+
+        });
+
+
+
+    /* TITLE DE ELEMENTOS */
+
+    document
+        .querySelectorAll("[data-i18n-title]")
+        .forEach(element => {
+
+
+            const key =
+                element.dataset.i18nTitle;
+
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    language,
+                    key
+                )
+            ) {
+
+                element.setAttribute(
+                    "title",
+                    language[key]
+                );
+
+            }
+
+
+        });
+
+
+
+    /* BOTÓN ACTIVO */
+
+    document
+        .querySelectorAll(".lang-btn")
+        .forEach(button => {
+
+
+            button.classList.toggle(
+                "active",
+                button.dataset.lang === lang
+            );
+
+
+        });
+
+
+
+    /* GUARDAR IDIOMA */
+
+    localStorage.setItem(
+        "sportour-language",
+        lang
+    );
+
+
+}
+
+
+
+/* =========================================================
+   BOTONES DE IDIOMA
+========================================================== */
+
+document
+    .querySelectorAll(".lang-btn")
+    .forEach(button => {
+
+
+        button.addEventListener(
+            "click",
+            function () {
+
+
+                setLanguage(
+                    this.dataset.lang
+                );
+
+
+            }
+        );
+
+
+    });
+
+
+
+/* =========================================================
+   IDIOMA AL ENTRAR
+========================================================== */
+
+const savedLanguage =
+    localStorage.getItem("sportour-language") || "es";
+
+
+setLanguage(savedLanguage);
+
+
+</script>
 
 
 </body>

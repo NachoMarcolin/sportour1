@@ -1,164 +1,1439 @@
 <!DOCTYPE html>
+
 <html lang="es" data-theme="dark">
+
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
 
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/pages.css">
-  <title>Buenos Aires | SporTour</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+
+    <!-- FUENTES -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="../css/main.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/pages.css"
+    >
+
+
+    <title>Buenos Aires | SporTour</title>
+
 </head>
+
+
+
 <body>
+
+
+<!-- =========================================================
+     NAV
+========================================================== -->
+
 <nav class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="../index.html#top">
-      <span class="dot"></span>
-      <img src="../img/logo-blanco.png" alt="SporTour">
-    </a>
 
-    <ul class="navlinks" id="navlinks">
-       <li><a href="../index.html#servicios">Experiencia</a></li>
-      <li><a href="../index.html#destinos">Servicios</a></li>
-      <li><a href="../index.html#paquetes">Paquetes</a></li>
-      <li><a href="../index.html#promociones">Promos</a></li>
-      <li><a href="../index.html#alojamiento">Alojamiento</a></li>
-      <li><a href="../index.html#nosotros">Nosotros</a></li>
-    </ul>
+    <div class="nav-inner">
 
-    <a class="nav-cta" href="../index.html#contacto">Cotizar viaje</a>
 
-    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navlinks">
-      <span></span>
-    </button>
-  </div>
+        <!-- LOGO -->
+
+        <a
+            class="brand"
+            href="../index.html#top"
+        >
+
+            <span class="dot"></span>
+
+            <img
+                src="../img/logo-blanco.png"
+                alt="SporTour"
+            >
+
+        </a>
+
+
+
+        <!-- LINKS -->
+
+        <ul
+            class="navlinks"
+            id="navlinks"
+        >
+
+            <li>
+
+                <a
+                    href="../index.html#servicios"
+                    data-i18n="nav.experience"
+                >
+                    Experiencia
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a
+                    href="../index.html#destinos"
+                    data-i18n="nav.services"
+                >
+                    Servicios
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a
+                    href="../index.html#paquetes"
+                    data-i18n="nav.packages"
+                >
+                    Paquetes
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a
+                    href="../index.html#promociones"
+                    data-i18n="nav.promos"
+                >
+                    Promos
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a
+                    href="../index.html#alojamiento"
+                    data-i18n="nav.accommodation"
+                >
+                    Alojamiento
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a
+                    href="../index.html#nosotros"
+                    data-i18n="nav.about"
+                >
+                    Nosotros
+                </a>
+
+            </li>
+
+        </ul>
+
+
+
+        <!-- SELECTOR DE IDIOMA -->
+
+        <div class="language-switcher">
+
+
+            <!-- INGLÉS -->
+
+            <button
+                class="lang-btn"
+                data-lang="en"
+                type="button"
+            >
+
+                <span>
+                    EN
+                </span>
+
+                <img
+                    src="../img/bandera-eeuu.webp"
+                    alt="English"
+                    class="lang-flag"
+                >
+
+            </button>
+
+
+            <span class="lang-divider">
+                |
+            </span>
+
+
+            <!-- ESPAÑOL -->
+
+            <button
+                class="lang-btn active"
+                data-lang="es"
+                type="button"
+            >
+
+                <span>
+                    ES
+                </span>
+
+                <img
+                    src="../img/bandera-españa.webp"
+                    alt="Español"
+                    class="lang-flag"
+                >
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- CTA -->
+
+        <a
+            class="nav-cta"
+            href="../index.html#contacto"
+            data-i18n="nav.quote"
+        >
+            Cotizar viaje
+        </a>
+
+
+
+        <!-- MOBILE -->
+
+        <button
+            class="burger"
+            id="burger"
+            aria-label="Abrir menú"
+            data-i18n-aria-label="nav.menu"
+            aria-expanded="false"
+            aria-controls="navlinks"
+        >
+
+            <span></span>
+
+        </button>
+
+
+    </div>
+
 </nav>
 
+
+
+<!-- =========================================================
+     MAIN
+========================================================== -->
+
 <main>
-  <header class="sp-city-hero">
-    <div class="sp-city-bg" style="background-image:url('../img/buenosaires1.jpg')"></div>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================== -->
+
+<header class="sp-city-hero">
+
+
+    <div
+        class="sp-city-bg"
+        style="background-image:url('../img/buenosaires1.jpg')"
+    >
+    </div>
+
+
 
     <div class="wrap sp-city-hero-content">
-      <div class="sp-breadcrumb">
-        <a href="../index.html">Inicio</a><span>/</span>
-        <a href="../index.html#destinos">Viví Buenos Aires</a><span>/</span>
-        <span>Buenos Aires</span>
-      </div>
 
-      <span class="sp-kicker">Experiencia 04</span>
-      <h1>Una ciudad que se vive dentro y fuera de la cancha</h1>
-      <p class="sp-hero-copy">
-        Barrios, arquitectura, fútbol e historia en recorridos pensados para integrarse
-        al calendario deportivo del grupo.
-      </p>
 
-      <a class="btn primary" href="#city-routes">Explorar recorridos</a>
-    </div>
+        <!-- BREADCRUMB -->
 
-    <div class="sp-city-coords">34°36′S<br>58°23′O</div>
-  </header>
+        <div class="sp-breadcrumb">
 
-  <section class="sp-section">
-    <div class="wrap sp-city-intro">
-      <div>
-        <span class="sp-kicker">El destino</span>
-        <h2>Buenos Aires cambia según el barrio</h2>
-      </div>
-      <p>
-        La ciudad ofrece distintas formas de vivirla. Diseñamos recorridos por zonas
-        para aprovechar el tiempo sin saturar la agenda del equipo.
-      </p>
-    </div>
-  </section>
 
-  <section class="sp-section sp-section-alt" id="city-routes">
-    <div class="wrap">
-      <div class="sp-section-head">
-        <div>
-          <span class="sp-kicker">Recorridos</span>
-          <h2>Cuatro formas de conocerla</h2>
+            <a
+                href="../index.html"
+                data-i18n="breadcrumb.home"
+            >
+                Inicio
+            </a>
+
+
+            <span>
+                /
+            </span>
+
+
+            <a
+                href="../index.html#destinos"
+                data-i18n="breadcrumb.experience"
+            >
+                Viví Buenos Aires
+            </a>
+
+
+            <span>
+                /
+            </span>
+
+
+            <span>
+                Buenos Aires
+            </span>
+
+
         </div>
-        <p>Las rutas se pueden combinar con entrenamientos, visitas a clubes o días de partido.</p>
-      </div>
 
-      <div class="sp-city-routes">
-        <article>
-          <span class="sp-route-num">01</span>
-          <div class="sp-route-image" style="background-image:url('../img/buenosaires1.jpg')"></div>
-          <div class="sp-route-copy">
-            <small>Centro histórico</small>
-            <h3>Postales porteñas</h3>
-            <p>Una primera mirada a los espacios más reconocibles de la ciudad y su historia.</p>
-            <div><b>Arquitectura</b><b>Historia</b><b>Ciudad</b></div>
-          </div>
-        </article>
 
-        <article>
-          <span class="sp-route-num">02</span>
-          <div class="sp-route-image" style="background-image:url('../img/cultura1.jpg')"></div>
-          <div class="sp-route-copy">
-            <small>Sur</small>
-            <h3>Barrio, color y fútbol</h3>
-            <p>Cultura popular e identidad barrial en una de las zonas más reconocibles de Buenos Aires.</p>
-            <div><b>Barrio</b><b>Fútbol</b><b>Cultura</b></div>
-          </div>
-        </article>
 
-        <article>
-          <span class="sp-route-num">03</span>
-          <div class="sp-route-image" style="background-image:url('../img/estadio1.jpg')"></div>
-          <div class="sp-route-copy">
-            <small>Norte</small>
-            <h3>Estadios y espacios abiertos</h3>
-            <p>Escenarios deportivos, parques y recorridos ideales para una jornada más liviana.</p>
-            <div><b>Estadios</b><b>Parques</b><b>Recorrido</b></div>
-          </div>
-        </article>
+        <span
+            class="sp-kicker"
+            data-i18n="hero.kicker"
+        >
+            Experiencia 04
+        </span>
 
-        <article>
-          <span class="sp-route-num">04</span>
-          <div class="sp-route-image" style="background-image:url('../img/partidos1.avif')"></div>
-          <div class="sp-route-copy">
-            <small>Noche</small>
-            <h3>La ciudad antes del partido</h3>
-            <p>Un recorrido corto que puede terminar con una experiencia de fútbol en vivo.</p>
-            <div><b>Previa</b><b>Ciudad</b><b>Partido</b></div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
 
-  <section class="sp-section">
-    <div class="wrap sp-city-mosaic">
-      <div class="sp-city-mosaic-copy">
-        <span class="sp-kicker">Tiempo libre</span>
-        <h2>También hay lugar para bajar un cambio</h2>
-        <p>
-          El programa puede reservar momentos para caminar, comer, comprar o descansar
-          sin perder organización.
+
+        <h1 data-i18n="hero.title">
+            Una ciudad que se vive dentro y fuera de la cancha
+        </h1>
+
+
+
+        <p
+            class="sp-hero-copy"
+            data-i18n="hero.description"
+        >
+            Barrios, arquitectura, fútbol e historia en recorridos
+            pensados para integrarse al calendario deportivo del grupo.
         </p>
-      </div>
-      <div class="sp-mosaic-photo" style="background-image:url('../img/cultura1.jpg')"></div>
-      <div class="sp-mosaic-photo" style="background-image:url('../img/buenosaires1.jpg')"></div>
-    </div>
-  </section>
 
-  <section class="sp-page-cta">
-    <div class="wrap sp-page-cta-grid">
-      <div>
-        <span class="sp-kicker">Sportour</span>
-        <h2>Conocé Buenos Aires sin despegarte del viaje deportivo</h2>
-        <p>Armamos recorridos según tiempos, edades y calendario del grupo.</p>
-      </div>
-      <a class="btn primary" href="../index.html#contacto">Diseñar recorrido</a>
+
+
+        <a
+            class="btn primary"
+            href="#city-routes"
+            data-i18n="hero.button"
+        >
+            Explorar recorridos
+        </a>
+
+
     </div>
-  </section>
+
+
+
+    <div class="sp-city-coords">
+
+        34°36′S<br>
+        58°23′O
+
+    </div>
+
+
+</header>
+
+
+
+<!-- =========================================================
+     INTRO
+========================================================== -->
+
+<section class="sp-section">
+
+    <div class="wrap sp-city-intro">
+
+
+        <div>
+
+
+            <span
+                class="sp-kicker"
+                data-i18n="intro.kicker"
+            >
+                El destino
+            </span>
+
+
+            <h2 data-i18n="intro.title">
+                Buenos Aires cambia según el barrio
+            </h2>
+
+
+        </div>
+
+
+
+        <p data-i18n="intro.text">
+
+            La ciudad ofrece distintas formas de vivirla.
+            Diseñamos recorridos por zonas para aprovechar
+            el tiempo sin saturar la agenda del equipo.
+
+        </p>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     RECORRIDOS
+========================================================== -->
+
+<section
+    class="sp-section sp-section-alt"
+    id="city-routes"
+>
+
+
+    <div class="wrap">
+
+
+        <div class="sp-section-head">
+
+
+            <div>
+
+
+                <span
+                    class="sp-kicker"
+                    data-i18n="routes.kicker"
+                >
+                    Recorridos
+                </span>
+
+
+                <h2 data-i18n="routes.title">
+                    Cuatro formas de conocerla
+                </h2>
+
+
+            </div>
+
+
+
+            <p data-i18n="routes.description">
+
+                Las rutas se pueden combinar con entrenamientos,
+                visitas a clubes o días de partido.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="sp-city-routes">
+
+
+
+            <!-- =================================================
+                 RECORRIDO 01
+            ================================================== -->
+
+            <article>
+
+
+                <span class="sp-route-num">
+                    01
+                </span>
+
+
+                <div
+                    class="sp-route-image"
+                    style="background-image:url('../img/buenosaires1.jpg')"
+                >
+                </div>
+
+
+                <div class="sp-route-copy">
+
+
+                    <small data-i18n="route1.area">
+                        Centro histórico
+                    </small>
+
+
+                    <h3 data-i18n="route1.title">
+                        Postales porteñas
+                    </h3>
+
+
+                    <p data-i18n="route1.text">
+
+                        Una primera mirada a los espacios más
+                        reconocibles de la ciudad y su historia.
+
+                    </p>
+
+
+                    <div>
+
+
+                        <b data-i18n="tag.architecture">
+                            Arquitectura
+                        </b>
+
+
+                        <b data-i18n="tag.history">
+                            Historia
+                        </b>
+
+
+                        <b data-i18n="tag.city">
+                            Ciudad
+                        </b>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =================================================
+                 RECORRIDO 02
+            ================================================== -->
+
+            <article>
+
+
+                <span class="sp-route-num">
+                    02
+                </span>
+
+
+                <div
+                    class="sp-route-image"
+                    style="background-image:url('../img/cultura1.jpg')"
+                >
+                </div>
+
+
+                <div class="sp-route-copy">
+
+
+                    <small data-i18n="route2.area">
+                        Sur
+                    </small>
+
+
+                    <h3 data-i18n="route2.title">
+                        Barrio, color y fútbol
+                    </h3>
+
+
+                    <p data-i18n="route2.text">
+
+                        Cultura popular e identidad barrial
+                        en una de las zonas más reconocibles
+                        de Buenos Aires.
+
+                    </p>
+
+
+                    <div>
+
+
+                        <b data-i18n="tag.neighborhood">
+                            Barrio
+                        </b>
+
+
+                        <b data-i18n="tag.football">
+                            Fútbol
+                        </b>
+
+
+                        <b data-i18n="tag.culture">
+                            Cultura
+                        </b>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =================================================
+                 RECORRIDO 03
+            ================================================== -->
+
+            <article>
+
+
+                <span class="sp-route-num">
+                    03
+                </span>
+
+
+                <div
+                    class="sp-route-image"
+                    style="background-image:url('../img/estadio1.jpg')"
+                >
+                </div>
+
+
+                <div class="sp-route-copy">
+
+
+                    <small data-i18n="route3.area">
+                        Norte
+                    </small>
+
+
+                    <h3 data-i18n="route3.title">
+                        Estadios y espacios abiertos
+                    </h3>
+
+
+                    <p data-i18n="route3.text">
+
+                        Escenarios deportivos, parques y recorridos
+                        ideales para una jornada más liviana.
+
+                    </p>
+
+
+                    <div>
+
+
+                        <b data-i18n="tag.stadiums">
+                            Estadios
+                        </b>
+
+
+                        <b data-i18n="tag.parks">
+                            Parques
+                        </b>
+
+
+                        <b data-i18n="tag.route">
+                            Recorrido
+                        </b>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =================================================
+                 RECORRIDO 04
+            ================================================== -->
+
+            <article>
+
+
+                <span class="sp-route-num">
+                    04
+                </span>
+
+
+                <div
+                    class="sp-route-image"
+                    style="background-image:url('../img/partidos1.avif')"
+                >
+                </div>
+
+
+                <div class="sp-route-copy">
+
+
+                    <small data-i18n="route4.area">
+                        Noche
+                    </small>
+
+
+                    <h3 data-i18n="route4.title">
+                        La ciudad antes del partido
+                    </h3>
+
+
+                    <p data-i18n="route4.text">
+
+                        Un recorrido corto que puede terminar
+                        con una experiencia de fútbol en vivo.
+
+                    </p>
+
+
+                    <div>
+
+
+                        <b data-i18n="tag.prematch">
+                            Previa
+                        </b>
+
+
+                        <b data-i18n="tag.city">
+                            Ciudad
+                        </b>
+
+
+                        <b data-i18n="tag.match">
+                            Partido
+                        </b>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     TIEMPO LIBRE
+========================================================== -->
+
+<section class="sp-section">
+
+
+    <div class="wrap sp-city-mosaic">
+
+
+        <div class="sp-city-mosaic-copy">
+
+
+            <span
+                class="sp-kicker"
+                data-i18n="free.kicker"
+            >
+                Tiempo libre
+            </span>
+
+
+            <h2 data-i18n="free.title">
+                También hay lugar para bajar un cambio
+            </h2>
+
+
+            <p data-i18n="free.text">
+
+                El programa puede reservar momentos
+                para caminar, comer, comprar o descansar
+                sin perder organización.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div
+            class="sp-mosaic-photo"
+            style="background-image:url('../img/cultura1.jpg')"
+        >
+        </div>
+
+
+
+        <div
+            class="sp-mosaic-photo"
+            style="background-image:url('../img/buenosaires1.jpg')"
+        >
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     CTA FINAL
+========================================================== -->
+
+<section class="sp-page-cta">
+
+
+    <div class="wrap sp-page-cta-grid">
+
+
+        <div>
+
+
+            <span class="sp-kicker">
+                Sportour
+            </span>
+
+
+            <h2 data-i18n="cta.title">
+                Conocé Buenos Aires sin despegarte del viaje deportivo
+            </h2>
+
+
+            <p data-i18n="cta.text">
+
+                Armamos recorridos según tiempos,
+                edades y calendario del grupo.
+
+            </p>
+
+
+        </div>
+
+
+
+        <a
+            class="btn primary"
+            href="../index.html#contacto"
+            data-i18n="cta.button"
+        >
+            Diseñar recorrido
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
 </main>
 
+
+
+<!-- =========================================================
+     MAIN JS
+========================================================== -->
+
 <script src="../js/main.js"></script>
+
+
+
+<!-- =========================================================
+     TRADUCCIONES
+========================================================== -->
+
+<script>
+
+
+const translations = {
+
+
+    /* =========================================================
+       ESPAÑOL
+    ========================================================== */
+
+    es: {
+
+
+        pageTitle:
+            "Buenos Aires | SporTour",
+
+
+        /* NAV */
+
+        "nav.experience":
+            "Experiencia",
+
+        "nav.services":
+            "Servicios",
+
+        "nav.packages":
+            "Paquetes",
+
+        "nav.promos":
+            "Promos",
+
+        "nav.accommodation":
+            "Alojamiento",
+
+        "nav.about":
+            "Nosotros",
+
+        "nav.quote":
+            "Cotizar viaje",
+
+        "nav.menu":
+            "Abrir menú",
+
+
+        /* BREADCRUMB */
+
+        "breadcrumb.home":
+            "Inicio",
+
+        "breadcrumb.experience":
+            "Viví Buenos Aires",
+
+
+        /* HERO */
+
+        "hero.kicker":
+            "Experiencia 04",
+
+        "hero.title":
+            "Una ciudad que se vive dentro y fuera de la cancha",
+
+        "hero.description":
+            "Barrios, arquitectura, fútbol e historia en recorridos pensados para integrarse al calendario deportivo del grupo.",
+
+        "hero.button":
+            "Explorar recorridos",
+
+
+        /* INTRO */
+
+        "intro.kicker":
+            "El destino",
+
+        "intro.title":
+            "Buenos Aires cambia según el barrio",
+
+        "intro.text":
+            "La ciudad ofrece distintas formas de vivirla. Diseñamos recorridos por zonas para aprovechar el tiempo sin saturar la agenda del equipo.",
+
+
+        /* ROUTES */
+
+        "routes.kicker":
+            "Recorridos",
+
+        "routes.title":
+            "Cuatro formas de conocerla",
+
+        "routes.description":
+            "Las rutas se pueden combinar con entrenamientos, visitas a clubes o días de partido.",
+
+
+        /* ROUTE 01 */
+
+        "route1.area":
+            "Centro histórico",
+
+        "route1.title":
+            "Postales porteñas",
+
+        "route1.text":
+            "Una primera mirada a los espacios más reconocibles de la ciudad y su historia.",
+
+
+        /* ROUTE 02 */
+
+        "route2.area":
+            "Sur",
+
+        "route2.title":
+            "Barrio, color y fútbol",
+
+        "route2.text":
+            "Cultura popular e identidad barrial en una de las zonas más reconocibles de Buenos Aires.",
+
+
+        /* ROUTE 03 */
+
+        "route3.area":
+            "Norte",
+
+        "route3.title":
+            "Estadios y espacios abiertos",
+
+        "route3.text":
+            "Escenarios deportivos, parques y recorridos ideales para una jornada más liviana.",
+
+
+        /* ROUTE 04 */
+
+        "route4.area":
+            "Noche",
+
+        "route4.title":
+            "La ciudad antes del partido",
+
+        "route4.text":
+            "Un recorrido corto que puede terminar con una experiencia de fútbol en vivo.",
+
+
+        /* TAGS */
+
+        "tag.architecture":
+            "Arquitectura",
+
+        "tag.history":
+            "Historia",
+
+        "tag.city":
+            "Ciudad",
+
+        "tag.neighborhood":
+            "Barrio",
+
+        "tag.football":
+            "Fútbol",
+
+        "tag.culture":
+            "Cultura",
+
+        "tag.stadiums":
+            "Estadios",
+
+        "tag.parks":
+            "Parques",
+
+        "tag.route":
+            "Recorrido",
+
+        "tag.prematch":
+            "Previa",
+
+        "tag.match":
+            "Partido",
+
+
+        /* FREE TIME */
+
+        "free.kicker":
+            "Tiempo libre",
+
+        "free.title":
+            "También hay lugar para bajar un cambio",
+
+        "free.text":
+            "El programa puede reservar momentos para caminar, comer, comprar o descansar sin perder organización.",
+
+
+        /* CTA */
+
+        "cta.title":
+            "Conocé Buenos Aires sin despegarte del viaje deportivo",
+
+        "cta.text":
+            "Armamos recorridos según tiempos, edades y calendario del grupo.",
+
+        "cta.button":
+            "Diseñar recorrido"
+
+    },
+
+
+
+    /* =========================================================
+       ENGLISH
+    ========================================================== */
+
+    en: {
+
+
+        pageTitle:
+            "Buenos Aires | SporTour",
+
+
+        /* NAV */
+
+        "nav.experience":
+            "Experience",
+
+        "nav.services":
+            "Services",
+
+        "nav.packages":
+            "Packages",
+
+        "nav.promos":
+            "Benefits",
+
+        "nav.accommodation":
+            "Accommodation",
+
+        "nav.about":
+            "About us",
+
+        "nav.quote":
+            "Request a quote",
+
+        "nav.menu":
+            "Open menu",
+
+
+        /* BREADCRUMB */
+
+        "breadcrumb.home":
+            "Home",
+
+        "breadcrumb.experience":
+            "Experience Buenos Aires",
+
+
+        /* HERO */
+
+        "hero.kicker":
+            "Experience 04",
+
+        "hero.title":
+            "A city to experience on and off the pitch",
+
+        "hero.description":
+            "Neighborhoods, architecture, football and history through tours designed to fit naturally into the team's sporting schedule.",
+
+        "hero.button":
+            "Explore the routes",
+
+
+        /* INTRO */
+
+        "intro.kicker":
+            "The destination",
+
+        "intro.title":
+            "Buenos Aires changes from neighborhood to neighborhood",
+
+        "intro.text":
+            "The city offers many different ways to experience it. We design routes by area to make the most of the available time without overloading the team's schedule.",
+
+
+        /* ROUTES */
+
+        "routes.kicker":
+            "Routes",
+
+        "routes.title":
+            "Four ways to discover the city",
+
+        "routes.description":
+            "These routes can be combined with training sessions, club visits or matchdays.",
+
+
+        /* ROUTE 01 */
+
+        "route1.area":
+            "Historic center",
+
+        "route1.title":
+            "Classic Buenos Aires",
+
+        "route1.text":
+            "A first look at some of the city's most iconic places and the history behind them.",
+
+
+        /* ROUTE 02 */
+
+        "route2.area":
+            "South",
+
+        "route2.title":
+            "Neighborhood, color and football",
+
+        "route2.text":
+            "Popular culture and neighborhood identity in one of the most recognizable areas of Buenos Aires.",
+
+
+        /* ROUTE 03 */
+
+        "route3.area":
+            "North",
+
+        "route3.title":
+            "Stadiums and open spaces",
+
+        "route3.text":
+            "Sports venues, parks and routes that are ideal for a lighter day in the team's schedule.",
+
+
+        /* ROUTE 04 */
+
+        "route4.area":
+            "Night",
+
+        "route4.title":
+            "The city before the match",
+
+        "route4.text":
+            "A short route that can finish with the experience of watching Argentine football live.",
+
+
+        /* TAGS */
+
+        "tag.architecture":
+            "Architecture",
+
+        "tag.history":
+            "History",
+
+        "tag.city":
+            "City",
+
+        "tag.neighborhood":
+            "Neighborhood",
+
+        "tag.football":
+            "Football",
+
+        "tag.culture":
+            "Culture",
+
+        "tag.stadiums":
+            "Stadiums",
+
+        "tag.parks":
+            "Parks",
+
+        "tag.route":
+            "Route",
+
+        "tag.prematch":
+            "Pre-match",
+
+        "tag.match":
+            "Match",
+
+
+        /* FREE TIME */
+
+        "free.kicker":
+            "Free time",
+
+        "free.title":
+            "There is also time to slow down",
+
+        "free.text":
+            "The program can include free time to walk around, eat, shop or rest while keeping the overall itinerary organized.",
+
+
+        /* CTA */
+
+        "cta.title":
+            "Discover Buenos Aires without stepping away from the sporting experience",
+
+        "cta.text":
+            "We design each route according to the group's schedule, ages and available time.",
+
+        "cta.button":
+            "Plan a route"
+
+    }
+
+};
+
+
+
+/* =========================================================
+   CAMBIAR IDIOMA
+========================================================== */
+
+function setLanguage(lang) {
+
+
+    const language =
+        translations[lang];
+
+
+    if (!language) {
+        return;
+    }
+
+
+
+    /* HTML LANG */
+
+    document.documentElement.lang =
+        lang;
+
+
+
+    /* TITLE */
+
+    document.title =
+        language.pageTitle;
+
+
+
+    /* TEXTO NORMAL */
+
+    document
+        .querySelectorAll("[data-i18n]")
+        .forEach(element => {
+
+
+            const key =
+                element.dataset.i18n;
+
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    language,
+                    key
+                )
+            ) {
+
+                element.textContent =
+                    language[key];
+
+            }
+
+
+        });
+
+
+
+    /* ARIA LABEL */
+
+    document
+        .querySelectorAll("[data-i18n-aria-label]")
+        .forEach(element => {
+
+
+            const key =
+                element.dataset.i18nAriaLabel;
+
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    language,
+                    key
+                )
+            ) {
+
+                element.setAttribute(
+                    "aria-label",
+                    language[key]
+                );
+
+            }
+
+
+        });
+
+
+
+    /* BOTÓN ACTIVO */
+
+    document
+        .querySelectorAll(".lang-btn")
+        .forEach(button => {
+
+
+            button.classList.toggle(
+                "active",
+                button.dataset.lang === lang
+            );
+
+
+        });
+
+
+
+    /* GUARDAR IDIOMA */
+
+    localStorage.setItem(
+        "sportour-language",
+        lang
+    );
+
+
+}
+
+
+
+/* =========================================================
+   BOTONES
+========================================================== */
+
+document
+    .querySelectorAll(".lang-btn")
+    .forEach(button => {
+
+
+        button.addEventListener(
+            "click",
+            function () {
+
+
+                setLanguage(
+                    this.dataset.lang
+                );
+
+
+            }
+        );
+
+
+    });
+
+
+
+/* =========================================================
+   IDIOMA AL ENTRAR
+========================================================== */
+
+const savedLanguage =
+    localStorage.getItem("sportour-language") || "es";
+
+
+setLanguage(savedLanguage);
+
+
+</script>
+
+
 </body>
+
 </html>

@@ -1,154 +1,1255 @@
 <!DOCTYPE html>
 <html lang="es" data-theme="dark">
+
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
 
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/pages.css">
-  <title>Cultura | SporTour</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+
+    <!-- FUENTES -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="../css/main.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/pages.css"
+    >
+
+
+    <title>Cultura | SporTour</title>
+
 </head>
+
+
 <body>
+
+
+<!-- =========================================================
+     NAV
+========================================================== -->
+
 <nav class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="../index.html#top">
-      <span class="dot"></span>
-      <img src="../img/logo-blanco.png" alt="SporTour">
-    </a>
 
-    <ul class="navlinks" id="navlinks">
-       <li><a href="../index.html#servicios">Experiencia</a></li>
-      <li><a href="../index.html#destinos">Servicios</a></li>
-      <li><a href="../index.html#paquetes">Paquetes</a></li>
-      <li><a href="../index.html#promociones">Promos</a></li>
-      <li><a href="../index.html#alojamiento">Alojamiento</a></li>
-      <li><a href="../index.html#nosotros">Nosotros</a></li>
-    </ul>
+    <div class="nav-inner">
 
-    <a class="nav-cta" href="../index.html#contacto">Cotizar viaje</a>
 
-    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navlinks">
-      <span></span>
-    </button>
-  </div>
+        <!-- LOGO -->
+
+        <a
+            class="brand"
+            href="../index.html#top"
+        >
+
+            <span class="dot"></span>
+
+            <img
+                src="../img/logo-blanco.png"
+                alt="SporTour"
+            >
+
+        </a>
+
+
+
+        <!-- LINKS -->
+
+        <ul
+            class="navlinks"
+            id="navlinks"
+        >
+
+            <li>
+                <a
+                    href="../index.html#servicios"
+                    data-i18n="nav.experience"
+                >
+                    Experiencia
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#destinos"
+                    data-i18n="nav.services"
+                >
+                    Servicios
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#paquetes"
+                    data-i18n="nav.packages"
+                >
+                    Paquetes
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#promociones"
+                    data-i18n="nav.promos"
+                >
+                    Promos
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#alojamiento"
+                    data-i18n="nav.accommodation"
+                >
+                    Alojamiento
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../index.html#nosotros"
+                    data-i18n="nav.about"
+                >
+                    Nosotros
+                </a>
+            </li>
+
+        </ul>
+
+
+
+        <!-- SELECTOR DE IDIOMA -->
+
+        <div class="language-switcher">
+
+
+            <button
+                class="lang-btn"
+                data-lang="en"
+                type="button"
+            >
+
+                <span>
+                    EN
+                </span>
+
+                <img
+                    src="../img/bandera-eeuu.webp"
+                    alt="English"
+                    class="lang-flag"
+                >
+
+            </button>
+
+
+            <span class="lang-divider">
+                |
+            </span>
+
+
+            <button
+                class="lang-btn active"
+                data-lang="es"
+                type="button"
+            >
+
+                <span>
+                    ES
+                </span>
+
+                <img
+                    src="../img/bandera-españa.webp"
+                    alt="Español"
+                    class="lang-flag"
+                >
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- CTA -->
+
+        <a
+            class="nav-cta"
+            href="../index.html#contacto"
+            data-i18n="nav.quote"
+        >
+            Cotizar viaje
+        </a>
+
+
+
+        <!-- MOBILE -->
+
+        <button
+            class="burger"
+            id="burger"
+            aria-label="Abrir menú"
+            data-i18n-aria-label="nav.menu"
+            aria-expanded="false"
+            aria-controls="navlinks"
+        >
+            <span></span>
+        </button>
+
+
+    </div>
+
 </nav>
 
+
+
 <main>
-  <header class="sp-culture-hero">
+
+
+<!-- =========================================================
+     HERO
+========================================================== -->
+
+<header class="sp-culture-hero">
+
+
     <div class="sp-culture-collage">
-      <div class="sp-culture-a" style="background-image:url('../img/cultura1.jpg')"></div>
-      <div class="sp-culture-b" style="background-image:url('../img/buenosaires1.jpg')"></div>
-      <div class="sp-culture-c" style="background-image:url('../img/partidos1.avif')"></div>
+
+
+        <div
+            class="sp-culture-a"
+            style="background-image:url('../img/cultura1.jpg')"
+        >
+        </div>
+
+
+        <div
+            class="sp-culture-b"
+            style="background-image:url('../img/buenosaires1.jpg')"
+        >
+        </div>
+
+
+        <div
+            class="sp-culture-c"
+            style="background-image:url('../img/partidos1.avif')"
+        >
+        </div>
+
+
     </div>
+
+
 
     <div class="wrap sp-culture-hero-content">
-      <div class="sp-breadcrumb">
-        <a href="../index.html">Inicio</a><span>/</span>
-        <a href="../index.html#destinos">Viví Buenos Aires</a><span>/</span>
-        <span>Cultura</span>
-      </div>
 
-      <span class="sp-kicker">Experiencia 05</span>
-      <h1>Entender la ciudad también es parte del viaje</h1>
-      <p class="sp-hero-copy">
-        Historia, gastronomía, arte y fútbol como puertas de entrada a la identidad de Buenos Aires.
-      </p>
-    </div>
-  </header>
 
-  <section class="sp-section">
-    <div class="wrap sp-culture-manifesto">
-      <span>05</span>
-      <h2>El fútbol no se explica solo desde la cancha.</h2>
-      <p>
-        Conocer la cultura del destino ayuda a entender sus clubes, sus barrios,
-        sus rituales y su forma de vivir el deporte.
-      </p>
-    </div>
-  </section>
+        <!-- BREADCRUMB -->
 
-  <section class="sp-section sp-section-alt">
-    <div class="wrap">
-      <div class="sp-section-head">
-        <div>
-          <span class="sp-kicker">Cuatro capas</span>
-          <h2>Una experiencia más completa</h2>
+        <div class="sp-breadcrumb">
+
+
+            <a
+                href="../index.html"
+                data-i18n="breadcrumb.home"
+            >
+                Inicio
+            </a>
+
+
+            <span>
+                /
+            </span>
+
+
+            <a
+                href="../index.html#destinos"
+                data-i18n="breadcrumb.ba"
+            >
+                Viví Buenos Aires
+            </a>
+
+
+            <span>
+                /
+            </span>
+
+
+            <span data-i18n="breadcrumb.current">
+                Cultura
+            </span>
+
+
         </div>
-        <p>Las actividades se combinan según el tiempo disponible y el perfil del grupo.</p>
-      </div>
 
-      <div class="sp-culture-accordion">
-        <article class="sp-culture-item open">
-          <button class="sp-culture-toggle" aria-expanded="true">
-            <span>01</span><strong>Historia</strong><i>+</i>
-          </button>
-          <div class="sp-culture-panel">
-            <div style="background-image:url('../img/buenosaires1.jpg')"></div>
-            <p>Recorridos y relatos para entender cómo creció Buenos Aires y cómo cada barrio construyó una identidad propia.</p>
-          </div>
-        </article>
 
-        <article class="sp-culture-item">
-          <button class="sp-culture-toggle" aria-expanded="false">
-            <span>02</span><strong>Gastronomía</strong><i>+</i>
-          </button>
-          <div class="sp-culture-panel">
-            <div style="background-image:url('../img/cultura1.jpg')"></div>
-            <p>Experiencias gastronómicas seleccionadas para sumar momentos de grupo dentro del itinerario.</p>
-          </div>
-        </article>
 
-        <article class="sp-culture-item">
-          <button class="sp-culture-toggle" aria-expanded="false">
-            <span>03</span><strong>Arte urbano</strong><i>+</i>
-          </button>
-          <div class="sp-culture-panel">
-            <div style="background-image:url('../img/cultura1.jpg')"></div>
-            <p>Murales, arquitectura y expresiones visuales que muestran otra cara de la ciudad.</p>
-          </div>
-        </article>
+        <span
+            class="sp-kicker"
+            data-i18n="hero.kicker"
+        >
+            Experiencia 05
+        </span>
 
-        <article class="sp-culture-item">
-          <button class="sp-culture-toggle" aria-expanded="false">
-            <span>04</span><strong>Fútbol como cultura</strong><i>+</i>
-          </button>
-          <div class="sp-culture-panel">
-            <div style="background-image:url('../img/partidos1.avif')"></div>
-            <p>Símbolos, canciones, barrios e instituciones para entender al fútbol como fenómeno social.</p>
-          </div>
-        </article>
-      </div>
+
+
+        <h1 data-i18n="hero.title">
+            Entender la ciudad también es parte del viaje
+        </h1>
+
+
+
+        <p
+            class="sp-hero-copy"
+            data-i18n="hero.text"
+        >
+            Historia, gastronomía, arte y fútbol como puertas
+            de entrada a la identidad de Buenos Aires.
+        </p>
+
+
     </div>
-  </section>
 
-  <section class="sp-section">
+
+</header>
+
+
+
+<!-- =========================================================
+     MANIFIESTO
+========================================================== -->
+
+<section class="sp-section">
+
+
+    <div class="wrap sp-culture-manifesto">
+
+
+        <span>
+            05
+        </span>
+
+
+        <h2 data-i18n="manifesto.title">
+            El fútbol no se explica solo desde la cancha.
+        </h2>
+
+
+        <p data-i18n="manifesto.text">
+
+            Conocer la cultura del destino ayuda a entender
+            sus clubes, sus barrios, sus rituales
+            y su forma de vivir el deporte.
+
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     CUATRO CAPAS
+========================================================== -->
+
+<section class="sp-section sp-section-alt">
+
+
+    <div class="wrap">
+
+
+        <div class="sp-section-head">
+
+
+            <div>
+
+
+                <span
+                    class="sp-kicker"
+                    data-i18n="layers.kicker"
+                >
+                    Cuatro capas
+                </span>
+
+
+                <h2 data-i18n="layers.title">
+                    Una experiencia más completa
+                </h2>
+
+
+            </div>
+
+
+
+            <p data-i18n="layers.text">
+
+                Las actividades se combinan según
+                el tiempo disponible y el perfil del grupo.
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             ACORDEÓN
+        ================================================== -->
+
+        <div class="sp-culture-accordion">
+
+
+
+            <!-- HISTORIA -->
+
+            <article class="sp-culture-item open">
+
+
+                <button
+                    class="sp-culture-toggle"
+                    aria-expanded="true"
+                >
+
+                    <span>
+                        01
+                    </span>
+
+                    <strong data-i18n="accordion.historyTitle">
+                        Historia
+                    </strong>
+
+                    <i>
+                        +
+                    </i>
+
+                </button>
+
+
+                <div class="sp-culture-panel">
+
+
+                    <div
+                        style="background-image:url('../img/buenosaires1.jpg')"
+                    >
+                    </div>
+
+
+                    <p data-i18n="accordion.historyText">
+
+                        Recorridos y relatos para entender cómo creció Buenos Aires
+                        y cómo cada barrio construyó una identidad propia.
+
+                    </p>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- GASTRONOMÍA -->
+
+            <article class="sp-culture-item">
+
+
+                <button
+                    class="sp-culture-toggle"
+                    aria-expanded="false"
+                >
+
+                    <span>
+                        02
+                    </span>
+
+                    <strong data-i18n="accordion.foodTitle">
+                        Gastronomía
+                    </strong>
+
+                    <i>
+                        +
+                    </i>
+
+                </button>
+
+
+                <div class="sp-culture-panel">
+
+
+                    <div
+                        style="background-image:url('../img/cultura1.jpg')"
+                    >
+                    </div>
+
+
+                    <p data-i18n="accordion.foodText">
+
+                        Experiencias gastronómicas seleccionadas
+                        para sumar momentos de grupo dentro del itinerario.
+
+                    </p>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- ARTE -->
+
+            <article class="sp-culture-item">
+
+
+                <button
+                    class="sp-culture-toggle"
+                    aria-expanded="false"
+                >
+
+                    <span>
+                        03
+                    </span>
+
+                    <strong data-i18n="accordion.artTitle">
+                        Arte urbano
+                    </strong>
+
+                    <i>
+                        +
+                    </i>
+
+                </button>
+
+
+                <div class="sp-culture-panel">
+
+
+                    <div
+                        style="background-image:url('../img/cultura1.jpg')"
+                    >
+                    </div>
+
+
+                    <p data-i18n="accordion.artText">
+
+                        Murales, arquitectura y expresiones visuales
+                        que muestran otra cara de la ciudad.
+
+                    </p>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- FÚTBOL -->
+
+            <article class="sp-culture-item">
+
+
+                <button
+                    class="sp-culture-toggle"
+                    aria-expanded="false"
+                >
+
+                    <span>
+                        04
+                    </span>
+
+                    <strong data-i18n="accordion.footballTitle">
+                        Fútbol como cultura
+                    </strong>
+
+                    <i>
+                        +
+                    </i>
+
+                </button>
+
+
+                <div class="sp-culture-panel">
+
+
+                    <div
+                        style="background-image:url('../img/partidos1.avif')"
+                    >
+                    </div>
+
+
+                    <p data-i18n="accordion.footballText">
+
+                        Símbolos, canciones, barrios e instituciones
+                        para entender al fútbol como fenómeno social.
+
+                    </p>
+
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     FRASE + BENEFICIOS
+========================================================== -->
+
+<section class="sp-section">
+
+
     <div class="wrap sp-culture-quotes">
-      <div>“La ciudad se entiende mejor cuando se la vive con tiempo.”</div>
 
-      <div class="sp-culture-mini">
-        <article><span>Para jugadores</span><p>Amplía la experiencia más allá del entrenamiento.</p></article>
-        <article><span>Para acompañantes</span><p>Suma actividades atractivas también para familias y staff.</p></article>
-        <article><span>Para el grupo</span><p>Genera recuerdos compartidos fuera de la competencia.</p></article>
-      </div>
+
+        <div data-i18n="quotes.main">
+
+            “La ciudad se entiende mejor cuando se la vive con tiempo.”
+
+        </div>
+
+
+
+        <div class="sp-culture-mini">
+
+
+
+            <!-- JUGADORES -->
+
+            <article>
+
+
+                <span data-i18n="quotes.playersTitle">
+                    Para jugadores
+                </span>
+
+
+                <p data-i18n="quotes.playersText">
+                    Amplía la experiencia más allá del entrenamiento.
+                </p>
+
+
+            </article>
+
+
+
+            <!-- ACOMPAÑANTES -->
+
+            <article>
+
+
+                <span data-i18n="quotes.companionsTitle">
+                    Para acompañantes
+                </span>
+
+
+                <p data-i18n="quotes.companionsText">
+                    Suma actividades atractivas también para familias y staff.
+                </p>
+
+
+            </article>
+
+
+
+            <!-- GRUPO -->
+
+            <article>
+
+
+                <span data-i18n="quotes.groupTitle">
+                    Para el grupo
+                </span>
+
+
+                <p data-i18n="quotes.groupText">
+                    Genera recuerdos compartidos fuera de la competencia.
+                </p>
+
+
+            </article>
+
+
+        </div>
+
+
     </div>
-  </section>
 
-  <section class="sp-page-cta">
+
+</section>
+
+
+
+<!-- =========================================================
+     CTA FINAL
+========================================================== -->
+
+<section class="sp-page-cta">
+
+
     <div class="wrap sp-page-cta-grid">
-      <div>
-        <span class="sp-kicker">Sportour</span>
-        <h2>Sumá cultura sin perder el foco deportivo</h2>
-        <p>Integramos actividades con tiempos reales y logística de grupo.</p>
-      </div>
-      <a class="btn primary" href="../index.html#contacto">Armar experiencia</a>
+
+
+        <div>
+
+
+            <span class="sp-kicker">
+                Sportour
+            </span>
+
+
+            <h2 data-i18n="cta.title">
+                Sumá cultura sin perder el foco deportivo
+            </h2>
+
+
+            <p data-i18n="cta.text">
+                Integramos actividades con tiempos reales
+                y logística de grupo.
+            </p>
+
+
+        </div>
+
+
+
+        <a
+            class="btn primary"
+            href="../index.html#contacto"
+            data-i18n="cta.button"
+        >
+            Armar experiencia
+        </a>
+
+
     </div>
-  </section>
+
+
+</section>
+
+
 </main>
 
+
+
+<!-- =========================================================
+     JS PRINCIPAL
+========================================================== -->
+
 <script src="../js/main.js"></script>
+
+
+
+<!-- =========================================================
+     TRADUCCIONES
+========================================================== -->
+
+<script>
+
+
+const translations = {
+
+
+    /* =========================================================
+       ESPAÑOL
+    ========================================================== */
+
+    es: {
+
+
+        pageTitle:
+            "Cultura | SporTour",
+
+
+        /* NAV */
+
+        "nav.experience":
+            "Experiencia",
+
+        "nav.services":
+            "Servicios",
+
+        "nav.packages":
+            "Paquetes",
+
+        "nav.promos":
+            "Promos",
+
+        "nav.accommodation":
+            "Alojamiento",
+
+        "nav.about":
+            "Nosotros",
+
+        "nav.quote":
+            "Cotizar viaje",
+
+        "nav.menu":
+            "Abrir menú",
+
+
+        /* BREADCRUMB */
+
+        "breadcrumb.home":
+            "Inicio",
+
+        "breadcrumb.ba":
+            "Viví Buenos Aires",
+
+        "breadcrumb.current":
+            "Cultura",
+
+
+        /* HERO */
+
+        "hero.kicker":
+            "Experiencia 05",
+
+        "hero.title":
+            "Entender la ciudad también es parte del viaje",
+
+        "hero.text":
+            "Historia, gastronomía, arte y fútbol como puertas de entrada a la identidad de Buenos Aires.",
+
+
+        /* MANIFIESTO */
+
+        "manifesto.title":
+            "El fútbol no se explica solo desde la cancha.",
+
+        "manifesto.text":
+            "Conocer la cultura del destino ayuda a entender sus clubes, sus barrios, sus rituales y su forma de vivir el deporte.",
+
+
+        /* CAPAS */
+
+        "layers.kicker":
+            "Cuatro capas",
+
+        "layers.title":
+            "Una experiencia más completa",
+
+        "layers.text":
+            "Las actividades se combinan según el tiempo disponible y el perfil del grupo.",
+
+
+        /* ACORDEÓN */
+
+        "accordion.historyTitle":
+            "Historia",
+
+        "accordion.historyText":
+            "Recorridos y relatos para entender cómo creció Buenos Aires y cómo cada barrio construyó una identidad propia.",
+
+        "accordion.foodTitle":
+            "Gastronomía",
+
+        "accordion.foodText":
+            "Experiencias gastronómicas seleccionadas para sumar momentos de grupo dentro del itinerario.",
+
+        "accordion.artTitle":
+            "Arte urbano",
+
+        "accordion.artText":
+            "Murales, arquitectura y expresiones visuales que muestran otra cara de la ciudad.",
+
+        "accordion.footballTitle":
+            "Fútbol como cultura",
+
+        "accordion.footballText":
+            "Símbolos, canciones, barrios e instituciones para entender al fútbol como fenómeno social.",
+
+
+        /* FRASES */
+
+        "quotes.main":
+            "“La ciudad se entiende mejor cuando se la vive con tiempo.”",
+
+        "quotes.playersTitle":
+            "Para jugadores",
+
+        "quotes.playersText":
+            "Amplía la experiencia más allá del entrenamiento.",
+
+        "quotes.companionsTitle":
+            "Para acompañantes",
+
+        "quotes.companionsText":
+            "Suma actividades atractivas también para familias y staff.",
+
+        "quotes.groupTitle":
+            "Para el grupo",
+
+        "quotes.groupText":
+            "Genera recuerdos compartidos fuera de la competencia.",
+
+
+        /* CTA */
+
+        "cta.title":
+            "Sumá cultura sin perder el foco deportivo",
+
+        "cta.text":
+            "Integramos actividades con tiempos reales y logística de grupo.",
+
+        "cta.button":
+            "Armar experiencia"
+
+    },
+
+
+
+    /* =========================================================
+       ENGLISH
+    ========================================================== */
+
+    en: {
+
+
+        pageTitle:
+            "Culture | SporTour",
+
+
+        /* NAV */
+
+        "nav.experience":
+            "Experience",
+
+        "nav.services":
+            "Services",
+
+        "nav.packages":
+            "Packages",
+
+        "nav.promos":
+            "Benefits",
+
+        "nav.accommodation":
+            "Accommodation",
+
+        "nav.about":
+            "About us",
+
+        "nav.quote":
+            "Request a quote",
+
+        "nav.menu":
+            "Open menu",
+
+
+        /* BREADCRUMB */
+
+        "breadcrumb.home":
+            "Home",
+
+        "breadcrumb.ba":
+            "Experience Buenos Aires",
+
+        "breadcrumb.current":
+            "Culture",
+
+
+        /* HERO */
+
+        "hero.kicker":
+            "Experience 05",
+
+        "hero.title":
+            "Understanding the city is also part of the journey",
+
+        "hero.text":
+            "History, food, art and football as gateways to the identity of Buenos Aires.",
+
+
+        /* MANIFESTO */
+
+        "manifesto.title":
+            "Football cannot be understood only from the pitch.",
+
+        "manifesto.text":
+            "Discovering the culture of the destination helps you understand its clubs, neighborhoods, rituals and the way people experience sport.",
+
+
+        /* LAYERS */
+
+        "layers.kicker":
+            "Four layers",
+
+        "layers.title":
+            "A more complete experience",
+
+        "layers.text":
+            "Activities are combined according to the available time and the profile of each group.",
+
+
+        /* ACCORDION */
+
+        "accordion.historyTitle":
+            "History",
+
+        "accordion.historyText":
+            "Tours and stories that help explain how Buenos Aires grew and how each neighborhood developed its own identity.",
+
+        "accordion.foodTitle":
+            "Food",
+
+        "accordion.foodText":
+            "Selected culinary experiences designed to create shared moments for the group within the itinerary.",
+
+        "accordion.artTitle":
+            "Urban art",
+
+        "accordion.artText":
+            "Murals, architecture and visual expressions that reveal another side of the city.",
+
+        "accordion.footballTitle":
+            "Football as culture",
+
+        "accordion.footballText":
+            "Symbols, songs, neighborhoods and institutions that help explain football as a social phenomenon.",
+
+
+        /* QUOTES */
+
+        "quotes.main":
+            "“The city is better understood when you take the time to truly experience it.”",
+
+        "quotes.playersTitle":
+            "For players",
+
+        "quotes.playersText":
+            "Expands the experience beyond training sessions.",
+
+        "quotes.companionsTitle":
+            "For companions",
+
+        "quotes.companionsText":
+            "Adds attractive activities for families and staff as well.",
+
+        "quotes.groupTitle":
+            "For the group",
+
+        "quotes.groupText":
+            "Creates shared memories away from competition.",
+
+
+        /* CTA */
+
+        "cta.title":
+            "Add culture without losing the sporting focus",
+
+        "cta.text":
+            "We integrate activities with realistic timing and group logistics.",
+
+        "cta.button":
+            "Build your experience"
+
+    }
+
+};
+
+
+
+/* =========================================================
+   CAMBIAR IDIOMA
+========================================================== */
+
+function setLanguage(lang) {
+
+
+    const language =
+        translations[lang];
+
+
+    if (!language) {
+        return;
+    }
+
+
+
+    /* IDIOMA DEL HTML */
+
+    document.documentElement.lang =
+        lang;
+
+
+
+    /* TITLE */
+
+    document.title =
+        language.pageTitle;
+
+
+
+    /* TEXTOS */
+
+    document
+        .querySelectorAll("[data-i18n]")
+        .forEach(element => {
+
+
+            const key =
+                element.dataset.i18n;
+
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    language,
+                    key
+                )
+            ) {
+
+                element.textContent =
+                    language[key];
+
+            }
+
+
+        });
+
+
+
+    /* ARIA LABELS */
+
+    document
+        .querySelectorAll("[data-i18n-aria-label]")
+        .forEach(element => {
+
+
+            const key =
+                element.dataset.i18nAriaLabel;
+
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    language,
+                    key
+                )
+            ) {
+
+                element.setAttribute(
+                    "aria-label",
+                    language[key]
+                );
+
+            }
+
+
+        });
+
+
+
+    /* BOTÓN ACTIVO */
+
+    document
+        .querySelectorAll(".lang-btn")
+        .forEach(button => {
+
+
+            button.classList.toggle(
+                "active",
+                button.dataset.lang === lang
+            );
+
+
+        });
+
+
+
+    /* GUARDAR */
+
+    localStorage.setItem(
+        "sportour-language",
+        lang
+    );
+
+
+}
+
+
+
+/* =========================================================
+   BOTONES
+========================================================== */
+
+document
+    .querySelectorAll(".lang-btn")
+    .forEach(button => {
+
+
+        button.addEventListener(
+            "click",
+            function () {
+
+
+                setLanguage(
+                    this.dataset.lang
+                );
+
+
+            }
+        );
+
+
+    });
+
+
+
+/* =========================================================
+   IDIOMA AL ENTRAR
+========================================================== */
+
+const savedLanguage =
+    localStorage.getItem("sportour-language") || "es";
+
+
+setLanguage(savedLanguage);
+
+
+</script>
+
+
 </body>
+
 </html>
